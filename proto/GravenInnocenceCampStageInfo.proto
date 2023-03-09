@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GravenInnocenceCampStageInfo {
+	bool IsOpen = 8;
+	uint32 StageId = 14;
+	bool IsFinished = 13;
+	uint32 LevelId = 12;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message QuestUpdateQuestTimeVarNotify {
+	enum QuestUpdateQuestTimeVarNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 436;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ParentQuestId = 5;
+	map<uint32, uint32> TimeVarMap = 8;
+}

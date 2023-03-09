@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarInfo.proto";
+
+message AvatarAddNotify {
+	enum AvatarAddNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1661;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	AvatarInfo Avatar = 8;
+	bool IsInTeam = 14;
+}

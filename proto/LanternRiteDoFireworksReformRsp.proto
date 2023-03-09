@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LanternRiteFireworksReformFactorInfo.proto";
+
+message LanternRiteDoFireworksReformRsp {
+	enum LanternRiteDoFireworksReformRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8644;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FireElementAdditionRatio = 3;
+	bool IsLucky = 7;
+	repeated LanternRiteFireworksReformFactorInfo FactorInfoList = 6;
+	uint32 StageId = 1;
+	uint32 ChallengeId = 9;
+	uint32 StaminaValue = 5;
+	uint32 ReformScore = 14;
+	uint32 FireElementValue = 2;
+	int32 Retcode = 12;
+}

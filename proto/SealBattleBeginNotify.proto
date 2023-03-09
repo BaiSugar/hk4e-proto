@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SealBattleType.proto";
+
+message SealBattleBeginNotify {
+	enum SealBattleBeginNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 261;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SealRadius = 12;
+	uint32 SealMaxProgress = 2;
+	uint32 SealEntityId = 15;
+	SealBattleType BattleType = 4;
+}

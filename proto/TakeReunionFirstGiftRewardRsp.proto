@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeReunionFirstGiftRewardRsp {
+	enum TakeReunionFirstGiftRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5091;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	int32 RewardId = 12;
+}

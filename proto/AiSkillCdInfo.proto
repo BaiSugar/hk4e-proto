@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AiSkillCdInfo {
+	map<uint32, uint32> SkillCdMap = 14;
+	map<uint32, uint32> SkillGroupCdMap = 3;
+}

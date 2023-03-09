@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SummerTimeSprintBoatSettleNotify {
+	enum SummerTimeSprintBoatSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8474;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 LeftTime = 11;
+	uint32 Score = 14;
+	uint32 GroupId = 1;
+	uint32 CollectNum = 3;
+	uint32 MedalLevel = 8;
+	bool IsSuccess = 2;
+	uint32 TotalNum = 7;
+	bool IsNewRecord = 4;
+}

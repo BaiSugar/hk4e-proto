@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BartenderTaskInfo.proto";
+import "BartenderLevelInfo.proto";
+
+message BartenderActivityDetailInfo {
+	repeated BartenderTaskInfo UnlockTaskList = 15;
+	bool IsDevelopModuleOpen = 10;
+	repeated uint32 UnlockItemList = 8;
+	repeated uint32 UnlockFormulaList = 14;
+	bool IsContentClosed = 2;
+	repeated BartenderLevelInfo UnlockLevelList = 4;
+}

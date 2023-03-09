@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeBlueprintSlotInfo.proto";
+
+message HomeCreateBlueprintRsp {
+	enum FICBDNICILH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4765;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	HomeBlueprintSlotInfo SlotInfo = 4;
+	int32 Retcode = 13;
+}

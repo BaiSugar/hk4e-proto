@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message IrodoriChessSettleInfo {
+	bool IsActivityEnd = 10;
+	uint32 KillMonsterNum = 2;
+	bool IsNewRecord = 12;
+	uint64 SceneTimeMs = 14;
+	uint32 SettleScore = 15;
+	bool IsPerfect = 5;
+}

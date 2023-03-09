@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HideAndSeekPlayerCapturedNotify {
+	enum AKLNMHDJEAB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5551;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GhostSkillId = 13;
+}

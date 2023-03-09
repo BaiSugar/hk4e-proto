@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message BoxInfo {
+	int32 Id = 1;
+	uint32 ConfigId = 2;
+	Rotation Center = 3;
+	Rotation Extents = 4;
+	Rotation Up = 5;
+	Rotation Forward = 6;
+	Rotation Right = 7;
+}

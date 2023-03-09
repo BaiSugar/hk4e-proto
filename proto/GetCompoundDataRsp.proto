@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CompoundQueueData.proto";
+
+message GetCompoundDataRsp {
+	enum GetCompoundDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 152;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 2;
+	repeated CompoundQueueData CompoundQueDataList = 6;
+	repeated uint32 UnlockCompoundList = 14;
+}

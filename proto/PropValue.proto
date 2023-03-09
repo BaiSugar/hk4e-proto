@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PropValue {
+	uint32 Type = 1;
+	oneof PropValue_ValueOneofCase {
+		int64 ival = 2;
+		float fval = 3;
+	}
+	int64 Val = 4;
+}

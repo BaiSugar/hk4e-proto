@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SignInData.proto";
+
+message SignInInfo {
+	uint32 ConfigId = 2;
+	uint32 SignInCount = 5;
+	bool IsCondSatisfied = 13;
+	repeated uint32 RewardDayList = 7;
+	uint32 LastSignInTime = 4;
+	uint32 EndTime = 12;
+	repeated SignInData SigninDataList = 14;
+	uint32 ScheduleId = 1;
+	uint32 BeginTime = 8;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message NormalUidOpNotify {
+	enum NormalUidOpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5738;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Duration = 1;
+	repeated uint32 ParamList = 12;
+	repeated uint32 ParamUidList = 7;
+	uint32 ParamIndex = 6;
+}

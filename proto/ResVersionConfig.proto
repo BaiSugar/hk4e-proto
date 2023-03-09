@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ResVersionConfig {
+	uint32 Version = 1;
+	bool Relogin = 2;
+	string Md5 = 3;
+	string ReleaseTotalSize = 4;
+	string VersionSuffix = 5;
+	string Branch = 6;
+	string NextScriptVersion = 7;
+}

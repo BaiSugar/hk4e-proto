@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FurnitureMakeSlot.proto";
+import "FurnitureMakeHelpData.proto";
+import "FurnitureMakeMakeInfo.proto";
+import "FurnitureMakeBeHelpedData.proto";
+
+message FurnitureMakeRsp {
+	enum FurnitureMakeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4802;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 5;
+	FurnitureMakeSlot FurnitureMakeSlot = 3;
+	repeated FurnitureMakeHelpData HelpDataList = 7;
+	repeated FurnitureMakeMakeInfo MakeInfoList = 8;
+	repeated FurnitureMakeBeHelpedData HelpedDataList = 14;
+}

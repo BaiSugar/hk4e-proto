@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FungusFighterClearTrainingRuntimeDataReq {
+	enum JHCNJHLONKJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23642;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 DungeonId = 3;
+}

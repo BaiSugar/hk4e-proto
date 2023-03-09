@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReadPrivateChatReq {
+	enum ReadPrivateChatReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4964;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 TargetUid = 5;
+}

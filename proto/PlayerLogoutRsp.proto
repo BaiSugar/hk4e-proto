@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerLogoutRsp {
+	enum PlayerLogoutRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 174;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 5;
+}

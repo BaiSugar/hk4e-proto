@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChatChannelInfo.proto";
+
+message ChatChannelDataNotify {
+	enum ChatChannelDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5028;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 ChannelList = 12;
+	repeated ChatChannelInfo ChannelInfoList = 7;
+}

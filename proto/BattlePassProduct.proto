@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BattlePassProduct {
+	string NormalProductId = 4;
+	string ExtraProductId = 14;
+	string UpgradeProductId = 7;
+}

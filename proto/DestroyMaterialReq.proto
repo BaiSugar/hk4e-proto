@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MaterilaInfo.proto";
+
+message DestroyMaterialReq {
+	enum DestroyMaterialReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 601;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated MaterilaInfo MaterialList = 10;
+}

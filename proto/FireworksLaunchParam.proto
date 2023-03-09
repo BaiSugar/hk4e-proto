@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FireworksLaunchParamType.proto";
+
+message FireworksLaunchParam {
+	FireworksLaunchParamType Type = 5;
+	int32 Value = 14;
+}

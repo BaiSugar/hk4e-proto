@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CoinCollectPlayerInfo.proto";
+
+message CoinCollectStageInfo {
+	uint32 LevelId = 6;
+	uint32 PlayIndex = 12;
+	repeated CoinCollectPlayerInfo PlayerInfoList = 5;
+}

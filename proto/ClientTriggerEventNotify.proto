@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "EventTriggerType.proto";
+
+message ClientTriggerEventNotify {
+	enum ClientTriggerEventNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 178;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ForceId = 5;
+	EventTriggerType EventType = 1;
+}

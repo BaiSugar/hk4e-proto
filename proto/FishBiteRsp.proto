@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FishBiteRsp {
+	enum FishBiteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5825;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AbilityMixinWindSeedSpawner {
+	message AbilityMixinWindSeedSpawner_AddSignal {
+	}
+	message AbilityMixinWindSeedSpawner_RefreshSeed {
+		repeated Rotation PosList = 1;
+	}
+	message AbilityMixinWindSeedSpawner_CatchSeed {
+		uint32 EntityId = 5;
+	}
+
+	oneof AbilityMixinWindSeedSpawner_CmdOneofCase {
+		AbilityMixinWindSeedSpawner_AddSignal add_signal = 13;
+		AbilityMixinWindSeedSpawner_RefreshSeed refresh_seed = 3;
+		AbilityMixinWindSeedSpawner_CatchSeed catch_seed = 4;
+	}
+}

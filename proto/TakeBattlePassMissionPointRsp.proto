@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeBattlePassMissionPointRsp {
+	enum TakeBattlePassMissionPointRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2635;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 MissionIdList = 10;
+	int32 Retcode = 4;
+}

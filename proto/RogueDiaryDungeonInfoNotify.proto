@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueDiaryRoomInfo.proto";
+
+message RogueDiaryDungeonInfoNotify {
+	enum RogueDiaryDungeonInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8695;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 StageId = 6;
+	repeated uint32 RoundCardList = 13;
+	uint32 Time = 7;
+	uint32 CurRound = 12;
+	uint32 Coin = 14;
+	repeated uint32 RoundMonsterList = 11;
+	uint32 Difficulty = 4;
+	repeated RogueDiaryRoomInfo RoomList = 5;
+	uint32 DungeonId = 15;
+	uint32 CurRoom = 1;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EntityFightPropNotify {
+	enum EntityFightPropNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1287;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 EntityId = 7;
+	map<uint32, float> FightPropMap = 15;
+}

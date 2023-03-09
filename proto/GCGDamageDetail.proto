@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDamageDetail {
+	uint32 SkillId = 9;
+	uint32 CardGuid = 10;
+}

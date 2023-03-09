@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChannellerSlabLoopDungeonResultInfo {
+	uint32 ChallengeMaxScore = 5;
+	bool IsSuccess = 13;
+	bool IsInTimeLimit = 6;
+	uint32 ChallengeScore = 1;
+	uint32 DungeonIndex = 3;
+}

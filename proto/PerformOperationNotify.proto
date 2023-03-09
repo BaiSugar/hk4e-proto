@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "OperateType.proto";
+
+message PerformOperationNotify {
+	enum GOAGPODAGOL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1139;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	Rotation Rot = 1;
+	OperateType OperateType = 5;
+	Rotation Pos = 14;
+	uint32 Index = 10;
+	uint32 EntityId = 3;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChessInfo {
+	uint32 PunishOverTime = 4;
+	uint32 ContentCloseTime = 10;
+	uint32 AvailableExp = 5;
+	uint32 Exp = 11;
+	bool IsTeachDungeonFinished = 6;
+	uint32 ObtainedExp = 8;
+	uint32 Level = 14;
+	repeated uint32 FinishedMapIdList = 7;
+	bool IsContentClosed = 15;
+}

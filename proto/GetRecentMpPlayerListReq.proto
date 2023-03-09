@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetRecentMpPlayerListReq {
+	enum GetRecentMpPlayerListReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4051;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

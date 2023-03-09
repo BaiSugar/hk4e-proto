@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SaveMainCoopReq {
+	enum SaveMainCoopReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1996;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Id = 4;
+	map<uint32, int32> NormalVarMap = 15;
+	uint32 SavePointId = 13;
+	map<uint32, int32> TempVarMap = 10;
+	uint32 SelfConfidence = 1;
+}

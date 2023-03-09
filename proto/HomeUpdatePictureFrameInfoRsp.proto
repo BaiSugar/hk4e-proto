@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomePictureFrameInfo.proto";
+
+message HomeUpdatePictureFrameInfoRsp {
+	enum HomeUpdatePictureFrameInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4540;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 11;
+	HomePictureFrameInfo PictureFrameInfo = 4;
+}

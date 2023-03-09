@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DKMDNEAEGDF {
+	enum HGNBEDAOKOC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 166;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ClientGameTime = 14;
+	uint32 GameTime = 15;
+	int32 Retcode = 12;
+}

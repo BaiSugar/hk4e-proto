@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SegmentInfo {
+	uint32 Size = 6;
+	uint32 Offset = 9;
+	uint32 Module = 12;
+}

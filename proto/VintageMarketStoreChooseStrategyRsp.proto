@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageMarketStoreChooseStrategyRsp {
+	enum NPJKKPABAAI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23497;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 StrategyList = 7;
+	uint32 StoreId = 15;
+	int32 Retcode = 8;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueDiaryAvatar.proto";
+
+message RogueDiaryTiredAvatarNotify {
+	enum RogueDiaryTiredAvatarNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8243;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsNeedShow = 12;
+	uint32 ReserveAvatarNum = 10;
+	uint32 TiredType = 8;
+	repeated RogueDiaryAvatar OptianalTiredAvatarList = 15;
+}

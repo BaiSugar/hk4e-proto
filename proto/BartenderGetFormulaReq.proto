@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message BartenderGetFormulaReq {
+	enum BartenderGetFormulaReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8258;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated ItemParam ItemList = 4;
+	uint32 QuestId = 6;
+}

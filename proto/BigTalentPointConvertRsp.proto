@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BigTalentPointConvertRsp {
+	enum BigTalentPointConvertRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1074;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	uint64 AvatarGuid = 12;
+}

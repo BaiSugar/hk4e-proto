@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message IslandPartyRaftInfoNotify {
+	enum IslandPartyRaftInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5588;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Fuel = 9;
+	uint32 Component = 12;
+	uint32 PointId = 6;
+	uint32 Coin = 5;
+}

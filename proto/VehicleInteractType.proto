@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum VehicleInteractType {
+	VehicleInteractNone = 0;
+	VehicleInteractIn = 1;
+	VehicleInteractOut = 2;
+}

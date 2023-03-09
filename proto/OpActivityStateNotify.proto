@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "OpActivityTagBriefInfo.proto";
+
+message OpActivityStateNotify {
+	enum OpActivityStateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2505;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 FinishedBonusActivityIdList = 11;
+	repeated OpActivityTagBriefInfo OpenedOpActivityInfoList = 3;
+}

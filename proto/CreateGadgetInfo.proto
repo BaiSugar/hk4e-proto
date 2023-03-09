@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GadgetBornType.proto";
+
+message CreateGadgetInfo {
+	message CreateGadgetInfo_Chest {
+		uint32 ChestDropId = 1;
+		bool IsShowCutscene = 2;
+	}
+
+	GadgetBornType BornType = 1;
+	CreateGadgetInfo_Chest Chest = 2;
+}

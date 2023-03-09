@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MpPlayGuestReplyNotify {
+	enum MpPlayGuestReplyNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1812;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsAgree = 7;
+	uint32 MpPlayId = 12;
+	uint32 Uid = 6;
+}

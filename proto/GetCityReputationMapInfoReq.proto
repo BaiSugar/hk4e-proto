@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetCityReputationMapInfoReq {
+	enum GetCityReputationMapInfoReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2829;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

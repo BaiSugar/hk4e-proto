@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FireworksLaunchParamType {
+	FireworksLaunchParamNone = 0;
+	FireworksLaunchParamRepeat = 1;
+	FireworksLaunchParamInteval = 2;
+	FireworksLaunchParamDelay = 3;
+	FireworksLaunchParamRoundInteval = 4;
+	FireworksLaunchParamMax = 5;
+}

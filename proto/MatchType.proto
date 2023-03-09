@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+enum MatchType {
+	None = 0;
+	Dungeon = 1;
+	MpPlay = 2;
+	Mechanicus = 3;
+	General = 4;
+	Gcg = 5;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message SpiceActivityProcessFoodReq {
+	enum SpiceActivityProcessFoodReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8357;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated ItemParam NormalFoodList = 7;
+}

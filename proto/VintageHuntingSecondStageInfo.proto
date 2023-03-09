@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageHuntingSecondStageInfo {
+	uint32 TotalNum = 15;
+	uint32 CaptureAnimalNum = 11;
+	uint32 LeftNum = 14;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WidgetGadgetData.proto";
+
+message WidgetGadgetAllDataNotify {
+	enum WidgetGadgetAllDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4259;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated WidgetGadgetData WidgetGadgetData = 4;
+}

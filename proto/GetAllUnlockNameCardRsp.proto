@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetAllUnlockNameCardRsp {
+	enum GetAllUnlockNameCardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4075;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 Retcode = 15;
+	repeated uint32 NameCardList = 12;
+}

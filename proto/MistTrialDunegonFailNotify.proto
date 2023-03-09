@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MistTrialDunegonFailNotify {
+	enum MistTrialDunegonFailNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8775;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 DungeonId = 9;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+enum DraftInviteFailReason {
+	DraftFailUnknown = 0;
+	DraftActivityNotOpen = 1;
+	DraftActivityPlayNotOpen = 2;
+	DraftSceneNotMeet = 3;
+	DraftWorldNotMeet = 4;
+	DraftPlayLimitNotMeet = 5;
+}

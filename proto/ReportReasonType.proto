@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ReportReasonType {
+	ReportReasonNone = 0;
+	ReportReasonDeceptiveAds = 1;
+	ReportReasonAbusing = 2;
+	ReportReasonCheat = 3;
+	ReportReasonPolitical = 4;
+	ReportReasonOther = 5;
+	ReportReasonHome = 6;
+}

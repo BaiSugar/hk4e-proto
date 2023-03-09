@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReliquaryFilterStateNotify {
+	enum OEOHONEIBDO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 631;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, uint32> ReliquaryFilterStateMap = 11;
+}

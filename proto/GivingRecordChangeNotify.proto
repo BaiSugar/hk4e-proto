@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GivingRecord.proto";
+
+message GivingRecordChangeNotify {
+	enum GivingRecordChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 167;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	GivingRecord GivingRecord = 8;
+	bool IsDeactive = 4;
+}

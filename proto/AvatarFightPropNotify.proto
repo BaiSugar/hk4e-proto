@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarFightPropNotify {
+	enum AvatarFightPropNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1220;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, float> FightPropMap = 13;
+	uint64 AvatarGuid = 12;
+}

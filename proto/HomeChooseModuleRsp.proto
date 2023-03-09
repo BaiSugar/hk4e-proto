@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeChooseModuleRsp {
+	enum HomeChooseModuleRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4707;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ModuleId = 5;
+	int32 Retcode = 6;
+}

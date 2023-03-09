@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ServerLogType {
+	ServerLogTypeNone = 0;
+	ServerLogTypeAbility = 1;
+	ServerLogTypeLevel = 2;
+	ServerLogTypeEntity = 3;
+	ServerLogTypeLua = 4;
+}

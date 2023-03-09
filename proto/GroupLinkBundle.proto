@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message GroupLinkBundle {
+	bool IsActivated = 7;
+	Rotation Center = 6;
+	uint32 SceneId = 8;
+	uint32 Radius = 13;
+	bool IsShowMark = 12;
+	uint32 BundleId = 9;
+}

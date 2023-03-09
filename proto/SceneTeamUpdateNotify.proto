@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SceneTeamAvatar.proto";
+
+message SceneTeamUpdateNotify {
+	enum SceneTeamUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1623;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsInMp = 15;
+	repeated SceneTeamAvatar SceneTeamAvatarList = 12;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BounceConjuringGallerySettleInfo.proto";
+
+message BounceConjuringSettleNotify {
+	enum BounceConjuringSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8552;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsNewRecord = 6;
+	map<uint32, BounceConjuringGallerySettleInfo> SettleInfoMap = 7;
+	uint32 ChapterId = 11;
+	uint32 TotalScore = 4;
+}

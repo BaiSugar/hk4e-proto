@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetCityReputationMapInfoRsp {
+	enum GetCityReputationMapInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2878;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsNewRequest = 13;
+	int32 Retcode = 4;
+	repeated uint32 UnlockHuntingCityList = 12;
+	bool IsNewHunting = 7;
+	repeated uint32 RewardCityList = 1;
+}

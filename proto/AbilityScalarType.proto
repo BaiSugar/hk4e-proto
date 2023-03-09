@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+enum AbilityScalarType {
+	Unknow = 0;
+	Float = 1;
+	Int = 2;
+	Bool = 3;
+	Trigger = 4;
+	String = 5;
+	Uint = 6;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MaterialDeleteReturnType.proto";
+
+message MaterialDeleteReturnNotify {
+	enum MaterialDeleteReturnNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 615;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, uint32> ReturnItemMap = 7;
+	map<uint32, uint32> DeleteMaterialMap = 10;
+	MaterialDeleteReturnType Type = 11;
+}

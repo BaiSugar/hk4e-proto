@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ScenePlayBattleSettleRewardInfo.proto";
+import "ScenePlayBattleSettlePlayerInfo.proto";
+
+message ScenePlayBattleResultNotify {
+	enum ScenePlayBattleResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4428;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ScenePlayBattleSettleRewardInfo SettleRewardInfoList = 9;
+	uint32 PlayId = 2;
+	repeated ScenePlayBattleSettlePlayerInfo SettlePlayerInfoList = 4;
+	uint32 CostTime = 8;
+	uint32 PlayType = 13;
+	bool IsWin = 12;
+}

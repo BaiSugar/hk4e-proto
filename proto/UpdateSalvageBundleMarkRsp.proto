@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UpdateSalvageBundleMarkRsp {
+	enum UpdateSalvageBundleMarkRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8990;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ChallengeType = 6;
+	uint32 StageId = 10;
+	int32 Retcode = 1;
+}

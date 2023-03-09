@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlessingGiveFriendPicReq {
+	enum BlessingGiveFriendPicReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2002;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Uid = 9;
+	uint32 PicId = 8;
+}

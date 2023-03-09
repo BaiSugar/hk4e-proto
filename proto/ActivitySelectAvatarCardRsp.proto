@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivitySelectAvatarCardRsp {
+	enum ActivitySelectAvatarCardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2154;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 RewardId = 14;
+	uint32 ActivityId = 1;
+	int32 Retcode = 5;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum SealBattleType {
+	SealBattleKeepAlive = 0;
+	SealBattleKillMonster = 1;
+	SealBattleEnergyCharge = 2;
+}

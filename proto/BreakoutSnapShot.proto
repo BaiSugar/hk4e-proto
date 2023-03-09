@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BreakoutPhysicalObject.proto";
+import "BreakoutAction.proto";
+import "BreakoutSpawnPoint.proto";
+import "BreakoutElementReactionCounter.proto";
+import "BreakoutSyncConnectUidInfo.proto";
+
+message BreakoutSnapShot {
+	uint64 ClientGameTime = 1;
+	uint64 ServerGameTime = 2;
+	repeated BreakoutPhysicalObject BallList = 3;
+	repeated BreakoutPhysicalObject PhysicalObjectList = 4;
+	repeated BreakoutAction ActionList = 5;
+	uint32 WaveIndex = 6;
+	bool IsFinish = 7;
+	uint32 Score = 8;
+	uint32 Combo = 9;
+	uint32 MaxCombo = 10;
+	uint32 LifeCount = 11;
+	uint32 WaveSuiteIndex = 12;
+	repeated BreakoutSpawnPoint SpawnPointList = 13;
+	uint32 RemainingBossHp = 14;
+	repeated BreakoutElementReactionCounter BrickElementReactionList = 15;
+	repeated BreakoutElementReactionCounter BallElementReactionList = 16;
+	repeated BreakoutSyncConnectUidInfo UidInfoList = 17;
+	repeated BreakoutPhysicalObject DynamicObjectList = 18;
+	repeated uint32 IdIndexList = 19;
+	int32 RawClientGameTime = 20;
+}

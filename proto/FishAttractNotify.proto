@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message FishAttractNotify {
+	enum FishAttractNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5815;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	Rotation Pos = 3;
+	repeated uint32 FishIdList = 5;
+	uint32 Uid = 10;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CityReputationRequestInfo {
+	message CityReputationRequestInfo_RequestInfo {
+		uint32 RequestId = 11;
+		uint32 QuestId = 14;
+		bool IsTakenReward = 13;
+	}
+
+	bool IsOpen = 1;
+	repeated CityReputationRequestInfo_RequestInfo RequestInfoList = 2;
+}

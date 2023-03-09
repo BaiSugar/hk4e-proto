@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GachaActivityTakeRewardRsp {
+	enum GachaActivityTakeRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8228;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	map<uint32, uint32> RobotNumMap = 2;
+}

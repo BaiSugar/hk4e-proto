@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CloseCommonTipsNotify {
+	enum CloseCommonTipsNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3010;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GalleryBalloonScoreNotify {
+	enum GalleryBalloonScoreNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5587;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, uint32> UidScoreMap = 12;
+	uint32 GalleryId = 2;
+}

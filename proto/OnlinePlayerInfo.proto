@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MpSettingType.proto";
+import "ProfilePicture.proto";
+
+message OnlinePlayerInfo {
+	uint32 Uid = 1;
+	string Nickname = 2;
+	uint32 PlayerLevel = 3;
+	uint32 AvatarId = 4;
+	MpSettingType MpSettingType = 5;
+	uint32 CurPlayerNumInWorld = 6;
+	uint32 WorldLevel = 7;
+	string OnlineId = 8;
+	uint32 NameCardId = 9;
+	repeated uint32 BlacklistUidList = 10;
+	string Signature = 11;
+	ProfilePicture ProfilePicture = 12;
+	string PsnId = 13;
+}

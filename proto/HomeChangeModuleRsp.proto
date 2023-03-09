@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeChangeModuleRsp {
+	enum HomeChangeModuleRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4833;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TargetModuleId = 11;
+	int32 Retcode = 13;
+}

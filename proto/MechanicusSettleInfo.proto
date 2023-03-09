@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MultistageSettleWatcherInfo.proto";
+
+message MechanicusSettleInfo {
+	uint64 SceneTimeMs = 15;
+	uint32 TotalToken = 7;
+	bool IsSuccess = 6;
+	uint32 RealToken = 1;
+	uint32 GroupId = 12;
+	uint32 DifficultyPercentage = 11;
+	uint32 PlayIndex = 13;
+	repeated MultistageSettleWatcherInfo WatcherList = 4;
+}

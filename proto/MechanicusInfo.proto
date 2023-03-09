@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Uint32Pair.proto";
+
+message MechanicusInfo {
+	uint32 MechanicusId = 14;
+	repeated uint32 FinishDifficultLevelList = 7;
+	repeated Uint32Pair GearLevelPairList = 6;
+	repeated uint32 OpenSequenceIdList = 12;
+	bool IsFinishTeachDungeon = 3;
+	uint32 Coin = 8;
+	uint32 PunishOverTime = 10;
+}

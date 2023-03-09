@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SelectAsterMidDifficultyRsp {
+	enum SelectAsterMidDifficultyRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2139;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GadgetEntityId = 11;
+	int32 Retcode = 1;
+	uint32 DifficultyId = 3;
+	uint32 ScheduleId = 8;
+}

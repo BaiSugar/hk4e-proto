@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GearActivityFinishPlayPictureRsp {
+	enum GearActivityFinishPlayPictureRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21610;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	bool IsSuccess = 7;
+}

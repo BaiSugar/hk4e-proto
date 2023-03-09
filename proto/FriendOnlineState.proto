@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FriendOnlineState {
+	FreiendDisconnect = 0;
+	FriendOnline = 1;
+}

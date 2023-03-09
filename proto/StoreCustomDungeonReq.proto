@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message StoreCustomDungeonReq {
+	enum StoreCustomDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6211;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsCancelStore = 5;
+	uint64 DungeonGuid = 2;
+}

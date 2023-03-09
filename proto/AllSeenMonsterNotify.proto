@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AllSeenMonsterNotify {
+	enum AllSeenMonsterNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 244;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 MonsterIdList = 2;
+}

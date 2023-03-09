@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message StartRogueNormalCellChallengeRsp {
+	enum StartRogueNormalCellChallengeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8485;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DungeonId = 4;
+	int32 Retcode = 2;
+	uint32 CellId = 7;
+}

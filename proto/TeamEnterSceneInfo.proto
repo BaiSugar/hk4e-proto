@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityControlBlock.proto";
+import "AbilitySyncStateInfo.proto";
+
+message TeamEnterSceneInfo {
+	uint32 TeamEntityId = 4;
+	AbilityControlBlock AbilityControlBlock = 12;
+	AbilitySyncStateInfo TeamAbilityInfo = 10;
+}

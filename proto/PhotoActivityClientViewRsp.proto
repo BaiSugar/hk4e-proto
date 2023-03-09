@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PhotoActivityClientViewRsp {
+	enum PhotoActivityClientViewRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8441;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PosId = 7;
+	int32 Retcode = 12;
+}

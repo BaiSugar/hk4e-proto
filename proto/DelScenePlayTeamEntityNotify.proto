@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DelScenePlayTeamEntityNotify {
+	enum DelScenePlayTeamEntityNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3203;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SceneId = 9;
+	repeated uint32 DelEntityIdList = 6;
+}

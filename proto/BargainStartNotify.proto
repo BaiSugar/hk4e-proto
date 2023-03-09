@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BargainSnapshot.proto";
+
+message BargainStartNotify {
+	enum BargainStartNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 425;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 BargainId = 12;
+	BargainSnapshot Snapshot = 2;
+}

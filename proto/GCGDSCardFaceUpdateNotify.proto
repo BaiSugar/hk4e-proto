@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSCardFaceUpdateNotify {
+	enum LNHHPEEHCIF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7763;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FaceType = 12;
+	uint32 CardId = 1;
+}

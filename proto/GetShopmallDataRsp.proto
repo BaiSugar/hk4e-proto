@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetShopmallDataRsp {
+	enum GetShopmallDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 774;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 ShopTypeList = 10;
+	int32 Retcode = 3;
+}

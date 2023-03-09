@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SummerTimeSprintBoatInfo.proto";
+import "SummerTimeStageInfo.proto";
+
+message SummerTimeInfo {
+	SummerTimeSprintBoatInfo SprintBoatInfo = 11;
+	uint32 ContentCloseTime = 6;
+	map<uint32, SummerTimeStageInfo> StageMap = 2;
+	bool IsContentClosed = 9;
+}

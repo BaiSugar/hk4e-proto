@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SocialDetail.proto";
+
+message GetPlayerSocialDetailRsp {
+	enum GetPlayerSocialDetailRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4014;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	SocialDetail DetailData = 15;
+	int32 Retcode = 14;
+}

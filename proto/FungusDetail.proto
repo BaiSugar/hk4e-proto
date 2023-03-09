@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FungusDetail {
+	bool IsCultivate = 12;
+	uint32 CaptureOrder = 14;
+	uint32 MinCultivateStep = 3;
+	uint32 FungusId = 6;
+	uint32 NameId = 4;
+}

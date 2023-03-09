@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChangeAvatarRsp {
+	enum ChangeAvatarRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1780;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint64 CurGuid = 14;
+	uint32 SkillId = 6;
+	int32 Retcode = 15;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum AreaPlayType {
+	AreaPlayNone = 0;
+	AreaPlayClimate = 1;
+	AreaPlayRegionalPlay = 2;
+}

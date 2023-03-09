@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeAvatarRewardEventInfo.proto";
+
+message HomeAvatarRewardEventNotify {
+	enum HomeAvatarRewardEventNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4461;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsEventTrigger = 1;
+	HomeAvatarRewardEventInfo RewardEvent = 12;
+	repeated HomeAvatarRewardEventInfo PendingList = 15;
+}

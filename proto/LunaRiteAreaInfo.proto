@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LunaRiteHintStatusType.proto";
+
+message LunaRiteAreaInfo {
+	uint32 ChallengeIndex = 9;
+	repeated uint32 SacrificeRewardList = 13;
+	repeated uint32 SacrificeList = 2;
+	LunaRiteHintStatusType HintStatus = 3;
+	uint32 AreaId = 12;
+}

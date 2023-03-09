@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CrucibleInfo.proto";
+
+message GadgetPlayInfo {
+	uint32 PlayType = 1;
+	uint32 Duration = 2;
+	repeated uint32 ProgressStageList = 3;
+	uint32 StartCd = 4;
+	uint32 StartTime = 5;
+	uint32 Progress = 6;
+	oneof GadgetPlayInfo_PlayInfoOneofCase {
+		CrucibleInfo crucible_info = 21;
+	}
+}

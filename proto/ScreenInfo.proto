@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ScreenInfo {
+	uint32 LiveId = 1;
+	uint32 ProjectorEntityId = 2;
+}

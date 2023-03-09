@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "NpcPositionInfo.proto";
+
+message GetSceneNpcPositionRsp {
+	enum GetSceneNpcPositionRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 520;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SceneId = 13;
+	repeated NpcPositionInfo NpcInfoList = 6;
+	int32 Retcode = 3;
+}

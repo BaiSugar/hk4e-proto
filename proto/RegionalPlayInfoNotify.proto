@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RegionalPlayVar.proto";
+
+message RegionalPlayInfoNotify {
+	enum RegionalPlayInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6288;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string PlayName = 8;
+	repeated RegionalPlayVar VarList = 11;
+	uint32 PlayType = 14;
+	bool IsEnabled = 2;
+	bool IsInRegion = 7;
+}

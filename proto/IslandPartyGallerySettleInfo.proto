@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "OnlinePlayerInfo.proto";
+import "ExhibitionDisplayInfo.proto";
+
+message IslandPartyGallerySettleInfo {
+	OnlinePlayerInfo PlayerInfo = 3;
+	repeated ExhibitionDisplayInfo CardList = 9;
+}

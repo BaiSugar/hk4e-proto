@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BrickBreakerLevelInfo {
+	repeated uint32 ChosenSkillList = 12;
+	uint32 LevelId = 2;
+	bool IsFinish = 11;
+	bool IsCanStart = 1;
+	uint32 MaxScore = 6;
+	repeated uint32 ChosenAvatarList = 4;
+}

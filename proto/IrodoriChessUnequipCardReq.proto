@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message IrodoriChessUnequipCardReq {
+	enum IrodoriChessUnequipCardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8610;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 CardId = 14;
+	bool IsHardMap = 5;
+	uint32 LevelId = 7;
+}

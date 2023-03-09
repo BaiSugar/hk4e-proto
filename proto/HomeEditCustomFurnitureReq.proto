@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeCustomFurnitureInfo.proto";
+
+message HomeEditCustomFurnitureReq {
+	enum HomeEditCustomFurnitureReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4685;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	HomeCustomFurnitureInfo CustomFurnitureInfo = 5;
+}

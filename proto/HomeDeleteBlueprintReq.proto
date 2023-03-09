@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeDeleteBlueprintReq {
+	enum NOFFLELGDJF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4829;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 SlotId = 13;
+}

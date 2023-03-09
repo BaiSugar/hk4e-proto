@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BundleInfo.proto";
+import "ScoreChallengeInfo.proto";
+
+message SalvageChallengeInfo {
+	bool IsUnlock = 2;
+	uint32 ChallengeType = 14;
+	oneof SalvageChallengeInfo_ChallengeDetailOneofCase {
+		BundleInfo bundle_info = 8;
+		ScoreChallengeInfo score_challenge_info = 5;
+		uint32 boss_challenge_id = 1;
+	}
+}

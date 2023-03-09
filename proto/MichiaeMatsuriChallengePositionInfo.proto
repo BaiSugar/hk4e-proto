@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message MichiaeMatsuriChallengePositionInfo {
+	uint32 GroupId = 5;
+	uint32 GadgetId = 14;
+	Rotation Pos = 13;
+}

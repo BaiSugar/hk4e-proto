@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CombineReq {
+	enum CombineReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 650;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 CombineCount = 10;
+	uint32 CombineId = 8;
+	uint64 AvatarGuid = 15;
+}

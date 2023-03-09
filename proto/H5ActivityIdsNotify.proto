@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message H5ActivityIdsNotify {
+	enum H5ActivityIdsNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5696;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, uint32> H5ActivityMap = 15;
+	uint32 ClientRedDotTimestamp = 1;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DoRoguelikeDungeonCardGachaRsp {
+	enum DoRoguelikeDungeonCardGachaRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8820;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsCanRefresh = 7;
+	int32 Retcode = 15;
+	repeated uint32 CardList = 8;
+}

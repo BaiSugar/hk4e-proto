@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGGameMaxNotify {
+	enum CKMILFFEBON {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7537;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum EventTriggerType {
+	EventTriggerNone = 0;
+	EventTriggerEnterForce = 1;
+}

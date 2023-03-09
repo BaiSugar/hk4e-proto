@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneGalleryProgressInfo {
+	repeated uint32 ProgressStageList = 8;
+	string Key = 1;
+	uint32 Progress = 13;
+	uint32 UiForm = 2;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ModifierAction {
+	Added = 0;
+	Removed = 1;
+}

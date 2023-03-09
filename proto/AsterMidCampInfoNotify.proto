@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AsterMidCampInfo.proto";
+
+message AsterMidCampInfoNotify {
+	enum AsterMidCampInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2151;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated AsterMidCampInfo CampList = 2;
+}

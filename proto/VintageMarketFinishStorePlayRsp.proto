@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageMarketFinishStorePlayRsp {
+	enum MNGADGCMBJB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23367;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 RoundTotalIncome = 4;
+	uint32 RoundCoinBIncome = 14;
+	int32 Retcode = 11;
+	repeated uint32 TriggerNpcEventList = 2;
+	uint32 DisplayReturnCoinB = 15;
+	uint32 RoundDeltaCoinC = 7;
+	map<uint32, uint32> StoreIncomeMap = 1;
+	uint32 StoreRound = 6;
+	repeated uint32 TriggerEnvEventList = 5;
+	repeated uint32 LowAttrStoreList = 9;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MotionInfo.proto";
+
+message SceneEntityMoveNotify {
+	enum SceneEntityMoveNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 229;
+		EnetChannelId = 1;
+		EnetIsReliable = 1;
+	}
+
+	MotionInfo MotionInfo = 14;
+	uint32 EntityId = 1;
+	uint32 SceneTime = 7;
+	uint32 ReliableSeq = 12;
+}

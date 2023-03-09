@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AuditState.proto";
+
+message ContentAuditInfo {
+	bool IsOpen = 1;
+	string Content = 2;
+	uint32 SubmitCount = 3;
+	AuditState AuditState = 4;
+	uint32 SubmitLimit = 5;
+}

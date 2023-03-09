@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityString {
+	oneof AbilityString_TypeOneofCase {
+		string str = 1;
+		uint32 hash = 2;
+	}
+}

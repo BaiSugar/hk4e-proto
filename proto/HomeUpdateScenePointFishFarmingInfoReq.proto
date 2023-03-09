@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeScenePointFishFarmingInfo.proto";
+
+message HomeUpdateScenePointFishFarmingInfoReq {
+	enum GPAELILCNFJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4587;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	HomeScenePointFishFarmingInfo FishFarmingInfo = 10;
+}

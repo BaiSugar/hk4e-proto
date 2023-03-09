@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RacingGallerySettleInfo.proto";
+
+message HomeRacingGallerySettleNotify {
+	enum HomeRacingGallerySettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4671;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	RacingGallerySettleInfo SettleInfo = 10;
+	uint32 GalleryId = 4;
+	uint32 Rank = 1;
+	bool IsNewRecord = 5;
+}

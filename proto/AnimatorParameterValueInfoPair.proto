@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AnimatorParameterValueInfo.proto";
+
+message AnimatorParameterValueInfoPair {
+	int32 NameId = 1;
+	AnimatorParameterValueInfo AnimatorPara = 2;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeGroupPlayerInfo.proto";
+
+message HomeRacingGalleryRecord {
+	uint32 UseTime = 3;
+	uint32 Timestamp = 8;
+	HomeGroupPlayerInfo PlayerInfo = 4;
+}

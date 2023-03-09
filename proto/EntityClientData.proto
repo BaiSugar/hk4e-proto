@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EntityClientData {
+	uint32 WindChangeSceneTime = 1;
+	float WindmillSyncAngle = 2;
+	int32 WindChangeTargetLevel = 3;
+}

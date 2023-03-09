@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message WeaponUpgradeReq {
+	enum WeaponUpgradeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 646;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated ItemParam ItemParamList = 1;
+	uint64 TargetWeaponGuid = 11;
+	repeated uint64 FoodWeaponGuidList = 7;
+}

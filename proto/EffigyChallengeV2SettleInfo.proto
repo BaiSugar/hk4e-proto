@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EffigyChallengeV2SettleInfo {
+	uint32 CreateDungeonPlayerUid = 14;
+	bool IsNewRecordTime = 5;
+	uint32 RecordTime = 15;
+	uint32 FirstTimeFinishDifficulty = 10;
+	uint32 ChallengeModeDifficulty = 13;
+	bool IsChallengeHighestDifficulty = 1;
+}

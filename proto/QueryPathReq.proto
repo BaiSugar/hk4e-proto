@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Vector3Int.proto";
+import "QueryPathReq_OptionType.proto";
+import "QueryFilter.proto";
+import "Rotation.proto";
+
+message QueryPathReq {
+	enum QueryPathReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2305;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 QueryId = 13;
+	repeated Rotation DestinationPos = 4;
+	Vector3Int DestinationExtend = 5;
+	QueryPathReq_OptionType QueryType = 12;
+	QueryFilter Filter = 2;
+	Vector3Int SourceExtend = 15;
+	uint32 SceneId = 7;
+	Rotation SourcePos = 10;
+}

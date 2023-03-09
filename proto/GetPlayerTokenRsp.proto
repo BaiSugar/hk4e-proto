@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package Proto;
+
+
+import "StopServer.proto";
+
+message GetPlayerTokenRsp {
+	enum GetPlayerTokenRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 155;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SubChannelId = 891;
+	string Token = 6;
+	uint32 Uid = 1;
+	string SecretKey = 12;
+	uint32 AccountType = 3;
+	string Msg = 10;
+	bool IsWatchdogUid = 661;
+	bytes SecurityCmdBuffer = 13;
+	int32 Retcode = 15;
+	bytes ExtraBinData = 14;
+	string ClientVersionRandomKey = 1558;
+	string CountryCode = 1960;
+	uint32 KeyId = 2003;
+	string Birthday = 1459;
+	uint32 GmUid = 5;
+	uint64 SecretKeySeed = 8;
+	uint32 BlackUidEndTime = 2;
+	uint32 ChannelId = 1356;
+	uint32 RegPlatform = 1614;
+	uint32 PlatformType = 11;
+	bool IsGuest = 4;
+	repeated uint32 FinishCollectionIdList = 1846;
+	uint32 Tag = 1344;
+	string AccountUid = 9;
+	bool IsProficientPlayer = 7;
+	string Sign = 1993;
+	StopServer StopServer = 347;
+	string PsnId = 1285;
+	uint32 MinorsRegMinAge = 1481;
+	string ClientIpStr = 64;
+	string ServerRandKey = 1420;
+	bool IsLoginWhiteList = 1663;
+}

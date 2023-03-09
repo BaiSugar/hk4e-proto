@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GravenInnocenceCarveStageInfo {
+	bool IsOpen = 12;
+	uint32 StageId = 2;
+}

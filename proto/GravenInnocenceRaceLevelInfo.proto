@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GravenInnocenceRaceLevelInfo {
+	uint32 LevelId = 7;
+	bool IsOpen = 13;
+	uint32 MaxScore = 15;
+}

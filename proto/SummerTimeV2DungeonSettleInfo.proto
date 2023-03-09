@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SummerTimeV2DungeonSettleInfo {
+	uint32 TakenRewardCount = 12;
+	uint32 CurDungeonRewardLimit = 9;
+	bool IsSuccess = 10;
+}

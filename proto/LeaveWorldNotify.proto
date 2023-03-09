@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LeaveWorldNotify {
+	enum LeaveWorldNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3445;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CutSceneEndNotify {
+	enum CutSceneEndNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 299;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CutsceneId = 15;
+	int32 Retcode = 9;
+}

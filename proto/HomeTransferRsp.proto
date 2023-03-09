@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeTransferRsp {
+	enum HomeTransferRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4524;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 Retcode = 10;
+}

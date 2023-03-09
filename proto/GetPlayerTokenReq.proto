@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetPlayerTokenReq {
+	enum GetPlayerTokenReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 105;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 PlatformType = 10;
+	string AccountExt = 6;
+	string CountryCode = 1;
+	string ClientIpStr = 8;
+	uint32 CloudClientIp = 13;
+	uint32 KeyId = 294;
+	string PsnRegion = 9;
+	uint32 AccountType = 5;
+	bool IsGuest = 14;
+	uint32 MinorsRegMinAge = 1399;
+	string Birthday = 65;
+	string OnlineId = 12;
+	uint32 Uid = 11;
+	string ClientRandKey = 776;
+	uint32 SubChannelId = 7;
+	string AccountUid = 4;
+	string AccountToken = 2;
+	string PsnId = 15;
+	uint32 ChannelId = 3;
+	uint32 Lang = 904;
+}

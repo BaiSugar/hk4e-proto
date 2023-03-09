@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SeaLampContributeItemRsp {
+	enum SeaLampContributeItemRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2166;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 AddProgress = 4;
+	uint32 TotalContribution = 9;
+	int32 Retcode = 12;
+	uint32 AddContribution = 2;
+}

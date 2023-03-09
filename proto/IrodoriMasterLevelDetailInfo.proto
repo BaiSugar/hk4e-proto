@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message IrodoriMasterLevelDetailInfo {
+	bool IsFinish = 6;
+	bool IsHaveTry = 5;
+	uint32 MinFinishTime = 14;
+	uint32 Diffculty = 3;
+}

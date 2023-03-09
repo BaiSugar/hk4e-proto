@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MapMarkTipsType.proto";
+
+message MapMarkTipsInfo {
+	MapMarkTipsType TipsType = 1;
+	repeated uint32 PointIdList = 2;
+}

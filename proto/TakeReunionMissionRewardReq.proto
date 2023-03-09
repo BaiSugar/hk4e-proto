@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeReunionMissionRewardReq {
+	enum TakeReunionMissionRewardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5064;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 MissionId = 8;
+	uint32 RewardIndex = 15;
+	uint32 RewardId = 7;
+}

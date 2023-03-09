@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GachaActivityCreateRobotRsp {
+	enum GachaActivityCreateRobotRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8997;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 2;
+	uint32 RobotId = 15;
+}

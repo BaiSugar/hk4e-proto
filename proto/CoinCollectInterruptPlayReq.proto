@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CoinCollectInterruptPlayReq {
+	enum FJFOAHJNPBO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24934;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 GalleryId = 9;
+}

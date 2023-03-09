@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MistTrialMissionInfo.proto";
+
+message MistTrialGetChallengeMissionRsp {
+	enum MistTrialGetChallengeMissionRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8884;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 7;
+	uint32 TrialId = 9;
+	repeated MistTrialMissionInfo MissionInfoList = 6;
+}

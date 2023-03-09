@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FleurFairPlayerStatInfo.proto";
+
+message BossSettleInfo {
+	repeated FleurFairPlayerStatInfo StatInfoList = 3;
+	uint32 RewardTokenNum = 4;
+	uint32 Energy = 8;
+	uint32 CostTime = 2;
+	bool IsSuccess = 6;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AreaPlayType.proto";
+
+message AreaPlayInfoNotify {
+	enum DOKMOHCABHF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3069;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DetailPlayType = 12;
+	AreaPlayType AreaPlayType = 9;
+}

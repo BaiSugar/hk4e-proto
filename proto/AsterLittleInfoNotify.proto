@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AsterLittleDetailInfo.proto";
+
+message AsterLittleInfoNotify {
+	enum AsterLittleInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2063;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	AsterLittleDetailInfo Info = 7;
+}

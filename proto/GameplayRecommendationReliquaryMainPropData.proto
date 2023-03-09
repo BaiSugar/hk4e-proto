@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GameplayRecommendationReliquaryMainPropData {
+	uint32 MainPropId = 6;
+	uint32 Permillage = 9;
+}

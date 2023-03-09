@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SaveCoopDialogReq {
+	enum SaveCoopDialogReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1998;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 MainCoopId = 1;
+	uint32 DialogId = 6;
+}

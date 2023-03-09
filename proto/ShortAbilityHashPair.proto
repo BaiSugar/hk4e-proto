@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ShortAbilityHashPair {
+	int32 AbilityNameHash = 6;
+	int32 AbilityConfigHash = 10;
+}

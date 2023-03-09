@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlatformInfo.proto";
+
+message PlatformStopRouteNotify {
+	enum PlatformStopRouteNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 284;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 EntityId = 12;
+	PlatformInfo Platform = 6;
+	uint32 SceneTime = 3;
+}

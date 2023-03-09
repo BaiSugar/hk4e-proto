@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarType.proto";
+
+message MistTrialBestAvatar {
+	uint32 AvatarId = 2;
+	AvatarType AvatarType = 1;
+	uint32 CostumeId = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MpPlayPrepareNotify {
+	enum MpPlayPrepareNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1822;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PrepareEndTime = 2;
+	uint32 MpPlayId = 1;
+}

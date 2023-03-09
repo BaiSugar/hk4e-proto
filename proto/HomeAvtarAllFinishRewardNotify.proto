@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeAvtarAllFinishRewardNotify {
+	enum HomeAvtarAllFinishRewardNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4650;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 EventIdList = 7;
+}

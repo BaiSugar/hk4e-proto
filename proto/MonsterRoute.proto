@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RoutePoint.proto";
+
+message MonsterRoute {
+	repeated RoutePoint RoutePoints = 1;
+	uint32 SpeedLevel = 2;
+	uint32 RouteType = 3;
+	float ArriveRange = 4;
+}

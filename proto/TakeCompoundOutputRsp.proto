@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message TakeCompoundOutputRsp {
+	enum TakeCompoundOutputRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 143;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ItemParam ItemList = 13;
+	int32 Retcode = 2;
+}

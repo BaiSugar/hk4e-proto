@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SubmitInferenceWordRsp {
+	enum HDBJOOIELFD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 495;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ConclusionId = 7;
+	uint32 PageId = 13;
+	uint32 WordId = 6;
+	int32 Retcode = 8;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGApplyInviteBattleNotify {
+	enum FEBOBCEMECA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7941;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	bool IsAgree = 10;
+}

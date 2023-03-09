@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerApplyEnterHomeResultRsp {
+	enum PlayerApplyEnterHomeResultRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4869;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ApplyUid = 12;
+	bool IsAgreed = 10;
+	int32 Retcode = 15;
+	uint32 Param = 6;
+}

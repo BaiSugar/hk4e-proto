@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "StoreType.proto";
+
+message StoreItemDelNotify {
+	enum StoreItemDelNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 698;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint64 GuidList = 6;
+	StoreType StoreType = 10;
+}

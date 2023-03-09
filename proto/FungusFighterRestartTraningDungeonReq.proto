@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FungusFighterRestartTraningDungeonReq {
+	enum INLJMEDOALP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20900;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

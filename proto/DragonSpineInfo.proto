@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DragonSpineChapterInfo.proto";
+
+message DragonSpineInfo {
+	uint32 ContentFinishTime = 14;
+	uint32 WondrousEssence = 5;
+	uint32 ShimmeringEssence = 1;
+	uint32 WarmEssence = 7;
+	bool IsContentClosed = 2;
+	repeated DragonSpineChapterInfo ChapterInfoList = 9;
+	uint32 WeaponEnhanceLevel = 15;
+}

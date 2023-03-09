@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ClientInputType {
+	ClientInputNone = 0;
+	ClientInputKeybordMouse = 1;
+	ClientInputGamepad = 2;
+	ClientInputTouchPanel = 3;
+}

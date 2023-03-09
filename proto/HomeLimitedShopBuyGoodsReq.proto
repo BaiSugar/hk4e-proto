@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeLimitedShopGoods.proto";
+
+message HomeLimitedShopBuyGoodsReq {
+	enum HomeLimitedShopBuyGoodsReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4647;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	HomeLimitedShopGoods Goods = 1;
+	uint32 BuyCount = 10;
+}

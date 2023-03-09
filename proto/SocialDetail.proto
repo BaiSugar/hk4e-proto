@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Birthday.proto";
+import "FriendOnlineState.proto";
+import "FriendEnterHomeOption.proto";
+import "ProfilePicture.proto";
+import "SocialShowAvatarInfo.proto";
+
+message SocialDetail {
+	uint32 Uid = 1;
+	string Nickname = 2;
+	uint32 Level = 3;
+	uint32 AvatarId = 4;
+	string Signature = 5;
+	Birthday Birthday = 6;
+	uint32 WorldLevel = 7;
+	repeated uint32 ReservedList = 8;
+	FriendOnlineState OnlineState = 9;
+	uint32 Param = 10;
+	bool IsFriend = 11;
+	bool IsMpModeAvailable = 12;
+	string OnlineId = 13;
+	uint32 NameCardId = 14;
+	bool IsInBlacklist = 15;
+	bool IsChatNoDisturb = 16;
+	string RemarkName = 17;
+	uint32 FinishAchievementNum = 18;
+	uint32 TowerFloorIndex = 19;
+	uint32 TowerLevelIndex = 20;
+	bool IsShowAvatar = 21;
+	repeated SocialShowAvatarInfo ShowAvatarInfoList = 22;
+	repeated uint32 ShowNameCardIdList = 23;
+	FriendEnterHomeOption FriendEnterHomeOption = 24;
+	ProfilePicture ProfilePicture = 25;
+	string IpCode = 26;
+}

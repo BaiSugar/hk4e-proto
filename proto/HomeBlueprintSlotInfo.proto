@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeBlueprintSlotInfo {
+	bool IsAllowCopy = 9;
+	uint32 CreateTime = 8;
+	uint32 SceneId = 3;
+	uint32 BlockId = 2;
+	uint32 SlotId = 12;
+	uint32 ModuleId = 1;
+	string ShareCode = 4;
+}

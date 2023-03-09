@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueCellInfo.proto";
+
+message RogueCellUpdateNotify {
+	enum RogueCellUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8067;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	RogueCellInfo CellInfo = 15;
+}

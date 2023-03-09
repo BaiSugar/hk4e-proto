@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WidgetGadgetData {
+	repeated uint32 GadgetEntityIdList = 15;
+	uint32 GadgetId = 9;
+}

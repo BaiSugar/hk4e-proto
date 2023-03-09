@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SumoTeamData.proto";
+
+message SumoSaveTeamReq {
+	enum SumoSaveTeamReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8599;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 DifficultyId = 14;
+	repeated SumoTeamData TeamList = 2;
+	uint32 StageId = 7;
+	uint32 ActivityId = 12;
+}

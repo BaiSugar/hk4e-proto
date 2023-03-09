@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChildQuest {
+	uint32 QuestId = 5;
+	uint32 QuestConfigId = 10;
+	uint32 State = 12;
+}

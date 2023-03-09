@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerIpRegionNotify {
+	enum GPPBGJGNDHA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 171;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string IpCode = 6;
+}

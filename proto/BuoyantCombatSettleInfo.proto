@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BuoyantCombatGallerySettleInfo.proto";
+
+message BuoyantCombatSettleInfo {
+	BuoyantCombatGallerySettleInfo SettleInfo = 9;
+	bool IsNewRecord = 1;
+}

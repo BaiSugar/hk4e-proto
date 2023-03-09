@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PotionLevelData {
+	uint32 Score = 12;
+	uint32 LevelId = 6;
+	uint32 DifficultyLevel = 10;
+	uint32 ModeId = 11;
+}

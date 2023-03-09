@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChatInfo.proto";
+
+message PlayerChatNotify {
+	enum PlayerChatNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3092;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ChannelId = 14;
+	ChatInfo ChatInfo = 6;
+}

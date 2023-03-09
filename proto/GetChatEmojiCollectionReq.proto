@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetChatEmojiCollectionReq {
+	enum GetChatEmojiCollectionReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4011;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

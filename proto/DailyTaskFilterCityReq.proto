@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DailyTaskFilterCityReq {
+	enum DailyTaskFilterCityReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 182;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 CityId = 15;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EffigyChallengeV2DungeonInfoNotify {
+	enum MKHAEAENIHE {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20626;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 LevelId = 6;
+	uint32 ChallengeModeDifficulty = 4;
+	uint32 SkillNo = 10;
+}

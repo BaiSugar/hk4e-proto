@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ReunionBriefInfo.proto";
+
+message ReunionActivateNotify {
+	enum ReunionActivateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5060;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	ReunionBriefInfo ReunionBriefInfo = 7;
+	bool IsActivate = 5;
+}

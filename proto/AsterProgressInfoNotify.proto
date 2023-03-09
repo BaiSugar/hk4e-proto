@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AsterProgressDetailInfo.proto";
+
+message AsterProgressInfoNotify {
+	enum AsterProgressInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2091;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	AsterProgressDetailInfo Info = 7;
+}

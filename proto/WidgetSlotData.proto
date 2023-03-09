@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WidgetSlotTag.proto";
+
+message WidgetSlotData {
+	uint32 MaterialId = 11;
+	uint32 CdOverTime = 2;
+	bool IsActive = 12;
+	WidgetSlotTag Tag = 8;
+}

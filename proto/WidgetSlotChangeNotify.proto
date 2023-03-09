@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WidgetSlotOp.proto";
+import "WidgetSlotData.proto";
+
+message WidgetSlotChangeNotify {
+	enum WidgetSlotChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4283;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	WidgetSlotOp Op = 14;
+	WidgetSlotData Slot = 2;
+}

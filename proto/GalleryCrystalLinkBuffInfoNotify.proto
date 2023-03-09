@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GalleryCrystalLinkBuffInfoNotify {
+	enum GalleryCrystalLinkBuffInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5546;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsBuffValid = 11;
+	uint32 GalleryId = 6;
+	uint32 BuffId = 2;
+}

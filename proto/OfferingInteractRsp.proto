@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayerOfferingData.proto";
+
+message OfferingInteractRsp {
+	enum OfferingInteractRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2922;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 10;
+	PlayerOfferingData OfferingData = 14;
+}

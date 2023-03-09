@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSChangeDeckNameRsp {
+	enum INBIKEHAJAL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7459;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string Name = 9;
+	bool dniijjknndg = 2;
+	uint32 DeckId = 14;
+	int32 Retcode = 15;
+}

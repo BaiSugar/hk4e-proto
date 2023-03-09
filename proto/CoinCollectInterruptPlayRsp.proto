@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CoinCollectInterruptPlayRsp {
+	enum MJAFIBMPBCG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24576;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GalleryId = 7;
+	int32 Retcode = 6;
+}

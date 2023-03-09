@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGSelectOnStageCostInfo.proto";
+import "GCGAttackCostInfo.proto";
+import "GCGPlayCardCostInfo.proto";
+
+message GCGCostReviseInfo {
+	bool IsCanAttack = 2;
+	repeated GCGSelectOnStageCostInfo SelectOnStageCostList = 5;
+	repeated GCGAttackCostInfo AttackCostList = 8;
+	repeated uint32 CanUseHandCardIdList = 7;
+	repeated GCGPlayCardCostInfo PlayCardCostList = 15;
+}

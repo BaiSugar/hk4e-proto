@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CharAmusementAvatarInfo {
+	uint32 Uid = 3;
+	repeated uint32 AvatarIdList = 11;
+	uint32 PunishTime = 1;
+}

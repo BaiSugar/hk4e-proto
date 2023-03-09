@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForgeQueueData.proto";
+
+message ForgeGetQueueDataRsp {
+	enum ForgeGetQueueDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 607;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 12;
+	uint32 MaxQueueNum = 7;
+	map<uint32, ForgeQueueData> ForgeQueueMap = 4;
+}

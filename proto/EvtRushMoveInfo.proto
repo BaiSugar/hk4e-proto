@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtRushMoveInfo {
+	Rotation Velocity = 13;
+	uint32 EntityId = 5;
+	Rotation RushAttackTargetPos = 6;
+	float TimeRange = 10;
+	int32 FaceAngleCompact = 9;
+	Rotation Pos = 14;
+	Rotation RushToPos = 8;
+	int32 StateNameHash = 7;
+}

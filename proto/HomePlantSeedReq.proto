@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomePlantSeedReq {
+	enum HomePlantSeedReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4669;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Index = 5;
+	uint32 FieldGuid = 13;
+	repeated uint32 SeedIdList = 10;
+}

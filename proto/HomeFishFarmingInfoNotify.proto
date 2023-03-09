@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeFishFarmingInfo.proto";
+
+message HomeFishFarmingInfoNotify {
+	enum HomeFishFarmingInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4605;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated HomeFishFarmingInfo FishFarmingInfoList = 7;
+}

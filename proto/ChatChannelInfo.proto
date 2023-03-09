@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChatChannelInfo {
+	uint32 ChannelId = 4;
+	bool IsShield = 2;
+}

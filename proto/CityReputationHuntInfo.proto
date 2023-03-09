@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CityReputationHuntInfo {
+	uint32 CurWeekFinishNum = 1;
+	bool HasReward = 4;
+	bool IsOpen = 10;
+}

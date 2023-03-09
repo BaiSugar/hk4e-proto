@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FriendBrief.proto";
+
+message PSNBlackListNotify {
+	enum PSNBlackListNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4001;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated FriendBrief PsnBlacklist = 10;
+}

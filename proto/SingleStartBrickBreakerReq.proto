@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SingleStartBrickBreakerReq {
+	enum FOGKEKLDMHI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23861;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 LevelId = 1;
+	bool IsDungeon = 15;
+	repeated uint32 ChosenSkillList = 12;
+	repeated uint32 ChosenAvatarList = 10;
+}

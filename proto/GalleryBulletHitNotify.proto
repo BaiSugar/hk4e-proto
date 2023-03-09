@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GalleryBulletHitNotify {
+	enum GalleryBulletHitNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5524;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 HitCount = 11;
+	uint32 GalleryId = 10;
+}

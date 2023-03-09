@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TeamChainDungeonInfoNotify {
+	enum NIJONKEJPPP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20331;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 SkillNoList = 12;
+	uint32 StageId = 11;
+}

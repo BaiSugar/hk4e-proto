@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReunionWatcherInfo {
+	uint32 RewardUnlockTime = 7;
+	uint32 CurProgress = 11;
+	uint32 WatcherId = 12;
+	uint32 TotalProgress = 10;
+	bool IsTakenReward = 5;
+}

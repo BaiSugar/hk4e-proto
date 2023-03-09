@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum WidgetCreatorOpType {
+	WidgetCreatorTypeNone = 0;
+	WidgetCreatorTypeRetract = 1;
+	WidgetCreatorTypeRetractAndCreate = 2;
+}

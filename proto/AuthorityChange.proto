@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "EntityAuthorityInfo.proto";
+
+message AuthorityChange {
+	uint32 AuthorityPeerId = 2;
+	EntityAuthorityInfo EntityAuthorityInfo = 4;
+	uint32 EntityId = 14;
+}

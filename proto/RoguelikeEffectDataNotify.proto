@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueEffectRecord.proto";
+
+message RoguelikeEffectDataNotify {
+	enum RoguelikeEffectDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8256;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated RogueEffectRecord CurseList = 11;
+	repeated RogueEffectRecord CardList = 1;
+}

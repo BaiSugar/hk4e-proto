@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BartenderGetFormulaRsp {
+	enum BartenderGetFormulaRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8550;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsNew = 12;
+	uint32 FormulaId = 15;
+	repeated uint32 AffixList = 9;
+	int32 Retcode = 3;
+}

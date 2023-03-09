@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "IrodoriMasterGallerySettleInfo.proto";
+
+message IrodoriMasterGallerySettleNotify {
+	enum IrodoriMasterGallerySettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8194;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 GalleryId = 8;
+	IrodoriMasterGallerySettleInfo SettleInfo = 4;
+}

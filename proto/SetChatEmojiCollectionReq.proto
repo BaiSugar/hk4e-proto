@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChatEmojiCollectionData.proto";
+
+message SetChatEmojiCollectionReq {
+	enum SetChatEmojiCollectionReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4060;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ChatEmojiCollectionData ChatEmojiCollectionData = 11;
+}

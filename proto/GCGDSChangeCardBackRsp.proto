@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSChangeCardBackRsp {
+	enum OFPOBKOCGBC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7569;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CardBackId = 6;
+	uint32 DeckId = 3;
+	int32 Retcode = 4;
+}

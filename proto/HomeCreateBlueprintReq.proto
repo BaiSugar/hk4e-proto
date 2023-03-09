@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeSceneArrangementInfo.proto";
+
+message HomeCreateBlueprintReq {
+	enum LHOAMCJJEGB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4645;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	HomeSceneArrangementInfo SceneArrangementInfo = 15;
+	uint32 SlotId = 13;
+	string ServerShareCode = 8;
+	uint32 GenShareCodeCount = 1;
+}

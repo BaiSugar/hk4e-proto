@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MainCoop.proto";
+
+message MainCoopUpdateNotify {
+	enum MainCoopUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1995;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated MainCoop MainCoopList = 5;
+}

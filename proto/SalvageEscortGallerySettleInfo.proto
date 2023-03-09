@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SalvageEscortStopReason.proto";
+
+message SalvageEscortGallerySettleInfo {
+	SalvageEscortStopReason Reason = 6;
+	uint32 TimeRemain = 8;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonCandidateTeamInviteNotify {
+	enum DungeonCandidateTeamInviteNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 975;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DungeonId = 15;
+	uint32 PlayerUid = 9;
+	uint32 VaildDeadlineTimeSec = 4;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LunaRiteSacrificeRsp {
+	enum LunaRiteSacrificeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8324;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	uint32 AreaId = 13;
+	uint32 Index = 7;
+	repeated uint32 SacrificeList = 9;
+}

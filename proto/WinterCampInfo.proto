@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WinterCampStageInfo.proto";
+import "WinterCampRaceStageInfo.proto";
+import "ItemParam.proto";
+
+message WinterCampInfo {
+	repeated WinterCampRaceStageInfo RaceInfoList = 5;
+	repeated uint32 ExploreTakenRewardList = 14;
+	repeated ItemParam UsedItemList = 8;
+	repeated uint32 BattleTakenRewardList = 7;
+	WinterCampStageInfo ExploreInfo = 1;
+	repeated uint32 WishIdList = 3;
+	bool IsContentClosed = 11;
+	WinterCampStageInfo BattleInfo = 10;
+}

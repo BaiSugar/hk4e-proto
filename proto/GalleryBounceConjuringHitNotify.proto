@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GalleryBounceConjuringHitNotify {
+	enum GalleryBounceConjuringHitNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5569;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsPerfect = 15;
+	uint32 GalleryId = 7;
+	uint32 AddScore = 14;
+}

@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueCellInfo.proto";
+import "RoguelikeRuneRecord.proto";
+
+message EnterRoguelikeDungeonNotify {
+	enum EnterRoguelikeDungeonNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8098;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint64 OnstageAvatarGuidList = 11;
+	map<uint32, RogueCellInfo> CellInfoMap = 14;
+	uint32 DungeonId = 2;
+	uint32 DungeonWeightConfigId = 15;
+	uint32 RefreshCostItemCount = 917;
+	uint32 CurCellId = 3;
+	float BonusResourceProp = 1;
+	uint32 ReviseMonsterLevel = 1665;
+	uint32 StageId = 8;
+	repeated uint32 ExploredCellList = 5;
+	repeated uint64 BackstageAvatarGuidList = 7;
+	uint32 CurLevel = 12;
+	bool IsMistClear = 6;
+	repeated RoguelikeRuneRecord RuneRecordList = 4;
+	uint32 RefreshCostItemId = 13;
+	bool IsFirstEnter = 379;
+}

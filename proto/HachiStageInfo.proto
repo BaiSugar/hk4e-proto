@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HachiStageInfo {
+	uint32 OpenTime = 10;
+	bool IsFinished = 12;
+	uint32 StageId = 13;
+	bool IsOpen = 3;
+}

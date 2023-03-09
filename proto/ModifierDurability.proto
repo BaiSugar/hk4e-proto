@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ModifierDurability {
+	float ReduceRatio = 1;
+	float RemainingDurability = 2;
+}

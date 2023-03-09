@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerLogoutNotify {
+	enum PlayerLogoutNotify_CmdId {
+		None = 0;
+		CmdId = 180;
+	}
+
+	int32 Retcode = 7;
+}

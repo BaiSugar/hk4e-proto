@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AssociateInferenceWordReq {
+	enum NCOBIJLLDLL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 456;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 BaseWordId = 11;
+	uint32 PageId = 3;
+	uint32 AssociateWordId = 13;
+}

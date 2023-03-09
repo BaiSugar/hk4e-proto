@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DeathZoneObserveNotify {
+	enum GHGHPJPPIKH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3059;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 SourceEntityId = 5;
+	uint32 TargetEntityId = 7;
+}

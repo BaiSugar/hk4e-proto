@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FleurFairMusicRecord {
+	uint32 MaxCombo = 1;
+	bool IsUnlock = 7;
+	uint32 MaxScore = 8;
+}

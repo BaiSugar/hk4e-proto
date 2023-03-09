@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CheckGroupReplacedRsp {
+	enum FJMGJMAPMLK {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3117;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 3;
+	repeated uint32 ReplacedGroupIdList = 6;
+}

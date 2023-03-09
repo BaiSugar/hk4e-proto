@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueDiaryAvatar.proto";
+import "RogueDiaryRoomInfo.proto";
+
+message RogueDiaryRepairInfoNotify {
+	enum RogueDiaryRepairInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8681;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 StageId = 10;
+	repeated RogueDiaryAvatar AvatarList = 13;
+	repeated RogueDiaryAvatar SelectAvatarList = 7;
+	repeated uint32 RandCardList = 12;
+	repeated uint32 SelectCardList = 1;
+	repeated uint32 ChosenCardList = 8;
+	repeated RogueDiaryAvatar TrialAvatarList = 3;
+	repeated RogueDiaryRoomInfo RoomList = 5;
+}

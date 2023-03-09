@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message QuestDestroyEntityReq {
+	enum QuestDestroyEntityReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 429;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 EntityId = 10;
+	uint32 QuestId = 12;
+	uint32 SceneId = 13;
+}

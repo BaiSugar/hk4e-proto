@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintagePresentFinishNotify {
+	enum OJKNNANBCBE {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23457;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PresentId = 4;
+}

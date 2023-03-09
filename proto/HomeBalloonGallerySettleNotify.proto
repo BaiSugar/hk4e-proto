@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BalloonGallerySettleInfo.proto";
+
+message HomeBalloonGallerySettleNotify {
+	enum HomeBalloonGallerySettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4719;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GalleryId = 10;
+	BalloonGallerySettleInfo SettleInfo = 8;
+	uint32 Rank = 3;
+	bool IsNewRecord = 13;
+}

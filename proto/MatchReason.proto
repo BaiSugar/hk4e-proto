@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+enum MatchReason {
+	MatchNone = 0;
+	MatchFinish = 1;
+	MatchPlayerCancel = 2;
+	MatchTimeout = 3;
+	MatchPlayerConfirm = 4;
+	MatchFailed = 5;
+	MatchSystemError = 6;
+	MatchInterrupted = 7;
+	MatchMpUnavailable = 8;
+	MatchConfirmTimeout = 9;
+}

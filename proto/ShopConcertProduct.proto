@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ShopConcertProduct {
+	string ProductId = 1;
+	string PriceTier = 2;
+	uint32 ObtainCount = 3;
+	uint32 ObtainLimit = 4;
+	uint32 BeginTime = 5;
+	uint32 EndTime = 6;
+	uint32 BuyTimes = 7;
+}

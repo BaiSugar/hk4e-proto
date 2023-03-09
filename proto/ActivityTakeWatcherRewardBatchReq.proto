@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivityTakeWatcherRewardBatchReq {
+	enum ActivityTakeWatcherRewardBatchReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2083;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 WatcherIdList = 13;
+	uint32 ActivityId = 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "HitColliderType.proto";
+
+message HitCollision {
+	float AttackeeHitEntityAngle = 12;
+	Rotation HitDir = 4;
+	Rotation HitPoint = 3;
+	int32 HitBoxIndex = 10;
+	float AttackeeHitForceAngle = 15;
+	HitColliderType HitColliderType = 9;
+}

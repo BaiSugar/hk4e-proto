@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MoonfinTrialLevelInfo {
+	uint32 BestRecord = 11;
+	uint32 OpenTime = 3;
+}

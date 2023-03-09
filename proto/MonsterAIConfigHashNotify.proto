@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MonsterAIConfigHashNotify {
+	enum MonsterAIConfigHashNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3324;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 HashValue = 9;
+	uint32 EntityId = 7;
+	uint32 JobId = 1;
+}

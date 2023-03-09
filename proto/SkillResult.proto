@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGDamageDetail.proto";
+
+message SkillResult {
+	uint32 ResultSeq = 15;
+	uint32 SrcCardGuid = 2;
+	uint32 ahkoidfnbgc = 3;
+	uint32 TargetCardGuid = 7;
+	uint32 EffectElement = 1;
+	uint32 LastHp = 13;
+	uint32 npllnhifdoo = 6;
+	repeated GCGDamageDetail DetailList = 12;
+	uint32 Damage = 11;
+	uint32 SkillId = 4;
+	uint32 FromResultSeq = 14;
+}

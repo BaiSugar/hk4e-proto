@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeLimitedShopGoods.proto";
+
+message HomeLimitedShopInfoChangeNotify {
+	enum HomeLimitedShopInfoChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4552;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated HomeLimitedShopGoods GoodsList = 1;
+}

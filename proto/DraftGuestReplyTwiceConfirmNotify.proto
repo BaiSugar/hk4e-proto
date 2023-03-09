@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DraftGuestReplyTwiceConfirmNotify {
+	enum DraftGuestReplyTwiceConfirmNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5416;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsAgree = 5;
+	uint32 DraftId = 6;
+	uint32 GuestUid = 11;
+}

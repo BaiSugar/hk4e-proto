@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BrickBreakerSelectAvatarReq {
+	enum FHBNKGAFMEO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5397;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 AvatarId = 13;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DisableRoguelikeTrapNotify {
+	enum DisableRoguelikeTrapNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8726;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CardId = 8;
+}

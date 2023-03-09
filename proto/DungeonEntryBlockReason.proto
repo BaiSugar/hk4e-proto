@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum DungeonEntryBlockReason {
+	DungeonEntryReasonNone = 0;
+	DungeonEntryReasonLevel = 1;
+	DungeonEntryReasonQuest = 2;
+	DungeonEntryReasonMuliple = 3;
+}

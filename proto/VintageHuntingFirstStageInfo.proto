@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageHuntingFirstStageInfo {
+	uint32 BrutalCnt = 14;
+	uint32 EliteCnt = 1;
+	uint32 TimidCnt = 12;
+	uint32 Score = 15;
+}

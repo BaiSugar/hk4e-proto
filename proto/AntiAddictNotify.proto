@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AntiAddictNotify {
+	enum AntiAddictNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 104;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string Msg = 3;
+	string Level = 14;
+	int32 MsgType = 13;
+}

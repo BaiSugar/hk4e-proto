@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReliquaryDecomposeReq {
+	enum ReliquaryDecomposeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 640;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 TargetCount = 5;
+	uint32 ConfigId = 13;
+	repeated uint64 GuidList = 2;
+}

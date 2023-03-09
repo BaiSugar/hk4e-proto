@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GalleryStartSource {
+	GalleryStartByNone = 0;
+	GalleryStartByMatch = 1;
+	GalleryStartByDraft = 2;
+}

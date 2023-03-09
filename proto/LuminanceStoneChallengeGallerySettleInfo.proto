@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GalleryStopReason.proto";
+
+message LuminanceStoneChallengeGallerySettleInfo {
+	uint32 CleanMudCount = 15;
+	uint32 GalleryId = 11;
+	GalleryStopReason Reason = 9;
+	uint32 KillMonsterCount = 6;
+	uint32 KillSpecialMonsterCount = 4;
+	uint32 FinalScore = 5;
+}

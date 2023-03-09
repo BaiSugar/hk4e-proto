@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ScenePlayBattleInfo {
+	uint32 PrepareEndTime = 11;
+	uint32 Type = 1;
+	uint32 Mode = 8;
+	uint32 Progress = 6;
+	uint32 StartTime = 15;
+	uint32 PlayType = 14;
+	uint32 Duration = 2;
+	repeated uint32 ProgressStageList = 9;
+	uint32 State = 4;
+	uint32 PlayId = 10;
+}

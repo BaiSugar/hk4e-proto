@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CustomDungeonAbstract {
+	uint32 FinishRoomId = 10;
+	uint32 TotalCoinNum = 2;
+	uint32 FirstPublishTime = 1;
+	uint32 LastPublishTime = 4;
+	map<uint32, uint32> BrickStatisticsMap = 12;
+}

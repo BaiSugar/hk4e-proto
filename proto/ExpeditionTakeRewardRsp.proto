@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ExpeditionTakeRewardRsp {
+	enum ExpeditionTakeRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2065;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PathId = 14;
+	uint32 RewardLevel = 7;
+	int32 Retcode = 8;
+	bool IsBonus = 13;
+}

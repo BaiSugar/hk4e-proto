@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueDiaryAvatar.proto";
+
+message StartRogueDiaryPlayRsp {
+	enum StartRogueDiaryPlayRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8780;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated RogueDiaryAvatar TrialAvatarList = 8;
+	int32 Retcode = 3;
+	repeated uint32 RandCardList = 2;
+	repeated RogueDiaryAvatar AvatarList = 13;
+}

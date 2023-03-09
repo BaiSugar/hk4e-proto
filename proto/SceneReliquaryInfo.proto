@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneReliquaryInfo {
+	uint32 ItemId = 1;
+	uint64 Guid = 2;
+	uint32 Level = 3;
+	uint32 PromoteLevel = 4;
+}

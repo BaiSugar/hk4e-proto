@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TriggerRoguelikeCurseNotify {
+	enum TriggerRoguelikeCurseNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8642;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsTriggerCurse = 7;
+	uint32 CurseGroupId = 13;
+	repeated uint32 EffectParamList = 6;
+	uint32 CurseLevel = 5;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message LocationInfo {
+	Rotation Pos = 3;
+	Rotation Rot = 2;
+}

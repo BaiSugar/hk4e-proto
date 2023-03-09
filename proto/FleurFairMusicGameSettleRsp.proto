@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FleurFairMusicGameSettleRsp {
+	enum FleurFairMusicGameSettleRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2200;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MusicBasicId = 4;
+	bool IsNewRecord = 5;
+	bool IsUnlockNextLevel = 7;
+	int32 Retcode = 3;
+}

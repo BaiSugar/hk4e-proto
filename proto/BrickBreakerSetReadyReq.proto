@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BrickBreakerSetReadyReq {
+	enum IJBEGKHFNFP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5386;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

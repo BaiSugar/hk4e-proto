@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ProductPriceTier {
+	string ProductId = 10;
+	string PriceTier = 6;
+}

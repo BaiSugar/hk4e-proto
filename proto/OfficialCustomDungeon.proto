@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message OfficialCustomDungeon {
+	uint32 DungeonId = 3;
+	uint32 WinTimes = 14;
+}

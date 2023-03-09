@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SignInInfo.proto";
+
+message GetSignInRewardRsp {
+	enum GetSignInRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2574;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 7;
+	SignInInfo SignInInfo = 13;
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SettleReason.proto";
+import "Uint32Pair.proto";
+
+message BrickBreakerSettleNotify {
+	enum EHJNACJCAIL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21188;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GalleryId = 11;
+	uint32 Combo = 13;
+	uint32 Time = 3;
+	repeated Uint32Pair UpdateSkillList = 8;
+	uint32 Score = 1;
+	bool IsDungeon = 4;
+	uint32 LevelId = 5;
+	SettleReason Reason = 10;
+	bool IsSingleMode = 14;
+	bool IsNewRecord = 7;
+}

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package Proto;
+
+import "OptionType.proto";
+import "Rotation.proto";
+import "AStarMethod.proto";
+import "FilterType.proto";
+
+message ToTheMoonQueryPathReq {
+	enum MAJKIHKKGFG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6105;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	OptionType QueryType = 15;
+	int32 QueryId = 3;
+	Rotation SourcePos = 12;
+	uint32 SceneId = 6;
+	AStarMethod AstarMethod = 1;
+	FilterType FilterType = 8;
+	int32 FuzzyRange = 7;
+	bool Refined = 10;
+	bool UseFullNeighbor = 2;
+	Rotation DestinationPos = 5;
+}

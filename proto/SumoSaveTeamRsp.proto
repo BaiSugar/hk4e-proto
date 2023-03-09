@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SumoTeamData.proto";
+
+message SumoSaveTeamRsp {
+	enum SumoSaveTeamRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8017;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 StageId = 9;
+	uint32 DifficultyId = 14;
+	int32 Retcode = 12;
+	uint32 ActivityId = 3;
+	repeated SumoTeamData TeamList = 8;
+}

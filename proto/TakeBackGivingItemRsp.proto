@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeBackGivingItemRsp {
+	enum TakeBackGivingItemRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 132;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GivingId = 3;
+	int32 Retcode = 11;
+}

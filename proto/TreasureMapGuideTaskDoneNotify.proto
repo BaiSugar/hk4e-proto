@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TreasureMapGuideTaskDoneNotify {
+	enum TreasureMapGuideTaskDoneNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2053;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+}

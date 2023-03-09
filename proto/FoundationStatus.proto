@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FoundationStatus {
+	None = 0;
+	Init = 1;
+	Building = 2;
+	Built = 3;
+}

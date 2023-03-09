@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message SeaLampFlyLampReq {
+	enum SeaLampFlyLampReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2193;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	Rotation Pos = 14;
+	uint32 ItemId = 4;
+	uint32 ItemNum = 1;
+	int32 Param = 15;
+}

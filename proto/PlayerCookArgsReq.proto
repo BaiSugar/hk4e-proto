@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerCookArgsReq {
+	enum PlayerCookArgsReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 184;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 RecipeId = 5;
+	uint32 AssistAvatar = 9;
+}

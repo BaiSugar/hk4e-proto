@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TreasureSeelieCollectOrbsNotify {
+	enum DOKOIKJLHCC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23448;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CurrentNum = 1;
+	uint32 TotalNum = 9;
+}

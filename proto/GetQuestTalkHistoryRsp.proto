@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetQuestTalkHistoryRsp {
+	enum GetQuestTalkHistoryRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 462;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	uint32 ParentQuestId = 13;
+	repeated uint32 TalkIdList = 7;
+}

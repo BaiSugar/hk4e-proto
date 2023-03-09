@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GearColumnInfo {
+	bool HasGear = 9;
+	uint32 GearId = 6;
+	bool IsOverturn = 8;
+	uint32 PlacementLayer = 11;
+	uint32 GearColumnIndex = 15;
+}

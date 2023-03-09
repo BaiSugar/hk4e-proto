@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PathStatusType.proto";
+import "Rotation.proto";
+
+message ToTheMoonQueryPathRsp {
+	enum DEPALAPFJJF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6155;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 QueryId = 11;
+	PathStatusType QueryStatus = 15;
+	repeated int64 Index = 10;
+	int32 Retcode = 1;
+	repeated Rotation Corners = 3;
+	repeated int32 Level = 13;
+}

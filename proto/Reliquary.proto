@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message Reliquary {
+	uint32 Level = 1;
+	uint32 Exp = 2;
+	uint32 PromoteLevel = 3;
+	uint32 MainPropId = 4;
+	repeated uint32 AppendPropIdList = 5;
+}

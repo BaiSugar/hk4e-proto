@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ServerBuff {
+	uint32 ServerBuffUid = 1;
+	uint32 ServerBuffId = 2;
+	uint32 ServerBuffType = 3;
+	uint32 InstancedModifierId = 4;
+	bool IsModifierAdded = 5;
+}

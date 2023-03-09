@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneAreaUnlockNotify {
+	enum SceneAreaUnlockNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 258;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 AreaList = 12;
+	uint32 SceneId = 11;
+}

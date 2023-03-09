@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ArenaChallengeChildChallengeInfo {
+	bool IsSuccess = 15;
+	bool IsSettled = 4;
+	uint32 ChallengeType = 5;
+	uint32 ChallengeIndex = 8;
+	uint32 ChallengeId = 14;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PushTipsData.proto";
+
+message PushTipsAllDataNotify {
+	enum PushTipsAllDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2292;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated PushTipsData PushTipsList = 12;
+}

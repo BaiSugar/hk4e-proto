@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HuntingPair.proto";
+
+message TakeHuntingOfferRsp {
+	enum TakeHuntingOfferRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4345;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 7;
+	uint32 CityId = 8;
+	HuntingPair HuntingPair = 6;
+}

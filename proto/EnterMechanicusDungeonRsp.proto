@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EnterMechanicusDungeonRsp {
+	enum EnterMechanicusDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3929;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DifficultLevel = 6;
+	int32 Retcode = 8;
+	uint32 DungeonId = 9;
+	uint32 WrongUid = 14;
+}

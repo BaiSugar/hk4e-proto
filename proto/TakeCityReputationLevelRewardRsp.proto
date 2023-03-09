@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message TakeCityReputationLevelRewardRsp {
+	enum TakeCityReputationLevelRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2898;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 10;
+	repeated ItemParam ItemList = 12;
+	uint32 CityId = 8;
+	uint32 Level = 11;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BossChestActivateNotify {
+	enum BossChestActivateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 880;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 QualifyUidList = 6;
+	uint32 EntityId = 4;
+}

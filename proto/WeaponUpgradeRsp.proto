@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message WeaponUpgradeRsp {
+	enum WeaponUpgradeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 700;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CurLevel = 5;
+	repeated ItemParam ItemParamList = 9;
+	int32 Retcode = 14;
+	uint32 OldLevel = 1;
+	uint64 TargetWeaponGuid = 13;
+}

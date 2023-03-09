@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BartenderCompleteOrderRsp {
+	enum BartenderCompleteOrderRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8192;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 AffixList = 11;
+	int32 Retcode = 15;
+	uint32 QuestId = 6;
+	uint32 FinishOrderId = 7;
+	bool IsNew = 14;
+	uint32 FormulaId = 3;
+}

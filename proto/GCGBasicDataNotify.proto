@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGBasicDataNotify {
+	enum EKNAAOCIFJJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7017;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 LevelRewardTakenList = 8;
+	uint32 Exp = 11;
+	uint32 Level = 1;
+}

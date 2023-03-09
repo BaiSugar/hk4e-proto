@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TrifleItem.proto";
+
+message GadgetAutoPickDropInfoNotify {
+	enum GadgetAutoPickDropInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 816;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated TrifleItem ItemList = 15;
+}

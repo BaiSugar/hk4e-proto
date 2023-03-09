@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FungusTrainingMonsterPreviewDetail.proto";
+
+message FungusTrainingPoolPreviewDetail {
+	uint32 PoolId = 10;
+	repeated FungusTrainingMonsterPreviewDetail MonsterPreviewDetailList = 5;
+}

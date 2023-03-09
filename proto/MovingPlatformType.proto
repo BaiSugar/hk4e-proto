@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum MovingPlatformType {
+	MovingPlatformNone = 0;
+	MovingPlatformUseConfig = 1;
+	MovingPlatformAbility = 2;
+	MovingPlatformRoute = 3;
+}

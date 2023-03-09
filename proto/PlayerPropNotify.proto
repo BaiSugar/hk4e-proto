@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PropValue.proto";
+
+message PlayerPropNotify {
+	enum PlayerPropNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 129;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, PropValue> PropMap = 5;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChannellerSlabAssistInfo.proto";
+
+message ChannellerSlabSaveAssistInfoReq {
+	enum ChannellerSlabSaveAssistInfoReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8304;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated ChannellerSlabAssistInfo AssistInfoList = 6;
+}

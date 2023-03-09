@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ExpeditionAssistInfo {
+	uint32 AssistTime = 4;
+	uint32 AvatarId = 11;
+	string TargetNickName = 9;
+	uint32 CostumeId = 15;
+	string OnlineId = 13;
+}

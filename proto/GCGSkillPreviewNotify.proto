@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGChangeOnstageInfo.proto";
+import "GCGSkillPreviewInfo.proto";
+import "GCGSkillPreviewPlayCardInfo.proto";
+
+message GCGSkillPreviewNotify {
+	enum EBIPPGMBKOL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7368;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated GCGChangeOnstageInfo ChangeOnstagePreviewList = 2;
+	uint32 ControllerId = 3;
+	repeated GCGSkillPreviewInfo SkillPreviewList = 6;
+	repeated GCGSkillPreviewPlayCardInfo PlayCardList = 9;
+	uint32 OnstageCardGuid = 10;
+}

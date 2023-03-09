@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FetterData {
+	uint32 FetterId = 1;
+	uint32 FetterState = 2;
+	repeated uint32 CondIndexList = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeChangeModuleReq {
+	enum HomeChangeModuleReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4484;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 TargetModuleId = 12;
+}

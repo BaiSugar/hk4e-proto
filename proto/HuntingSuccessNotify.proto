@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HuntingPair.proto";
+
+message HuntingSuccessNotify {
+	enum HuntingSuccessNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4325;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	HuntingPair HuntingPair = 11;
+}

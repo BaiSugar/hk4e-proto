@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayerWidgetInfo.proto";
+
+message RemotePlayerWidgetNotify {
+	enum EEINCMFJCDI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5996;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated PlayerWidgetInfo PlayerWidgetInfoList = 8;
+}

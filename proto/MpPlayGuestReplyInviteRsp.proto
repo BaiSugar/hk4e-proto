@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MpPlayGuestReplyInviteRsp {
+	enum MpPlayGuestReplyInviteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1848;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 13;
+	uint32 MpPlayId = 14;
+}

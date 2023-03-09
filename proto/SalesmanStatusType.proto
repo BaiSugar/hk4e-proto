@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum SalesmanStatusType {
+	SalesmanStatusNone = 0;
+	SalesmanStatusUnstarted = 1;
+	SalesmanStatusStarted = 2;
+	SalesmanStatusDelivered = 3;
+}

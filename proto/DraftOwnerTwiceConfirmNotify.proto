@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DraftOwnerTwiceConfirmNotify {
+	enum DraftOwnerTwiceConfirmNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5414;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DraftId = 15;
+	uint32 TwiceConfirmDeadlineTime = 7;
+}

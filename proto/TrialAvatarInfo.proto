@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TrialAvatarActivityRewardDetailInfo.proto";
+
+message TrialAvatarInfo {
+	repeated TrialAvatarActivityRewardDetailInfo RewardInfoList = 10;
+}

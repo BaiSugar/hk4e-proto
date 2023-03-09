@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DraftInviteResultNotify {
+	enum DraftInviteResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5462;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsAllArgee = 1;
+	uint32 DraftId = 5;
+}

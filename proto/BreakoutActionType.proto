@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum BreakoutActionType {
+	ActionTypeNone = 0;
+	ActionTypeLaunchBall = 1;
+	ActionTypeDestroyBall = 2;
+	ActionTypeFallingObject = 3;
+	ActionTypeMissile = 4;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message IrodoriFlowerData {
+	repeated uint32 FinishedThemeList = 5;
+	repeated ItemParam UsedFlowerList = 12;
+}

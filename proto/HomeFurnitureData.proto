@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message HomeFurnitureData {
+	uint32 Version = 5;
+	int32 ParentFurnitureIndex = 9;
+	Rotation SpawnRot = 12;
+	Rotation SpawnPos = 2;
+	uint32 Guid = 14;
+	uint32 FurnitureId = 11;
+}

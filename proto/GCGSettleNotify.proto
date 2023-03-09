@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGEndReason.proto";
+import "GCGGameBusinessType.proto";
+import "ItemParam.proto";
+
+message GCGSettleNotify {
+	enum NAEPLBPDGDG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7773;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 ForbidFinishChallengeList = 14;
+	GCGEndReason Reason = 12;
+	bool IsWin = 4;
+	repeated ItemParam RewardItemList = 9;
+	repeated uint32 FinishedChallengeIdList = 11;
+	uint32 WinControllerId = 2;
+	uint32 GameId = 7;
+	GCGGameBusinessType BusinessType = 3;
+}

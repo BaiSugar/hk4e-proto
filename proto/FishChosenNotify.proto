@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FishChosenNotify {
+	enum FishChosenNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5831;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FishId = 14;
+}

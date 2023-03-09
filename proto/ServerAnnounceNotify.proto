@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AnnounceData.proto";
+
+message ServerAnnounceNotify {
+	enum ServerAnnounceNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2148;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated AnnounceData AnnounceDataList = 1;
+}

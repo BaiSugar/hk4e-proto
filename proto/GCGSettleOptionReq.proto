@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGSettleOption.proto";
+
+message GCGSettleOptionReq {
+	enum MFOGKBFIDLO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7511;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	GCGSettleOption Option = 13;
+}

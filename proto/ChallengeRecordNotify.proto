@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChallengeRecord.proto";
+
+message ChallengeRecordNotify {
+	enum ChallengeRecordNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 958;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GroupId = 3;
+	repeated ChallengeRecord ChallengeRecordList = 5;
+}

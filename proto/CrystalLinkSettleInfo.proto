@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CrystalLinkSettleInfo {
+	uint32 KillNormalMosnterNum = 11;
+	bool IsNewRecord = 6;
+	uint32 FinalScore = 13;
+	uint32 KillEliteMonsterNum = 15;
+	uint32 DifficultyId = 3;
+	uint32 LevelId = 10;
+}

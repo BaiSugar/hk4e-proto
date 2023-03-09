@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonChallengeBeginNotify {
+	enum DungeonChallengeBeginNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 939;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ChallengeId = 3;
+	uint32 ChallengeIndex = 2;
+	uint32 GroupId = 6;
+	uint32 FatherIndex = 7;
+	repeated uint32 UidList = 12;
+	repeated uint32 ParamList = 14;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChallengeBrief {
+	uint32 CurProgress = 9;
+	bool IsSuccess = 5;
+	uint32 ChallengeIndex = 15;
+	uint32 ChallengeId = 2;
+}

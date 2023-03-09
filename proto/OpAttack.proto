@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message OpAttack {
+	uint32 SkillId = 8;
+	repeated uint32 CostDiceIndexList = 11;
+}

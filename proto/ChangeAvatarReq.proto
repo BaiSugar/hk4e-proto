@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message ChangeAvatarReq {
+	enum ChangeAvatarReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1649;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 Guid = 12;
+	bool IsMove = 10;
+	Rotation MovePos = 3;
+	uint32 SkillId = 5;
+}

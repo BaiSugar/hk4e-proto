@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+enum SalvagePreventStopReason {
+	SalvagePreventStopNone = 0;
+	SalvagePreventStopSuccess = 1;
+	SalvagePreventStopArrival = 2;
+	SalvagePreventStopInterrupt = 3;
+	SalvagePreventStopLeave = 4;
+	SalvagePreventStopFull = 5;
+	SalvagePreventStopAway = 6;
+}

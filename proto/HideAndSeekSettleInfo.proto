@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProfilePicture.proto";
+import "ExhibitionDisplayInfo.proto";
+
+message HideAndSeekSettleInfo {
+	uint32 Uid = 1;
+	repeated ExhibitionDisplayInfo CardList = 2;
+	uint32 HeadImage = 3;
+	string OnlineId = 10;
+	string Nickname = 9;
+	ProfilePicture ProfilePicture = 5;
+}

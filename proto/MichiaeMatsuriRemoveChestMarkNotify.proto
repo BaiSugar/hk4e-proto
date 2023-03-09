@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MichiaeMatsuriRemoveChestMarkNotify {
+	enum MichiaeMatsuriRemoveChestMarkNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8051;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GroupId = 8;
+	uint32 ConfigId = 10;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGReason.proto";
+
+message TokenChange {
+	uint32 CardGuid = 6;
+	uint32 After = 5;
+	uint32 Before = 15;
+	uint32 TokenType = 8;
+	GCGReason Reason = 12;
+}

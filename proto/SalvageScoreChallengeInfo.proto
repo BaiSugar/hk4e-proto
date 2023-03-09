@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SalvageScoreChallengeInfo {
+	uint32 SalvageChallengeId = 13;
+	uint32 MaxScore = 4;
+}

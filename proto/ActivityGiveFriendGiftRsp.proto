@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivityGiveFriendGiftRsp {
+	enum ActivityGiveFriendGiftRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8707;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 LimitGiftList = 2;
+	int32 Retcode = 3;
+	uint32 ScheduleId = 13;
+}

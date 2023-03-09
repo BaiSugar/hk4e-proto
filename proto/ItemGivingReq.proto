@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemGivingReq_ItemGivingType.proto";
+import "ItemParam.proto";
+
+message ItemGivingReq {
+	enum ItemGivingReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 101;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	map<uint64, uint32> ItemGuidCountMap = 13;
+	uint32 GivingId = 7;
+	repeated ItemParam ItemParamList = 9;
+	ItemGivingReq_ItemGivingType ItemGivingType = 8;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "UgcType.proto";
+
+message GetUgcBriefInfoReq {
+	enum GetUgcBriefInfoReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6346;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	UgcType UgcType = 10;
+	uint64 UgcGuid = 11;
+}

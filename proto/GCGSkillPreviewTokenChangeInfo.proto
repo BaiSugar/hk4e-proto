@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGSkillPreviewTokenInfo.proto";
+
+message GCGSkillPreviewTokenChangeInfo {
+	repeated GCGSkillPreviewTokenInfo TokenChangeList = 1;
+}

@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChapterState.proto";
+
+message ChapterStateNotify {
+	enum ChapterStateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 469;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	message ChapterStateNotify_NeedPlayerLevel {
+		uint32 ConfigNeedPlayerLevel = 4;
+		bool IsLimit = 14;
+	}
+	message ChapterStateNotify_NeedBeginTime {
+		uint32 ConfigNeedBeginTime = 5;
+		bool IsLimit = 4;
+	}
+
+	ChapterStateNotify_NeedPlayerLevel NeedPlayerLevel = 2;
+	ChapterStateNotify_NeedBeginTime NeedBeginTime = 9;
+	ChapterState ChapterState = 13;
+	uint32 ChapterId = 15;
+}

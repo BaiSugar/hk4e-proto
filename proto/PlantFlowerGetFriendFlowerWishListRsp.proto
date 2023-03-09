@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlantFlowerFriendFlowerWishData.proto";
+
+message PlantFlowerGetFriendFlowerWishListRsp {
+	enum PlantFlowerGetFriendFlowerWishListRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8025;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 15;
+	uint32 ScheduleId = 7;
+	repeated PlantFlowerFriendFlowerWishData FriendFlowerWishList = 1;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message WinterCampRaceStageInfo {
+	Rotation Pos = 10;
+	uint32 MaxScore = 14;
+	uint32 OpenTime = 11;
+	uint32 Id = 15;
+}

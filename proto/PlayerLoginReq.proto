@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package Proto;
+
+
+import "TrackingIOInfo.proto";
+import "AdjustTrackingInfo.proto";
+
+message PlayerLoginReq {
+	enum PlayerLoginReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 187;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	string Token = 6;
+	uint32 TargetHomeParam = 323;
+	uint32 TargetUid = 4;
+	string ChecksumClientVersion = 1738;
+	string AccountUid = 9;
+	bool IsEditor = 13;
+	string Birthday = 1280;
+	bytes ExtraBinData = 78;
+	uint32 RegPlatform = 119;
+	uint32 GmUid = 246;
+	string Checksum = 1715;
+	uint32 PlatformType = 12;
+	TrackingIOInfo TrackingIoInfo = 710;
+	uint32 ClientToken = 1762;
+	string DeviceInfo = 14;
+	uint32 TargetHomeOwnerUid = 216;
+	string Platform = 2;
+	uint32 ChannelId = 324;
+	string CountryCode = 1616;
+	uint64 LoginRand = 8;
+	string OnlineId = 54;
+	uint32 SubChannelId = 1709;
+	string DeviceUuid = 15;
+	uint32 ClientPort = 2024;
+	string ClientVerisonHash = 1765;
+	AdjustTrackingInfo AdjustTrackingInfo = 442;
+	uint32 AccountType = 7;
+	string PsnId = 1568;
+	uint32 Tag = 1223;
+	uint32 CloudClientIp = 1394;
+	string SystemVersion = 3;
+	bool IsGuest = 10;
+	string ClientVersion = 11;
+	bool IsTransfer = 2037;
+	bytes EnvironmentErrorCode = 1015;
+	string DeviceName = 1;
+	string SecurityLibraryMd5 = 378;
+	uint32 LanguageType = 5;
+	bytes SecurityCmdReply = 907;
+	string SecurityLibraryVersion = 684;
+	uint32 ClientDataVersion = 426;
+	string Cps = 821;
+}

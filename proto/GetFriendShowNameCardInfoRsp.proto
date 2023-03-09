@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetFriendShowNameCardInfoRsp {
+	enum GetFriendShowNameCardInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4056;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 3;
+	uint32 Uid = 2;
+	repeated uint32 ShowNameCardIdList = 15;
+}

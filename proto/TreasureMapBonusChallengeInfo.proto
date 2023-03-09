@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TreasureMapBonusChallengeInfo {
+	bool IsActive = 5;
+	map<uint32, bool> FragmentMap = 13;
+	uint32 SolutionId = 14;
+	bool IsDone = 2;
+	uint32 ConfigId = 9;
+}

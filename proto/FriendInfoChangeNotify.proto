@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FriendInfoChangeNotify {
+	enum FriendInfoChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4026;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string OnlineId = 2;
+	uint32 Uid = 9;
+}

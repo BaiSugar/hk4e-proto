@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "EnterCustomDungeonType.proto";
+
+message EnterCustomDungeonReq {
+	enum EnterCustomDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6238;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	EnterCustomDungeonType EnterType = 2;
+	uint32 DungeonId = 13;
+	uint64 DungeonGuid = 3;
+}

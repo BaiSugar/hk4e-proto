@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivitySetGiftWishRsp {
+	enum ActivitySetGiftWishRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8828;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ScheduleId = 14;
+	int32 Retcode = 11;
+}

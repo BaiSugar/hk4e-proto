@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtAvatarLockChairRsp {
+	enum EvtAvatarLockChairRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 384;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	Rotation Position = 3;
+	uint64 ChairId = 15;
+	int32 Retcode = 12;
+	uint32 EntityId = 4;
+}

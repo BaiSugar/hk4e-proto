@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ToTheMoonObstacleInfo.proto";
+
+message ToTheMoonAddObstacleReq {
+	enum JNHMMGGPKOO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6174;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ToTheMoonObstacleInfo Obstacle = 6;
+	uint32 SceneId = 7;
+	int32 QueryId = 5;
+	bool UseEdge = 15;
+}

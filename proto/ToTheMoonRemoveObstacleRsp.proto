@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DynamicNodes.proto";
+
+message ToTheMoonRemoveObstacleRsp {
+	enum BAEILLHPINF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6162;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 QueryId = 4;
+	DynamicNodes DynamicNodes = 8;
+	int32 Retcode = 3;
+}

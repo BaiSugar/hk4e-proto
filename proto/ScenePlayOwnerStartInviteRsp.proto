@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ScenePlayOwnerStartInviteRsp {
+	enum ScenePlayOwnerStartInviteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4370;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	uint32 PlayId = 7;
+	bool IsSkipMatch = 11;
+}

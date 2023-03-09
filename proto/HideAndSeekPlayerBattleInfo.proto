@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HideAndSeekPlayerBattleInfo {
+	uint32 CostumeId = 5;
+	bool IsReady = 13;
+	repeated uint32 SkillList = 3;
+	uint32 AvatarId = 11;
+}

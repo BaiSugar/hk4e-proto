@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForwardType.proto";
+
+message AnimatorForceSetAirMoveNotify {
+	enum AnimatorForceSetAirMoveNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 330;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool InAirMove = 1;
+	ForwardType ForwardType = 11;
+	uint32 EntityId = 2;
+}

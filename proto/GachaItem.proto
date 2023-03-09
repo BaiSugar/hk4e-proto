@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+import "GachaTransferItem.proto";
+
+message GachaItem {
+	repeated GachaTransferItem TransferItems = 10;
+	bool IsGachaItemNew = 9;
+	repeated ItemParam TokenItemList = 12;
+	ItemParam GachaItem_ = 4;
+	bool IsFlashCard = 11;
+}

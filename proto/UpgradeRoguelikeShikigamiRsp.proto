@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UpgradeRoguelikeShikigamiRsp {
+	enum UpgradeRoguelikeShikigamiRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8113;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CurLevel = 4;
+	uint32 ShikigamiGroupId = 5;
+	int32 Retcode = 9;
+}

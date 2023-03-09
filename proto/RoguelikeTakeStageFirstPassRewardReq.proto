@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RoguelikeTakeStageFirstPassRewardReq {
+	enum RoguelikeTakeStageFirstPassRewardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8887;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 StageId = 14;
+}

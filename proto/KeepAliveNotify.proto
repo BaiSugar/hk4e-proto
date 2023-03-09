@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message KeepAliveNotify {
+	enum KeepAliveNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+}

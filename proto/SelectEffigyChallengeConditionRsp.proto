@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SelectEffigyChallengeConditionRsp {
+	enum SelectEffigyChallengeConditionRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2068;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 12;
+	repeated uint32 ConditionIdList = 1;
+	uint32 ChallengeId = 11;
+	uint32 DifficultyId = 10;
+}

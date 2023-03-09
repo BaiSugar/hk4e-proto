@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum BattlePassUnlockStatus {
+	BattlePassUnlockInvalid = 0;
+	BattlePassUnlockFree = 1;
+	BattlePassUnlockPaid = 2;
+}

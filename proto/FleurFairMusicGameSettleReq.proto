@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FleurFairMusicGameSettleReq {
+	enum FleurFairMusicGameSettleReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2072;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Combo = 3;
+	uint32 MusicBasicId = 9;
+	uint32 Score = 7;
+	uint32 CorrectHit = 6;
+}

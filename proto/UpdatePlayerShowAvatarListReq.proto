@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UpdatePlayerShowAvatarListReq {
+	enum UpdatePlayerShowAvatarListReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4064;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 ShowAvatarIdList = 11;
+	bool IsShowAvatar = 4;
+}

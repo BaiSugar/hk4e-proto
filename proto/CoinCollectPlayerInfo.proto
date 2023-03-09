@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CoinCollectTeamAvatarInfo.proto";
+
+message CoinCollectPlayerInfo {
+	repeated CoinCollectTeamAvatarInfo AvatarInfoList = 14;
+	bool IsPrepare = 8;
+	uint32 ChooseSkillNo = 10;
+	string PlayerName = 4;
+	uint32 PlayerUid = 5;
+}

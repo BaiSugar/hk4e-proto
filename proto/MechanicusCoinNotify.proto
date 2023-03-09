@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MechanicusCoinNotify {
+	enum MechanicusCoinNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3998;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MechanicusId = 8;
+	uint32 Coin = 13;
+}

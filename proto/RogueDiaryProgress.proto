@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RogueDiaryProgress {
+	bool IsEnterDungeon = 5;
+	repeated uint32 OptionalCardList = 12;
+	uint32 CurRound = 7;
+	uint32 StageId = 3;
+	uint32 Difficulty = 11;
+}

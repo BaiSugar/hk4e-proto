@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGWeekChallengeInfo.proto";
+
+message GCGWeekChallengeInfoNotify {
+	enum BPPOMFBCIKL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7890;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsNotifyNpcChange = 7;
+	uint32 NextRefreshTime = 9;
+	repeated GCGWeekChallengeInfo ChallengeInfoList = 8;
+}

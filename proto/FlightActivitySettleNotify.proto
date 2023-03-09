@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FlightActivitySettleNotify {
+	enum FlightActivitySettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2169;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MedalLevel = 9;
+	bool IsSuccess = 13;
+	uint32 CollectNum = 2;
+	bool IsNewRecord = 15;
+	uint32 TotalNum = 3;
+	uint32 GroupId = 10;
+	uint32 Score = 12;
+	uint32 LeftTime = 5;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MapAreaInfo.proto";
+
+message GetMapAreaRsp {
+	enum GetMapAreaRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3213;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated MapAreaInfo MapAreaInfoList = 3;
+	int32 Retcode = 2;
+}

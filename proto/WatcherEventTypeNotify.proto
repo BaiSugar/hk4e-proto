@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WatcherEventTypeNotify {
+	enum WatcherEventTypeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2298;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 ParamList = 5;
+	uint32 AddProgress = 13;
+	uint32 WatcherTriggerType = 7;
+}

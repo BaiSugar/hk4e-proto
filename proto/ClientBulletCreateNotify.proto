@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ClientBulletCreateNotify {
+	enum ClientBulletCreateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 25;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Param = 3;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MetNpcIdListNotify {
+	enum MetNpcIdListNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 574;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 NpcFirstMetIdList = 9;
+}

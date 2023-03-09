@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlessingActivityDetailInfo {
+	bool IsContentClosed = 5;
+	uint32 ContentCloseTime = 11;
+	uint32 CurDayScanNum = 12;
+	uint32 CurDayScanType = 15;
+	uint32 RedeemRewardNum = 9;
+	map<uint32, uint32> PicNumMap = 7;
+	uint32 NextRefreshTime = 14;
+	bool IsActivated = 8;
+}

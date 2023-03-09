@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ServerDisconnectClientNotify {
+	enum ServerDisconnectClientNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 160;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Data = 10;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MeetNpcRsp {
+	enum MeetNpcRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 570;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 NpcFirstMetId = 12;
+	int32 Retcode = 14;
+}

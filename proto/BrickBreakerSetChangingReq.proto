@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BrickBreakerSetChangingReq {
+	enum GCOKFLLGHPD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5371;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsChanging = 13;
+}

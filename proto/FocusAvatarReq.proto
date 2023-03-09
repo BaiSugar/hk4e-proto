@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FocusAvatarReq {
+	enum FocusAvatarReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1608;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsFocus = 15;
+	uint64 AvatarGuid = 10;
+}

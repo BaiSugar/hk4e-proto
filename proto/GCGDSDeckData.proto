@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSDeckData {
+	repeated uint32 CharacterCardList = 14;
+	bool IsValid = 4;
+	uint32 CreateTime = 9;
+	string Name = 3;
+	uint32 CardBackId = 2;
+	uint32 FieldId = 6;
+	repeated uint32 CardList = 12;
+	uint32 Id = 15;
+}

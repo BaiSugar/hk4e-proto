@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FlightDailyRecord.proto";
+
+message FlightInfo {
+	repeated FlightDailyRecord DailyRecordList = 5;
+	uint32 MinOpenPlayerLevel = 2;
+	uint32 PreviewRewardId = 7;
+}

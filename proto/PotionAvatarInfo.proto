@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PotionAvatarInfo {
+	uint64 AvatarId = 10;
+	bool IsTrial = 3;
+}

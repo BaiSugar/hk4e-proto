@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TeamChainChooseTeamInfo.proto";
+
+message TeamChainRestartDungeonReq {
+	enum KNIBCBJEFHI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21237;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated TeamChainChooseTeamInfo TeamInfoList = 2;
+}

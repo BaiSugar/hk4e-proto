@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message CalcWeaponUpgradeReturnItemsRsp {
+	enum CalcWeaponUpgradeReturnItemsRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 660;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 4;
+	uint64 TargetWeaponGuid = 9;
+	repeated ItemParam ItemParamList = 7;
+}

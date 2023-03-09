@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "HomeBlockSubFieldData.proto";
+
+message HomeBlockFieldData {
+	Rotation Pos = 1;
+	uint32 Guid = 6;
+	repeated HomeBlockSubFieldData SubFieldList = 9;
+	uint32 FurnitureId = 10;
+	Rotation Rot = 2;
+}

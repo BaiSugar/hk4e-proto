@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MistTrialGetChallengeMissionReq {
+	enum MistTrialGetChallengeMissionReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8534;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 TrialId = 3;
+}

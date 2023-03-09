@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DungeonEntryBlockReason.proto";
+
+message DungeonEntryCond {
+	DungeonEntryBlockReason CondReason = 14;
+	uint32 Param1 = 12;
+}

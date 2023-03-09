@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum CustomDungeonFinishType {
+	CustomDungeonFinishPlayNormal = 0;
+	CustomDungeonFinishPlayTry = 1;
+	CustomDungeonFinishEditTry = 2;
+	CustomDungeonFinishSelfPlayNormal = 3;
+}

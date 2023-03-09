@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EffigyChallengeDungeonResultInfo {
+	uint32 ChallengeMaxScore = 6;
+	bool IsInTimeLimit = 1;
+	uint32 ChallengeScore = 14;
+	bool IsSuccess = 2;
+	uint32 ChallengeId = 10;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ReunionSignInInfo.proto";
+
+message TakeReunionSignInRewardRsp {
+	enum TakeReunionSignInRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5085;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	ReunionSignInInfo SignInInfo = 5;
+	int32 Retcode = 8;
+}

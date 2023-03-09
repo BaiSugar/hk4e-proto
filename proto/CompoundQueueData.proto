@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CompoundQueueData {
+	uint32 OutputCount = 12;
+	uint32 CompoundId = 9;
+	uint32 WaitCount = 8;
+	uint32 OutputTime = 11;
+}

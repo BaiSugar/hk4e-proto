@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerAllowEnterMpAfterAgreeMatchNotify {
+	enum PlayerAllowEnterMpAfterAgreeMatchNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4175;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TargetUid = 2;
+}

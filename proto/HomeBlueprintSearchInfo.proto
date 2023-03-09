@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeBlueprintSearchInfo {
+	uint32 SceneId = 9;
+	string ShareCode = 15;
+	uint32 BlockId = 2;
+	uint32 ModuleId = 13;
+}

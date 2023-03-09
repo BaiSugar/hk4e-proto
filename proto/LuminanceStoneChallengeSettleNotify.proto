@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LuminanceStoneChallengeSettleInfo.proto";
+
+message LuminanceStoneChallengeSettleNotify {
+	enum LuminanceStoneChallengeSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8545;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	LuminanceStoneChallengeSettleInfo SettleInfo = 1;
+	uint32 GalleryId = 14;
+}

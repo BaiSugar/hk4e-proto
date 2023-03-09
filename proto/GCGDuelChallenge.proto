@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDuelChallenge {
+	uint32 TotalProgress = 9;
+	uint32 ChallengeId = 10;
+	uint32 CurProgress = 1;
+}

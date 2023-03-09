@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EchoShellTakeRewardRsp {
+	enum EchoShellTakeRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8180;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 RewardId = 2;
+	int32 Retcode = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FurnitureMakeHelpData {
+	uint32 Times = 2;
+	uint32 Uid = 6;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "EntityJumpNotify_Type.proto";
+
+message EntityJumpNotify {
+	enum EntityJumpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 292;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	Rotation Rot = 8;
+	Rotation Pos = 5;
+	uint32 EntityId = 11;
+	EntityJumpNotify_Type JumpType = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeSeekFurniturePlayerScore.proto";
+
+message HomeSeekFurnitureOneRecord {
+	repeated HomeSeekFurniturePlayerScore EngagedPlayerScoreList = 6;
+	uint32 Timestamp = 3;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message GrassInfo {
+	uint32 Id = 1;
+	Rotation Center = 2;
+	Rotation Size = 3;
+}

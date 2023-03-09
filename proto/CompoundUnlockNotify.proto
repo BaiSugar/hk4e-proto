@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CompoundUnlockNotify {
+	enum CompoundUnlockNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 159;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CompoundId = 6;
+}

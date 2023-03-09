@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum MpSettingType {
+	MpSettingNoEnter = 0;
+	MpSettingEnterFreely = 1;
+	MpSettingEnterAfterApply = 2;
+}

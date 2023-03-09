@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MichiaeMatsuriUnlockCrystalSkillRsp {
+	enum MichiaeMatsuriUnlockCrystalSkillRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8889;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CrystalSkillId = 1;
+	int32 Retcode = 13;
+}

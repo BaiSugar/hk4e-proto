@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProfilePicture.proto";
+
+message GadgetPlayUidInfo {
+	uint32 Score = 7;
+	string OnlineId = 1;
+	uint32 BattleWatcherId = 3;
+	ProfilePicture ProfilePicture = 6;
+	uint32 Uid = 14;
+	uint32 Icon = 9;
+	string Nickname = 15;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "MotionState.proto";
+
+message MotionInfo {
+	Rotation Pos = 1;
+	Rotation Rot = 2;
+	Rotation Speed = 3;
+	MotionState State = 4;
+	repeated Rotation Params = 5;
+	Rotation RefPos = 6;
+	uint32 RefId = 7;
+	uint32 SceneTime = 8;
+	uint64 IntervalVelocity = 9;
+}

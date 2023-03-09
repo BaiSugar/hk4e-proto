@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EffigyChallengeV2EnterDungeonRsp {
+	enum NCGEDBHPGLH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23456;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ChallengeModeSkillNo = 3;
+	uint32 LevelId = 7;
+	int32 Retcode = 15;
+	uint32 ChallengeModeDifficulty = 5;
+}

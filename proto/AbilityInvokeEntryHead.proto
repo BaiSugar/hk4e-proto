@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityInvokeEntryHead {
+	int32 LocalId = 7;
+	uint32 ServerBuffUid = 15;
+	uint32 TargetId = 5;
+	uint32 InstancedAbilityId = 2;
+	uint32 InstancedModifierId = 9;
+	bool IsServerbuffModifier = 10;
+	int32 ModifierConfigLocalId = 8;
+}

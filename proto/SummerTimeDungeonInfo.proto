@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SummerTimeDungeonInfo {
+	uint32 TotalShellCount = 8;
+	uint32 TakenShellCount = 2;
+	uint32 DungeonId = 5;
+	uint32 TakenChestCount = 4;
+	uint32 TotalChestCount = 13;
+}

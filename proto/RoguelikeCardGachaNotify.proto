@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RoguelikeCardGachaNotify {
+	enum RoguelikeCardGachaNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8033;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsCanRefresh = 9;
+	repeated uint32 CardList = 5;
+}

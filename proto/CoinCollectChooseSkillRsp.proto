@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CoinCollectChooseSkillRsp {
+	enum PEEIKCNOFNB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24303;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 LevelId = 5;
+	int32 Retcode = 7;
+	uint32 ChooseSkillNo = 1;
+}

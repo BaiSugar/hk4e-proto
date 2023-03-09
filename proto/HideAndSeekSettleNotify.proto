@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HideAndSeekSettleNotify_SettleReason.proto";
+import "HideAndSeekSettleInfo.proto";
+import "ExhibitionDisplayInfo.proto";
+
+message HideAndSeekSettleNotify {
+	enum HideAndSeekSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5327;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 WinnerList = 9;
+	uint32 CostTime = 10;
+	uint32 StageType = 11;
+	HideAndSeekSettleNotify_SettleReason Reason = 1;
+	repeated HideAndSeekSettleInfo SettleInfoList = 4;
+	uint32 PlayIndex = 13;
+	repeated ExhibitionDisplayInfo ScoreList = 7;
+	bool IsRecordScore = 5;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ClientCollectorData.proto";
+
+message ClientCollectorDataNotify {
+	enum ClientCollectorDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4292;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ClientCollectorData ClientCollectorDataList = 9;
+}

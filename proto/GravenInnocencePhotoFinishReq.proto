@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GravenInnocencePhotoFinishReq {
+	enum NDBMIJAJMLB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23521;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Param = 9;
+	uint32 ObjectId = 3;
+}

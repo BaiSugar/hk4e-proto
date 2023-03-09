@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SumoTeamData.proto";
+
+message SumoSelectTeamAndEnterDungeonReq {
+	enum SumoSelectTeamAndEnterDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8433;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ActivityId = 4;
+	repeated SumoTeamData TeamList = 8;
+	uint32 StageId = 15;
+	uint32 DifficultyId = 12;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BlossomBriefInfo.proto";
+
+message GetBlossomBriefInfoListRsp {
+	enum GetBlossomBriefInfoListRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2755;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 Retcode = 2;
+	repeated BlossomBriefInfo BriefInfoList = 4;
+}

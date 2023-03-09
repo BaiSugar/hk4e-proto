@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SceneGalleryInfo.proto";
+
+message SceneGalleryInfoNotify {
+	enum SceneGalleryInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5513;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	SceneGalleryInfo GalleryInfo = 7;
+}

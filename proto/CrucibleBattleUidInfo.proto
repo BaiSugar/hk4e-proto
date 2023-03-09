@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProfilePicture.proto";
+
+message CrucibleBattleUidInfo {
+	string Nickname = 4;
+	uint32 Icon = 5;
+	uint32 Uid = 2;
+	ProfilePicture ProfilePicture = 11;
+	string OnlineId = 6;
+}

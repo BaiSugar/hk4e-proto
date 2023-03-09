@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FishingScore.proto";
+import "FishInfo.proto";
+
+message FishingGallerySettleInfo {
+	repeated FishingScore FishingScoreList = 4;
+	map<uint32, FishInfo> FishMap = 9;
+}

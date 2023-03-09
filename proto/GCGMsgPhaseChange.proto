@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGPhaseType.proto";
+import "Uint32Pair.proto";
+
+message GCGMsgPhaseChange {
+	repeated Uint32Pair AllowControllerMap = 7;
+	GCGPhaseType AfterPhase = 13;
+	GCGPhaseType BeforePhase = 8;
+}

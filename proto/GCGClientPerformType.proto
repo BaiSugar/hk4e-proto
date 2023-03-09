@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGClientPerformType {
+	GCGClientPerformTypeInvalid = 0;
+	GCGClientPerformTypeCardExchange = 1;
+	GCGClientPerformTypeFirstHand = 2;
+	GCGClientPerformTypeReroll = 3;
+}

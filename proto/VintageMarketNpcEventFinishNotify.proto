@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageMarketNpcEventFinishNotify {
+	enum NLEDGJEHOFD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21065;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 UnlockStrategyList = 15;
+	uint32 CoinA = 12;
+	uint32 CoinC = 8;
+}

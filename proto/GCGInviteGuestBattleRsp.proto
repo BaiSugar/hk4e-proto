@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGInviteGuestBattleRsp {
+	enum BMEFPIBIJLP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7465;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ljemjfinpph = 13;
+	int32 Retcode = 15;
+	uint32 ConfirmEndTime = 7;
+	uint32 Uid = 4;
+	uint32 PunishEndTime = 5;
+}

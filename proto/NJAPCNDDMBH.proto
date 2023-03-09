@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGDuel.proto";
+
+message NJAPCNDDMBH {
+	uint32 OpSeq = 13;
+	uint32 ControllerId = 14;
+	oneof EEBALNLJINH {
+		string gm_msg = 12;
+		GCGDuel duel = 5;
+	}
+}

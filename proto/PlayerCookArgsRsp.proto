@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerCookArgsRsp {
+	enum PlayerCookArgsRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 111;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 15;
+	float QteRangeRatio = 6;
+}

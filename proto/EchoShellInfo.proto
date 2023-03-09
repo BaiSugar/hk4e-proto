@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SummerTimeDungeonInfo.proto";
+
+message EchoShellInfo {
+	repeated uint32 ShellList = 10;
+	repeated uint32 PassDungeonList = 5;
+	repeated uint32 TakenRewardList = 14;
+	repeated SummerTimeDungeonInfo SummerTimeDungeonList = 13;
+}

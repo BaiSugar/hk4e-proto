@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilitySyncStateInfo.proto";
+
+message TeamEntityInfo {
+	AbilitySyncStateInfo TeamAbilityInfo = 8;
+	uint32 TeamEntityId = 2;
+	uint32 AuthorityPeerId = 12;
+}

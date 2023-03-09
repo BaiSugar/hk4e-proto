@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BrickBreakerActivityStageInfo {
+	uint32 StageId = 1;
+	bool IsDungeonLevelUnlock = 12;
+	bool IsWorldLevelUnlock = 5;
+}

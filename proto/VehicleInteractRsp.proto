@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "VehicleMember.proto";
+import "VehicleInteractType.proto";
+
+message VehicleInteractRsp {
+	enum VehicleInteractRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 825;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	VehicleMember Member = 15;
+	uint32 EntityId = 2;
+	int32 Retcode = 10;
+	VehicleInteractType InteractType = 8;
+}

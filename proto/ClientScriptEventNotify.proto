@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ClientScriptEventNotify {
+	enum ClientScriptEventNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 247;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 TargetEntityId = 8;
+	repeated int32 ParamList = 1;
+	uint32 SourceEntityId = 4;
+	uint32 EventType = 10;
+}

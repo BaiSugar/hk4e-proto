@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeCustomFurnitureInfo.proto";
+
+message HomeCustomFurnitureInfoNotify {
+	enum HomeCustomFurnitureInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4784;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 DeleteCustomFurnitureList = 14;
+	repeated HomeCustomFurnitureInfo CustomFurnitureInfoList = 15;
+	map<uint32, uint32> UsedSubFurnitureCountMap = 2;
+}

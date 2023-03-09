@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EffigyChallengeV2ChooseSkillReq {
+	enum PNOLANBPFKF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22489;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 LevelId = 15;
+	uint32 ChallengeModeSkillNo = 12;
+}

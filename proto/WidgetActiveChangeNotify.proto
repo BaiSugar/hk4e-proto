@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WidgetSlotData.proto";
+
+message WidgetActiveChangeNotify {
+	enum WidgetActiveChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4278;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated WidgetSlotData WidgetDataList = 13;
+}

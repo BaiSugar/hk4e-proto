@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message IrodoriChessUnequipCardRsp {
+	enum IrodoriChessUnequipCardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8326;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsHardMap = 4;
+	uint32 LevelId = 15;
+	int32 Retcode = 12;
+	uint32 CardId = 14;
+}

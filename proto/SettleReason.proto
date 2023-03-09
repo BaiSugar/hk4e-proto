@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum SettleReason {
+	TimeOut = 0;
+	SettlePlayEnd = 1;
+	SettlePlayerQuit = 2;
+	SettleLifeCount = 3;
+}

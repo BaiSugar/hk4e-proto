@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HuntingPair.proto";
+
+message HuntingGiveUpReq {
+	enum HuntingGiveUpReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4337;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	HuntingPair HuntingPair = 13;
+}

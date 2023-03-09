@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+enum SalvageEscortStopReason {
+	SalvageEscortStopNone = 0;
+	SalvageEscortStopSuccess = 1;
+	SalvageEscortStopDump = 2;
+	SalvageEscortStopTime = 3;
+	SalvageEscortStopInterrupt = 4;
+	SalvageEscortStopLeave = 5;
+	SalvageEscortStopFull = 6;
+}

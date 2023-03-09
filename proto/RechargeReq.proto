@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ShopMcoinProduct.proto";
+import "ShopCardProduct.proto";
+import "PlayProduct.proto";
+import "ShopConcertProduct.proto";
+
+message RechargeReq {
+	enum RechargeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4138;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ShopMcoinProduct McoinProduct = 11;
+	ShopCardProduct CardProduct = 5;
+	PlayProduct PlayProduct = 6;
+	ShopConcertProduct ConcertProduct = 3;
+}

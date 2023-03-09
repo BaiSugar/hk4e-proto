@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarChangeAnimHashRsp {
+	enum AvatarChangeAnimHashRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1700;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 15;
+	uint32 AnimHash = 9;
+	uint64 AvatarGuid = 11;
+}

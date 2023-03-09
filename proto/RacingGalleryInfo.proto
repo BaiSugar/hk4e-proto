@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeRacingGalleryRecord.proto";
+
+message RacingGalleryInfo {
+	repeated HomeRacingGalleryRecord RecordList = 2;
+}

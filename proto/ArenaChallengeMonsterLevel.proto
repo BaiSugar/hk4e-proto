@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ArenaChallengeMonsterLevel {
+	uint32 ArenaChallengeLevel = 13;
+	uint32 ArenaChallengeId = 3;
+}

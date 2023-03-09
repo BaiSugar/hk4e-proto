@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSDeckSaveRsp {
+	enum KMBJACGLCPJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7791;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CreateTime = 8;
+	uint32 DeckId = 1;
+	bool IsValid = 11;
+	int32 Retcode = 3;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BlossomChest.proto";
+
+message BlossomChestInfoNotify {
+	enum BlossomChestInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 870;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	BlossomChest BlossomChestInfo = 5;
+	uint32 EntityId = 13;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChessPickCardRsp {
+	enum ChessPickCardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5360;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CardIndex = 10;
+	uint32 CardId = 8;
+	int32 Retcode = 7;
+}

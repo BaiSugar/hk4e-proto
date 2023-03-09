@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "HuntingPair.proto";
+
+message HuntingRevealClueNotify {
+	enum HuntingRevealClueNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4335;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FinishedGroupId = 13;
+	uint32 FinishClueCount = 11;
+	Rotation CluePosition = 5;
+	HuntingPair HuntingPair = 4;
+}

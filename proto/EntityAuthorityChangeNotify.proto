@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AuthorityChange.proto";
+
+message EntityAuthorityChangeNotify {
+	enum EntityAuthorityChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 375;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated AuthorityChange AuthorityChangeList = 2;
+}

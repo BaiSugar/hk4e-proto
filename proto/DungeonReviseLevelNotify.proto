@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonReviseLevelNotify {
+	enum DungeonReviseLevelNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 991;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ReviseLevel = 11;
+	uint32 SceneLevel = 13;
+	uint32 DungeonId = 12;
+}

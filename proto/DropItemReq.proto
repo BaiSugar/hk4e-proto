@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "StoreType.proto";
+import "Rotation.proto";
+
+message DropItemReq {
+	enum DropItemReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 614;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 Guid = 10;
+	uint32 Count = 3;
+	StoreType StoreType = 12;
+	Rotation Pos = 13;
+}

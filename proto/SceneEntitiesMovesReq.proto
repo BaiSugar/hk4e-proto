@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "EntityMoveInfo.proto";
+
+message SceneEntitiesMovesReq {
+	enum SceneEntitiesMovesReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 241;
+		EnetChannelId = 1;
+		EnetIsReliable = 0;
+		IsAllowClient = 1;
+	}
+
+	repeated EntityMoveInfo EntityMoveInfoList = 8;
+}

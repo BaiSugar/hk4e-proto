@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RedPointData {
+	uint32 RedPointType = 1;
+	bool IsShow = 2;
+	uint32 ContentId = 3;
+}

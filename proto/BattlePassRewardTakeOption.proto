@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BattlePassRewardTag.proto";
+
+message BattlePassRewardTakeOption {
+	BattlePassRewardTag Tag = 15;
+	uint32 OptionIdx = 14;
+}

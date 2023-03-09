@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGMsgPVEIntention {
+	repeated uint32 SkillIdList = 3;
+	uint32 CardGuid = 9;
+}

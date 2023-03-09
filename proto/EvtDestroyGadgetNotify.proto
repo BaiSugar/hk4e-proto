@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForwardType.proto";
+
+message EvtDestroyGadgetNotify {
+	enum EvtDestroyGadgetNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 374;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ForwardType ForwardType = 11;
+	uint32 EntityId = 3;
+}

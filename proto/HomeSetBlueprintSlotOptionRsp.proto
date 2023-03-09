@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeSetBlueprintSlotOptionRsp {
+	enum HAKCGBFOHIP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4749;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 15;
+	uint32 SlotId = 2;
+	bool IsAllowCopy = 1;
+}

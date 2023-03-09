@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ItemHint {
+	uint32 Count = 12;
+	uint64 Guid = 8;
+	uint32 ItemId = 13;
+	bool IsNew = 14;
+}

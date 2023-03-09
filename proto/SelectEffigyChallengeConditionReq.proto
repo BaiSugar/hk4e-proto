@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SelectEffigyChallengeConditionReq {
+	enum SelectEffigyChallengeConditionReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2115;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 DifficultyId = 11;
+	uint32 ChallengeId = 2;
+	repeated uint32 ConditionIdList = 3;
+}

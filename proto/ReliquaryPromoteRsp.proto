@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReliquaryPromoteRsp {
+	enum ReliquaryPromoteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 675;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 CurAppendPropList = 12;
+	uint64 TargetReliquaryGuid = 2;
+	int32 Retcode = 6;
+	repeated uint32 OldAppendPropList = 11;
+	uint32 OldPromoteLevel = 7;
+	uint32 CurPromoteLevel = 15;
+}

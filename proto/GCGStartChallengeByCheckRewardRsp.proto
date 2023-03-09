@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGLevelType.proto";
+
+message GCGStartChallengeByCheckRewardRsp {
+	enum JFHPNEMLEIG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7127;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	GCGLevelType LevelType = 9;
+	uint32 LevelId = 10;
+	repeated uint32 ExceededItemTypeList = 15;
+	repeated uint32 ExceededItemList = 13;
+	int32 Retcode = 11;
+	uint32 ConfigId = 8;
+}

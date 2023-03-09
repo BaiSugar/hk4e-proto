@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TowerBuffSelectReq {
+	enum TowerBuffSelectReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2478;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 TowerBuffId = 12;
+}

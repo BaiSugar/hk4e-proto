@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeResource.proto";
+
+message HomeResourceTakeHomeCoinRsp {
+	enum HomeResourceTakeHomeCoinRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4573;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	HomeResource HomeCoin = 15;
+	int32 Retcode = 14;
+}

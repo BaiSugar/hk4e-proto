@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HideAndSeekMapInfo {
+	uint32 Id = 7;
+	repeated uint32 MatchLockReasonList = 5;
+}

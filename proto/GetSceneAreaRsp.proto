@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CityInfo.proto";
+
+message GetSceneAreaRsp {
+	enum GetSceneAreaRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 225;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 AreaIdList = 11;
+	int32 Retcode = 6;
+	repeated CityInfo CityInfoList = 14;
+	uint32 SceneId = 2;
+}

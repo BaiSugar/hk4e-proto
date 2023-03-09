@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CoinCollectCheckDoubleStartPlayRsp {
+	enum FOBGPGMPJMO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24464;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 11;
+	uint32 LevelId = 8;
+}

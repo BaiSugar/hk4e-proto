@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PersistentDungeonSwitchAvatarReq {
+	enum PersistentDungeonSwitchAvatarReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1709;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 CurAvatarGuid = 14;
+	repeated uint64 AvatarTeamGuidList = 2;
+}

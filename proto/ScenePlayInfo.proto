@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ScenePlayInfo {
+	uint32 EntryId = 1;
+	uint32 PlayId = 8;
+	bool IsOpen = 2;
+	uint32 PlayType = 12;
+}

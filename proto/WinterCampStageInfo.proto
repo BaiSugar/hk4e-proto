@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message WinterCampStageInfo {
+	uint32 TotalProgress = 15;
+	uint32 CurProgress = 2;
+	uint32 Id = 13;
+	uint32 OpenTime = 12;
+	Rotation Pos = 6;
+	bool IsFinished = 9;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeCityReputationParentQuestReq {
+	enum TakeCityReputationParentQuestReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2874;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 ParentQuestList = 1;
+	uint32 CityId = 9;
+}

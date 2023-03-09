@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSDeleteDeckRsp {
+	enum GKKOJFEKJII {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7399;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DeckId = 14;
+	int32 Retcode = 10;
+}

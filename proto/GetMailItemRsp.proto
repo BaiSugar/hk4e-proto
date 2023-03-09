@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "EquipParam.proto";
+
+message GetMailItemRsp {
+	enum GetMailItemRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1420;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated EquipParam ItemList = 9;
+	repeated uint32 MailIdList = 6;
+	int32 Retcode = 12;
+}

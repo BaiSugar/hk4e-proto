@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SelectAsterMidDifficultyReq {
+	enum SelectAsterMidDifficultyReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2128;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 GadgetEntityId = 7;
+	uint32 ScheduleId = 2;
+	uint32 DifficultyId = 14;
+}

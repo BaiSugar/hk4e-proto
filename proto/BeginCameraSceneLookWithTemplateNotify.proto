@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "FollowType.proto";
+
+message BeginCameraSceneLookWithTemplateNotify {
+	enum KDFDCPCDOJA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3201;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TemplateId = 9;
+	Rotation LookPos = 4;
+	FollowType FollowType = 3;
+	repeated string OtherParams = 8;
+	uint32 EntityId = 14;
+	Rotation FollowPos = 7;
+}

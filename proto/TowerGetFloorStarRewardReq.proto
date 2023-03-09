@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TowerGetFloorStarRewardReq {
+	enum TowerGetFloorStarRewardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2425;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 FloorId = 11;
+}

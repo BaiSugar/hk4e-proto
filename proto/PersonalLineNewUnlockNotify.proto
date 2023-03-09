@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PersonalLineNewUnlockNotify {
+	enum PersonalLineNewUnlockNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 494;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 PersonalLineIdList = 11;
+}

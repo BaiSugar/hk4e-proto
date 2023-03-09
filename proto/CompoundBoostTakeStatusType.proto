@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum CompoundBoostTakeStatusType {
+	CompoundBoostTakeStatusNone = 0;
+	CompoundBoostTakeStatusBoostOnly = 1;
+	CompoundBoostTakeStatusBoostAndTake = 2;
+	CompoundBoostTakeStatusBagFull = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VehicleMember {
+	uint32 Uid = 1;
+	uint64 AvatarGuid = 2;
+	uint32 Pos = 3;
+}

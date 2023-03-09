@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ResinCostType {
+	None = 0;
+	Normal = 1;
+	Condense = 2;
+	ReunionPrivilege = 3;
+	OpActivity = 4;
+	Material = 5;
+}

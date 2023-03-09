@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ShopGoods.proto";
+import "BuyGoodsParam.proto";
+
+message BatchBuyGoodsRsp {
+	enum PEONLFKKKFC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 714;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 5;
+	repeated ShopGoods GoodsList = 11;
+	uint32 ShopType = 14;
+	repeated BuyGoodsParam BuyGoodsList = 3;
+}

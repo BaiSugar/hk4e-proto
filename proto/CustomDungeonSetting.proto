@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CustomDungeonSetting {
+	repeated uint32 OpenRoomList = 13;
+	uint32 LifeNum = 9;
+	uint32 CoinLimit = 4;
+	uint32 StartRoomId = 10;
+	bool IsForbidSkill = 11;
+	uint32 TimeLimit = 2;
+	bool IsArriveFinish = 14;
+}

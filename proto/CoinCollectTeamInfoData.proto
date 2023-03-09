@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CoinCollectTeamInfoData {
+	repeated uint32 AvatarCostumeIdList = 5;
+	uint32 PlayerUid = 7;
+	bool IsHost = 15;
+	uint32 ChooseSkillNo = 3;
+	repeated uint32 AvatarLvList = 6;
+	repeated uint32 AvatarIdList = 2;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlessingScanRsp {
+	enum BlessingScanRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2122;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	uint32 CurDayScanNum = 4;
+	uint32 ScanPicId = 9;
+}

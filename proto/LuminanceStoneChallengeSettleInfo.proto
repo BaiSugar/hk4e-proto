@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LuminanceStoneChallengeGallerySettleInfo.proto";
+
+message LuminanceStoneChallengeSettleInfo {
+	bool IsNewRecord = 8;
+	LuminanceStoneChallengeGallerySettleInfo SettleInfo = 11;
+}

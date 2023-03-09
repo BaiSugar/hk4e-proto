@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PostEnterSceneReq {
+	enum PostEnterSceneReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3212;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 EnterSceneToken = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GravenInnocencePhotoObjectInfo {
+	uint32 Param = 15;
+	uint32 FinishTime = 10;
+	uint32 ObjectId = 1;
+}

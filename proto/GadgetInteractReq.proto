@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+import "InterOpType.proto";
+import "ResinCostType.proto";
+
+message GadgetInteractReq {
+	enum GadgetInteractReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 805;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	InterOpType OpType = 1;
+	bool IsUseCondenseResin = 14;
+	uint32 GadgetEntityId = 8;
+	uint32 GadgetId = 15;
+	ResinCostType ResinCostType = 7;
+	uint32 UiInteractId = 6;
+}

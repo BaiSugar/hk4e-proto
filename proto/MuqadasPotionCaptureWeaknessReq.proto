@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MuqadasPotionCaptureWeaknessReq {
+	enum EIJKGLCLHOJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20534;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 LevelId = 10;
+	uint32 CaptureWeaknessCount = 12;
+}

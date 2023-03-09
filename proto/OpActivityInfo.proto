@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BonusInfo.proto";
+
+message OpActivityInfo {
+	uint32 ScheduleId = 1;
+	uint32 BeginTime = 8;
+	uint32 ActivityId = 15;
+	bool IsHasChange = 3;
+	oneof OpActivityInfo_DetailOneofCase {
+		BonusInfo bonus_info = 11;
+	}
+	uint32 EndTime = 10;
+}

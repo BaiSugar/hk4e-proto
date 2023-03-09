@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeoffEquipRsp {
+	enum TakeoffEquipRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 606;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 15;
+	uint32 Slot = 3;
+	uint64 AvatarGuid = 5;
+}

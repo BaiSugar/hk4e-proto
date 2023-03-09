@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message TakeResinCardDailyRewardRsp {
+	enum TakeResinCardDailyRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4116;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ItemParam ItemVec = 15;
+	uint32 ProductConfigId = 4;
+	int32 Retcode = 9;
+}

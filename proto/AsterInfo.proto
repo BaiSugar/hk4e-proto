@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AsterLargeDetailInfo.proto";
+import "AsterLittleDetailInfo.proto";
+import "AsterMidDetailInfo.proto";
+import "AsterProgressDetailInfo.proto";
+
+message AsterInfo {
+	AsterLargeDetailInfo AsterLarge = 2;
+	uint32 AsterToken = 8;
+	bool IsSpecialRewardTaken = 9;
+	AsterLittleDetailInfo AsterLittle = 3;
+	uint32 ContentCloseTime = 14;
+	uint32 AsterCredit = 10;
+	AsterMidDetailInfo AsterMid = 4;
+	AsterProgressDetailInfo AsterProgress = 7;
+	bool IsContentClosed = 15;
+}

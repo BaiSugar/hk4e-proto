@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GravenInnocenceCarveInfo.proto";
+import "GravenInnocencePhotoInfo.proto";
+import "GravenInnocenceRaceInfo.proto";
+import "GravenInnocenceCampInfo.proto";
+
+message GravenInnocenceInfo {
+	GravenInnocenceCarveInfo CarveInfo = 12;
+	GravenInnocencePhotoInfo PhotoInfo = 5;
+	GravenInnocenceRaceInfo RaceInfo = 13;
+	bool IsContentClosed = 8;
+	GravenInnocenceCampInfo CampInfo = 11;
+}

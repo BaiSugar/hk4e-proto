@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MichiaeMatsuriStartDarkChallengeRsp {
+	enum MichiaeMatsuriStartDarkChallengeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8269;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 1;
+}

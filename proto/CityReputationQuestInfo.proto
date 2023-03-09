@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CityReputationQuestInfo {
+	bool IsOpen = 14;
+	repeated uint32 TakenParentQuestRewardList = 4;
+	repeated uint32 FinishedParentQuestList = 10;
+}

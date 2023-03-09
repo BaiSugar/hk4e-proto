@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DealAddFriendResultType.proto";
+
+message DealAddFriendReq {
+	enum DealAddFriendReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4080;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 TargetUid = 1;
+	DealAddFriendResultType DealAddFriendResult = 6;
+}

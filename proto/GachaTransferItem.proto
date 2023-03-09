@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message GachaTransferItem {
+	ItemParam Item = 5;
+	bool IsTransferItemNew = 3;
+}

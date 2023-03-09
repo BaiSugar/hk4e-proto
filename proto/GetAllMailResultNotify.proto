@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MailData.proto";
+
+message GetAllMailResultNotify {
+	enum IGKIIEJOOAC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1413;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsCollected = 12;
+	repeated MailData MailList = 1;
+	uint32 TotalPageCount = 7;
+	int32 Retcode = 8;
+	uint32 PageIndex = 6;
+	string Transaction = 15;
+}

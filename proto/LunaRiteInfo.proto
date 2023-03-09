@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LunaRiteHintPoint.proto";
+import "LunaRiteAreaInfo.proto";
+
+message LunaRiteInfo {
+	repeated LunaRiteHintPoint HintPoint = 8;
+	repeated LunaRiteAreaInfo AreaInfoList = 9;
+}

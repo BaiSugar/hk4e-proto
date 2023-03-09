@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerCompoundMaterialBoostReq {
+	enum OKPDCPFCLNP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 102;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ConsumeMaterialId = 13;
+	bool IsBoostAll = 8;
+	uint32 ConsumeMaterialCount = 9;
+	uint32 TargetCompoundGroupId = 3;
+}

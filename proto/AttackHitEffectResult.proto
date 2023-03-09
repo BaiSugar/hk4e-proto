@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AttackHitEffectResult {
+	uint32 OriginalHitEffLevel = 3;
+	float AirStrength = 6;
+	uint32 HitEffLevel = 13;
+	float HitHaltTime = 15;
+	float RetreatStrength = 4;
+	float HitHaltTimeScale = 7;
+}

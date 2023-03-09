@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "ItemHint.proto";
+
+message ItemAddHintNotify {
+	enum ItemAddHintNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 620;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 QuestId = 7;
+	repeated ItemHint OverflowTransformedItemList = 1;
+	bool IsPositionValid = 14;
+	bool IsTransferedFromAvatarCard = 12;
+	uint32 Reason = 3;
+	Rotation Position = 9;
+	repeated ItemHint ItemList = 8;
+	bool IsGeneralRewardHiden = 11;
+}

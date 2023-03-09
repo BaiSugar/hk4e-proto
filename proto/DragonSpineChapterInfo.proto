@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DragonSpineChapterInfo {
+	uint32 FinishedMissionNum = 7;
+	uint32 ChapterId = 4;
+	bool IsOpen = 6;
+	uint32 Progress = 8;
+	uint32 OpenTime = 3;
+}

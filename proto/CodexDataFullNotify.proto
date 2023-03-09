@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CodexTypeData.proto";
+
+message CodexDataFullNotify {
+	enum CodexDataFullNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4207;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 RecentViewedPushtipsList = 1;
+	uint32 LastReadPushtipsCodexId = 11;
+	uint32 LastReadPushtipsTypeId = 10;
+	repeated CodexTypeData TypeDataList = 8;
+}

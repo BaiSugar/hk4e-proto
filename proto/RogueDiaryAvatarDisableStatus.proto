@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum RogueDiaryAvatarDisableStatus {
+	RogueDiaryAvatarDisableNone = 0;
+	RogueDiaryAvatarDisableDeath = 1;
+	RogueDiaryAvatarDisableTired = 2;
+	RogueDiaryAvatarDisableDuplicated = 3;
+}

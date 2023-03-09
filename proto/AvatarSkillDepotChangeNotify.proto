@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarSkillDepotChangeNotify {
+	enum AvatarSkillDepotChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1098;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 TalentIdList = 14;
+	repeated uint32 ProudSkillList = 11;
+	uint32 SkillDepotId = 8;
+	uint32 EntityId = 3;
+	map<uint32, uint32> ProudSkillExtraLevelMap = 4;
+	uint32 CoreProudSkillLevel = 10;
+	map<uint32, uint32> SkillLevelMap = 13;
+	uint64 AvatarGuid = 12;
+}

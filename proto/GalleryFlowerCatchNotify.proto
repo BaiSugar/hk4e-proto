@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GalleryFlowerCatchNotify {
+	enum GalleryFlowerCatchNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5562;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 AddScore = 1;
+	uint32 CurScore = 8;
+	uint32 GalleryId = 13;
+}

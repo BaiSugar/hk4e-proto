@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeDeliveryDailyRewardRsp {
+	enum TakeDeliveryDailyRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2158;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 7;
+	uint32 ScheduleId = 12;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeResource {
+	uint32 StoreLimit = 15;
+	uint32 StoreValue = 10;
+	uint32 NextRefreshTime = 1;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonShowReminderNotify {
+	enum DungeonShowReminderNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 916;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ReminderId = 5;
+}

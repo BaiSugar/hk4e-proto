@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGLevelData {
+	uint32 LevelId = 13;
+	repeated uint32 FinishedChallengeIdList = 4;
+}

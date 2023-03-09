@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeSeekFurnitureInfo {
+	uint32 CurTideDurationTime = 10;
+	uint32 CurTideTotalNum = 11;
+	uint32 CurTideLeftNum = 8;
+	map<uint32, uint32> PlayerScoreMap = 12;
+}

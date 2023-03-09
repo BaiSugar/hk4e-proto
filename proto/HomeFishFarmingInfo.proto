@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeFishFarmingInfo {
+	uint32 FishpondGuid = 4;
+	repeated uint32 FishIdList = 6;
+}

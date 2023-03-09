@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageMarketStoreInfo {
+	repeated uint32 StrategyList = 2;
+	uint32 StoreId = 8;
+	uint32 SlotCount = 7;
+	repeated uint32 NextAimAttrList = 10;
+	repeated uint32 CurAttrList = 12;
+}

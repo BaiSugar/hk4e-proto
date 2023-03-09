@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AcceptCityReputationRequestRsp {
+	enum AcceptCityReputationRequestRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2862;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CityId = 5;
+	int32 Retcode = 3;
+	uint32 RequestId = 9;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WorldPlayerReviveReq {
+	enum WorldPlayerReviveReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 219;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

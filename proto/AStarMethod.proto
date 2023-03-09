@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum AStarMethod {
+  AStarMethodClassic = 0;
+  AStarMethodTendency = 1;
+  AStarMethodAdaptive = 2;
+  AStarMethodInflection = 3;
+}

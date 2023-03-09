@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message TreasureMapDetectorData {
+	repeated Rotation SpotList = 15;
+	uint32 RegionId = 6;
+	uint32 Radius = 7;
+	Rotation CenterPos = 8;
+	bool IsRegionDetected = 12;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UseWidgetRetractGadgetRsp {
+	enum UseWidgetRetractGadgetRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4289;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 Retcode = 11;
+	uint32 EntityId = 4;
+}

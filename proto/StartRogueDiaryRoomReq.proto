@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message StartRogueDiaryRoomReq {
+	enum StartRogueDiaryRoomReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8792;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsSelectHard = 4;
+	uint32 RoomDifficulty = 1;
+}

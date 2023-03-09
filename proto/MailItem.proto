@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "EquipParam.proto";
+import "MaterialDeleteInfo.proto";
+
+message MailItem {
+	EquipParam EquipParam = 1;
+	MaterialDeleteInfo DeleteInfo = 2;
+}

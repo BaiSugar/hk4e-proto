@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ExhibitionDisplayInfo.proto";
+
+message InBattleChessSettleInfo {
+	uint32 OldChessExp = 9;
+	uint64 SceneTimeMs = 11;
+	uint32 OldChessLevel = 15;
+	bool IsSuccess = 2;
+	repeated ExhibitionDisplayInfo ScoreList = 1;
+	uint32 ChessExp = 3;
+	uint32 ChessLevel = 10;
+}

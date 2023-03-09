@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UpdatePS4BlockListReq {
+	enum UpdatePS4BlockListReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4035;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated string PsnIdList = 7;
+}

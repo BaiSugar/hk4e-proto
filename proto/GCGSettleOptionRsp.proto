@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGSettleOption.proto";
+
+message GCGSettleOptionRsp {
+	enum GDGKDAPJIME {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7222;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	GCGSettleOption Option = 6;
+	int32 Retcode = 2;
+}

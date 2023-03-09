@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message DeshretObeliskChestInfo {
+	uint32 SceneId = 4;
+	uint32 ConfigId = 13;
+	uint32 GroupId = 11;
+	Rotation Pos = 10;
+}

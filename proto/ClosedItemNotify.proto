@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ClosedItemNotify {
+	enum ClosedItemNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 612;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 ItemIdList = 6;
+}

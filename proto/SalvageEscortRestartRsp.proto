@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SalvageEscortRestartRsp {
+	enum SalvageEscortRestartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8107;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GalleryId = 6;
+	int32 Retcode = 12;
+}

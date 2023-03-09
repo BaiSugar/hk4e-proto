@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MonsterForceAlertNotify {
+	enum MonsterForceAlertNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 345;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MonsterEntityId = 5;
+}

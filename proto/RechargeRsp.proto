@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RechargeRsp {
+	enum RechargeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4145;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	string ProductId = 11;
+	bool IsShowMinorsHint = 5;
+}

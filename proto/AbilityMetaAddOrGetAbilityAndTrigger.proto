@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityString.proto";
+
+message AbilityMetaAddOrGetAbilityAndTrigger {
+	AbilityString AbilityOverride = 4;
+	float TriggerArgument = 15;
+	AbilityString AbilityName = 6;
+}

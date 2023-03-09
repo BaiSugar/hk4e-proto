@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message OrderFinishNotify {
+	enum OrderFinishNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4146;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 AddMcoin = 4;
+	uint32 CardProductRemainDays = 3;
+	uint32 OrderId = 5;
+	repeated ItemParam ItemList = 8;
+	string ProductId = 13;
+}

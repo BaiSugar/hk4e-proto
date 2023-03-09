@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintagePresentFinishNoify {
+	enum DAELMFOPJEN {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22633;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PresentId = 7;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DungeonEntryPointInfo.proto";
+import "DungeonEntryInfo.proto";
+
+message DungeonEntryInfoRsp {
+	enum DungeonEntryInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 955;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated DungeonEntryPointInfo DungeonEntryPointList = 5;
+	uint32 RecommendDungeonId = 4;
+	uint32 PointId = 7;
+	repeated DungeonEntryInfo DungeonEntryList = 1;
+	int32 Retcode = 3;
+}

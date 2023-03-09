@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message VintageMarketTraderInfo {
+	repeated ItemParam AvailableItemList = 10;
+	uint32 TraderId = 6;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ShowCommonTipsNotify {
+	enum ShowCommonTipsNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3048;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string Content = 4;
+	uint32 CloseTime = 7;
+	string Title = 8;
+}

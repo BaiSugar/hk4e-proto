@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message MarkEntityInMinMapNotify {
+	enum MarkEntityInMinMapNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 263;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MonsterId = 12;
+	uint32 EntityId = 3;
+	Rotation Position = 13;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityInvokeEntry.proto";
+
+message AbilityInvocationFailNotify {
+	enum AbilityInvocationFailNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1120;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string Reason = 4;
+	uint32 EntityId = 13;
+	AbilityInvokeEntry Invoke = 14;
+}

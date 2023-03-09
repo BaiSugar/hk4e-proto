@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeResource.proto";
+
+message HomeResourceNotify {
+	enum HomeResourceNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4639;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	HomeResource FetterExp = 9;
+	HomeResource HomeCoin = 1;
+}

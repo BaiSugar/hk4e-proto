@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BattlePassSchedule.proto";
+import "BattlePassMission.proto";
+
+message BattlePassAllDataNotify {
+	enum BattlePassAllDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2638;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool HaveCurSchedule = 6;
+	BattlePassSchedule CurSchedule = 15;
+	repeated BattlePassMission MissionList = 3;
+}

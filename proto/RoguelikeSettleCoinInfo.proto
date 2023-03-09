@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RoguelikeSettleCoinInfo {
+	uint32 CellNum = 12;
+	uint32 CoinC = 7;
+	uint32 CoinB = 15;
+}

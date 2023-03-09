@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum InBattleMechanicusCardChallengeState {
+	InBattleMechanicusCardChallengeNone = 0;
+	InBattleMechanicusCardChallengeOnGoing = 1;
+	InBattleMechanicusCardChallengeFail = 2;
+	InBattleMechanicusCardChallengeSuccess = 3;
+}

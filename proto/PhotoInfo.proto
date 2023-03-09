@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PhotoPosData.proto";
+
+message PhotoInfo {
+	repeated PhotoPosData PhotoPosDataList = 13;
+	bool IsContentClosed = 9;
+}

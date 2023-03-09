@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGSkillPreviewInfo.proto";
+
+message GCGSkillPreviewPlayCardInfo {
+	GCGSkillPreviewInfo PlayCardInfo = 15;
+	uint32 TargetCardGuid = 9;
+	uint32 HandCardGuid = 2;
+}

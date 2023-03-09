@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message DynamicSVONode {
+	int32 Area = 13;
+	int64 Index = 11;
+	Rotation ReferPos = 9;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneNpcInfo {
+	uint32 NpcId = 1;
+	uint32 RoomId = 2;
+	uint32 ParentQuestId = 3;
+	uint32 BlockId = 4;
+}

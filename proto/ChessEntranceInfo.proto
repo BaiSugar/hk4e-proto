@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChessMonsterInfo.proto";
+
+message ChessEntranceInfo {
+	repeated ChessMonsterInfo MonsterInfoList = 7;
+	uint32 EntrancePointId = 6;
+	uint32 EntranceIndex = 9;
+}

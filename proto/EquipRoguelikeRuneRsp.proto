@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EquipRoguelikeRuneRsp {
+	enum EquipRoguelikeRuneRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8054;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 RuneList = 13;
+	int32 Retcode = 7;
+}

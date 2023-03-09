@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MassivePropParam {
+	int32 Type = 1;
+	repeated uint32 ReactionInfoList = 2;
+	repeated float ParamList = 3;
+	uint32 SyncFlag = 4;
+}

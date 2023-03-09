@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BeginCameraSceneLookNotify_KeepRotType.proto";
+import "Rotation.proto";
+
+message BeginCameraSceneLookNotify {
+	enum BeginCameraSceneLookNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 279;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsForceWalk = 2;
+	bool IsSetScreenXY = 8;
+	bool IsChangePlayMode = 1;
+	float Duration = 10;
+	BeginCameraSceneLookNotify_KeepRotType KeepRotType = 14;
+	Rotation LookPos = 13;
+	float ScreenY = 5;
+	float CustomRadius = 11;
+	repeated string OtherParams = 12;
+	uint32 EntityId = 167;
+	bool IsSetFollowPos = 4;
+	bool IsAllowInput = 3;
+	uint32 BlendType = 1965;
+	bool IsRecoverKeepCurrent = 15;
+	float BlendDuration = 2004;
+	uint32 DisableProtect = 106;
+	Rotation FollowPos = 7;
+	bool IsAbsFollowPos = 644;
+	float ScreenX = 6;
+	bool IsForce = 9;
+}

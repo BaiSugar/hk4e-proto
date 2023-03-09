@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityInvokeEntry.proto";
+
+message AbilityInvocationsNotify {
+	enum AbilityInvocationsNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1155;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated AbilityInvokeEntry Invokes = 11;
+}

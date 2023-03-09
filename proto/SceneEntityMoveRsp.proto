@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MotionInfo.proto";
+
+message SceneEntityMoveRsp {
+	enum SceneEntityMoveRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 262;
+		EnetChannelId = 1;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SceneTime = 4;
+	uint32 EntityId = 10;
+	uint32 ReliableSeq = 11;
+	int32 Retcode = 15;
+	MotionInfo FailMotion = 6;
+}

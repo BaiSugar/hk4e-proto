@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MassivePropParam.proto";
+
+message MassivePropSyncInfo {
+	int64 Id = 1;
+	repeated MassivePropParam PropList = 2;
+}

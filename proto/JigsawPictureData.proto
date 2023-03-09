@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message JigsawPictureData {
+	uint32 ShortestTime = 12;
+	uint32 LastDuration = 11;
+	bool IsOpen = 4;
+	bool IsFinished = 8;
+}

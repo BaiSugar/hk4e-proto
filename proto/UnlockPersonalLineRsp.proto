@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UnlockPersonalLineRsp {
+	enum UnlockPersonalLineRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 403;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 5;
+	uint32 PersonalLineId = 6;
+	oneof UnlockPersonalLineRsp_ParamOneofCase {
+		uint32 level = 3;
+		uint32 chapter_id = 14;
+	}
+}

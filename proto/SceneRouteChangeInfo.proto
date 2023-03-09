@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RoutePointChangeInfo.proto";
+
+message SceneRouteChangeInfo {
+	bool IsForward = 7;
+	repeated RoutePointChangeInfo PointList = 14;
+	uint32 Type = 11;
+	uint32 RouteId = 6;
+}

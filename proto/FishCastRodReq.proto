@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message FishCastRodReq {
+	enum FishCastRodReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5819;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 RodEntityId = 2;
+	Rotation Pos = 1;
+	uint32 RodId = 15;
+	uint32 BaitId = 8;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeAvatarTalkFinishInfo.proto";
+
+message HomeAvatarTalkFinishInfoNotify {
+	enum HomeAvatarTalkFinishInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4718;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated HomeAvatarTalkFinishInfo AvatarTalkInfoList = 11;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BrickBreakerTwiceStartRsp {
+	enum HKLBALACGIP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23952;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 9;
+}

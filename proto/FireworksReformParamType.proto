@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FireworksReformParamType {
+	FireworksReformParamNone = 0;
+	FireworksReformParamColor = 1;
+	FireworksReformParamHeight = 2;
+	FireworksReformParamSize = 3;
+	FireworksReformParamDensity = 4;
+	FireworksReformParamRotation = 5;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EffigyChallengeV2EnterDungeonReq {
+	enum OHPCHJBJCCG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23798;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 LevelId = 10;
+	uint32 ChallengeModeSkillNo = 12;
+	uint32 ChallengeModeDifficulty = 8;
+}

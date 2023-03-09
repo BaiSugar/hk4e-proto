@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HideAndSeekChooseMapReq {
+	enum ENCLIIBMIJA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8458;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 MapList = 6;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WidgetWeatherWizardDataNotify {
+	enum HLAPCNOKIHB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5947;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ShieldValue = 15;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SetPlayerSignatureReq {
+	enum SetPlayerSignatureReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4013;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	string Signature = 15;
+}

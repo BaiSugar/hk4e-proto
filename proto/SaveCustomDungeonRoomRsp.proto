@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CustomDungeonBlock.proto";
+
+message SaveCustomDungeonRoomRsp {
+	enum SaveCustomDungeonRoomRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6241;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated CustomDungeonBlock ErrorBlockList = 4;
+	int32 Retcode = 8;
+	uint32 RoomId = 9;
+}

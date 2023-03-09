@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGDiceSideType.proto";
+
+message DiceReroll {
+	uint32 ControllerId = 8;
+	repeated GCGDiceSideType DiceSideList = 7;
+	repeated uint32 SelectDiceIndexList = 13;
+}

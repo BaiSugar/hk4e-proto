@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GachaItem.proto";
+
+message DoGachaRsp {
+	enum DoGachaRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1598;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GachaTimesLimit = 7;
+	uint32 NewGachaRandom = 9;
+	uint32 GachaType = 13;
+	uint32 LeftGachaTimes = 4;
+	uint32 CostItemNum = 8;
+	repeated GachaItem GachaItemList = 3;
+	uint32 WishProgress = 12;
+	uint32 DailyGachaTimes = 112;
+	uint32 CostItemId = 5;
+	uint32 WishItemId = 10;
+	uint32 CurScheduleDailyGachaTimes = 475;
+	uint32 TenCostItemNum = 11;
+	int32 Retcode = 14;
+	uint32 GachaTimes = 15;
+	bool IsUnderMinorsRestrict = 1849;
+	bool IsUnderGeneralRestrict = 397;
+	uint32 GachaScheduleId = 2;
+	uint32 WishMaxProgress = 1;
+	uint32 TenCostItemId = 6;
+}

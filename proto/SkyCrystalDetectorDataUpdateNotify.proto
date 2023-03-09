@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SkyCrystalDetectorData.proto";
+
+message SkyCrystalDetectorDataUpdateNotify {
+	enum SkyCrystalDetectorDataUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4265;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	SkyCrystalDetectorData SkyCrystalDetectorData = 12;
+}

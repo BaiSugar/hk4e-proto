@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InBattleMechanicusPickCardReq {
+	enum InBattleMechanicusPickCardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5370;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 GroupId = 9;
+	uint32 CardId = 11;
+	uint32 PlayIndex = 4;
+}

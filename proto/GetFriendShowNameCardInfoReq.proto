@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetFriendShowNameCardInfoReq {
+	enum GetFriendShowNameCardInfoReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4015;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Uid = 1;
+}

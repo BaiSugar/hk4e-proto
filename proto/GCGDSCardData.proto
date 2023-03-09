@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSCardData {
+	uint32 CardId = 7;
+	repeated uint32 ProficiencyRewardTakenIdxList = 15;
+	uint32 FaceType = 2;
+	uint32 Num = 4;
+	uint32 Proficiency = 12;
+	repeated uint32 UnlockFaceTypeList = 10;
+}

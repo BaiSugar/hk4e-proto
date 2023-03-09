@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeAvatarSummonEventInfo {
+	uint32 SuitId = 4;
+	uint32 RandomPosition = 2;
+	uint32 EventId = 3;
+	uint32 AvatarId = 12;
+	uint32 EventOverTime = 14;
+	uint32 Guid = 1;
+}

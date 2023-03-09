@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ClientInputType.proto";
+import "LanternProjectionLevelInfo.proto";
+
+message LanternProjectionInfo {
+	repeated ClientInputType ViewSwitchTipsList = 2;
+	repeated ClientInputType ViewInputTipsList = 14;
+	repeated LanternProjectionLevelInfo LevelList = 11;
+	repeated uint32 OpenStageList = 12;
+}

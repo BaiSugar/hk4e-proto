@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message WinterCampGiveFriendItemReq {
+	enum WinterCampGiveFriendItemReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8528;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated ItemParam ItemList = 5;
+	uint32 Uid = 2;
+}

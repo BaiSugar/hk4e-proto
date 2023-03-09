@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TowerFightRecordPair.proto";
+
+message TowerMonthlyCombatRecord {
+	TowerFightRecordPair HighestDpsAvatrPair = 10;
+	TowerFightRecordPair MostTakeDamageAvatarPair = 8;
+	TowerFightRecordPair MostCastEnergySkillAvatarPair = 1;
+	TowerFightRecordPair MostCastNormalSkillAvatarPair = 11;
+	TowerFightRecordPair MostKillAvatarPair = 4;
+	repeated TowerFightRecordPair MostRevealAvatarList = 7;
+}

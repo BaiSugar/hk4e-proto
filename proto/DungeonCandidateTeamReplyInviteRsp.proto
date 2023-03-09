@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonCandidateTeamReplyInviteRsp {
+	enum DungeonCandidateTeamReplyInviteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 952;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsTransPoint = 2;
+	int32 Retcode = 1;
+}

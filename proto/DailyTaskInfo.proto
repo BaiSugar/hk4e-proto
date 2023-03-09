@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DailyTaskInfo {
+	uint32 FinishProgress = 9;
+	bool IsFinished = 3;
+	uint32 Progress = 7;
+	uint32 DailyTaskId = 5;
+	uint32 RewardId = 14;
+}

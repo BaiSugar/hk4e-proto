@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BrickBreakerPlayerSetAvatarNotify {
+	enum KLPPMKBNEHC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5368;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 CostumeIdList = 6;
+	uint32 Uid = 3;
+	repeated uint32 AvatarIdList = 13;
+}

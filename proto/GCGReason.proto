@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGReason {
+	GCGReasonDefault = 0;
+	GCGReasonEffect = 1;
+	GCGReasonCost = 2;
+	GCGReasonGm = 3;
+	GCGReasonAttack = 4;
+  GCGReasonReboot = 5;
+  GCGReasonPlayCard = 6;
+  GCGReasonQuicklyOnstage = 7;
+  GCGReasonRemoveAfterDie = 8;
+	GCGReasonInit = 9;
+  GCGReasonDamage = 10;
+  GCGReasonHeal = 11;
+  GCGReasonRevive = 12;
+	ODGPMCHEPJN = 13;
+	MHHLAMICEFA = 14;
+	BHLECCJIPIJ = 15;
+	NCCIDJECGCO = 16;
+}

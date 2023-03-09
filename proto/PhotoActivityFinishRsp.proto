@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PhotoActivityFinishRsp {
+	enum PhotoActivityFinishRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8044;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PosId = 10;
+	int32 Retcode = 15;
+}

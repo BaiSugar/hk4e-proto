@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ObstacleInfo.proto";
+
+message PathfindingEnterSceneReq {
+	enum PathfindingEnterSceneReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2320;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 ActivityId = 8;
+	uint32 SceneTagHash = 1;
+	uint32 SceneId = 11;
+	bool IsEditor = 13;
+	uint32 Version = 6;
+	uint32 PolygonId = 3;
+	repeated ObstacleInfo Obstacles = 10;
+}

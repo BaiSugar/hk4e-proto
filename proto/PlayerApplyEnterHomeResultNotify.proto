@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayerApplyEnterHomeResultNotify_Reason.proto";
+
+message PlayerApplyEnterHomeResultNotify {
+	enum PlayerApplyEnterHomeResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4642;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TargetUid = 2;
+	PlayerApplyEnterHomeResultNotify_Reason Reason = 3;
+	bool IsAgreed = 10;
+	string TargetNickname = 9;
+}

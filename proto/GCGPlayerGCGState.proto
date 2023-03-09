@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGPlayerGCGState {
+	bool IsReasouceComplete = 14;
+	uint32 Uid = 15;
+	bool IsGcgStateOpen = 11;
+}

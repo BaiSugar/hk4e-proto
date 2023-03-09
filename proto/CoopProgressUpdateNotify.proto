@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CoopProgressUpdateNotify {
+	enum CoopProgressUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1956;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CurCoopPoint = 5;
+	bool IsHaveProgress = 1;
+}

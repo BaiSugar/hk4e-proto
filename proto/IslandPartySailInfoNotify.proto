@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "IslandPartySailStage.proto";
+
+message IslandPartySailInfoNotify {
+	enum IslandPartySailInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5525;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Progress = 5;
+	uint32 Coin = 1;
+	uint32 KillMonsterCount = 9;
+	IslandPartySailStage Stage = 2;
+}

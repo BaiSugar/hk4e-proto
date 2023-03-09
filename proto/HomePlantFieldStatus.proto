@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum HomePlantFieldStatus {
+	HomeFieldStatueNone = 0;
+	HomeFieldStatueSeed = 1;
+	HomeFieldStatueSprout = 2;
+	HomeFieldStatueGather = 3;
+}

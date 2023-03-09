@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message SceneAvatarStaminaStepRsp {
+	enum SceneAvatarStaminaStepRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 224;
+		EnetChannelId = 1;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	bool UseClientRot = 3;
+	Rotation Rot = 6;
+}

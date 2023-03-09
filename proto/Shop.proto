@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ShopMcoinProduct.proto";
+import "ShopConcertProduct.proto";
+import "ShopCardProduct.proto";
+import "ShopGoods.proto";
+
+message Shop {
+	repeated ShopMcoinProduct McoinProductList = 6;
+	uint32 CityId = 10;
+	repeated ShopConcertProduct ConcertProductList = 13;
+	uint32 NextRefreshTime = 14;
+	repeated ShopCardProduct CardProductList = 9;
+	uint32 CityReputationLevel = 4;
+	uint32 ShopType = 5;
+	repeated ShopGoods GoodsList = 15;
+}

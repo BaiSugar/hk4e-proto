@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message QuestRenameAvatarReq {
+	enum AMBGOMJIBBP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 467;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsCheck = 6;
+	uint32 RenameId = 9;
+	string AvatarName = 11;
+}

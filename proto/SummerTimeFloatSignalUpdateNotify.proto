@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message SummerTimeFloatSignalUpdateNotify {
+	enum SummerTimeFloatSignalUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8586;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	Rotation Position = 2;
+	bool IsTransferAnchor = 11;
+	uint32 FloatSignalId = 14;
+}

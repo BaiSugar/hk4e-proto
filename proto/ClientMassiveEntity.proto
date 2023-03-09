@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WaterInfo.proto";
+import "GrassInfo.proto";
+import "BoxInfo.proto";
+
+message ClientMassiveEntity {
+	uint32 EntityType = 1;
+	uint32 ConfigId = 2;
+	int64 ObjId = 3;
+	oneof ClientMassiveEntity_EntityInfoOneofCase {
+		WaterInfo water_info = 4;
+		GrassInfo grass_info = 5;
+		BoxInfo box_info = 6;
+	}
+}

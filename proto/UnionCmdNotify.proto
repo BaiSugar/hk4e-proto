@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "UnionCmd.proto";
+
+message UnionCmdNotify {
+	enum UnionCmdNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 69;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated UnionCmd CmdList = 11;
+}

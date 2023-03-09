@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGOperation.proto";
+
+message GCGOperationReq {
+	enum GMDGEMKCKPF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7487;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 RedirectUid = 3;
+	uint32 OpSeq = 6;
+	GCGOperation Op = 11;
+}

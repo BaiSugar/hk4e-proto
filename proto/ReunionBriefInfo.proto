@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ReunionPrivilegeInfo.proto";
+
+message ReunionBriefInfo {
+	uint32 PrivilegeId = 15;
+	uint32 FinishTime = 5;
+	uint32 MissionId = 11;
+	bool MissionHasReward = 14;
+	ReunionPrivilegeInfo PrivilegeInfo = 8;
+	bool IsTakenFirstGift = 13;
+	string Version = 7;
+	uint32 FirstGiftRewardId = 9;
+	uint32 FirstDayStartTime = 1;
+	uint32 StartTime = 10;
+	uint32 SignInConfigId = 6;
+	bool SignInHasReward = 2;
+}

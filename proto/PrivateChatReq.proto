@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PrivateChatReq {
+	enum PrivateChatReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4955;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 TargetUid = 11;
+	oneof PrivateChatReq_ContentOneofCase {
+		string text = 15;
+		uint32 icon = 9;
+	}
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeFurnitureMakeReq {
+	enum TakeFurnitureMakeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4825;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Index = 6;
+	bool IsFastFinish = 15;
+	uint32 MakeId = 9;
+}

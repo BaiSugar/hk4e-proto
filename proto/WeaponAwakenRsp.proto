@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WeaponAwakenRsp {
+	enum WeaponAwakenRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 685;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 11;
+	uint32 TargetWeaponAwakenLevel = 3;
+	uint64 TargetWeaponGuid = 2;
+	uint64 AvatarGuid = 5;
+	map<uint32, uint32> OldAffixLevelMap = 6;
+	map<uint32, uint32> CurAffixLevelMap = 12;
+}

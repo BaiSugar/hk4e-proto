@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonRestartRsp {
+	enum DungeonRestartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 956;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DungeonId = 6;
+	int32 Retcode = 4;
+	uint32 PointId = 1;
+}

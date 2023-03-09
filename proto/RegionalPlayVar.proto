@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RegionalPlayVar {
+	float BaseValue = 4;
+	float MaxValue = 15;
+	uint32 Type = 8;
+	float Value = 12;
+}

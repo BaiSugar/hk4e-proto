@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FungusCaptureSettleNotify {
+	enum MIBABDMJBJL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5585;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsSuccess = 4;
+}

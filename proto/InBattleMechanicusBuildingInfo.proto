@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InBattleMechanicusBuildingInfo {
+	uint32 BuildingId = 6;
+	uint32 Level = 3;
+	uint32 RefundPoints = 14;
+	uint32 CostPoints = 4;
+}

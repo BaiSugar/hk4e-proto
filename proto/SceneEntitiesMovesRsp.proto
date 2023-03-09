@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "EntityMoveFailInfo.proto";
+
+message SceneEntitiesMovesRsp {
+	enum SceneEntitiesMovesRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 293;
+		EnetChannelId = 1;
+		EnetIsReliable = 0;
+	}
+
+	repeated EntityMoveFailInfo EntityMoveFailInfoList = 5;
+}

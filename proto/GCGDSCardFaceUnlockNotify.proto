@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSCardFaceUnlockNotify {
+	enum KLACDDBMIDG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7126;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FaceType = 8;
+	uint32 CardId = 6;
+}

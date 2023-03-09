@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InBattleMechanicusConfirmCardNotify {
+	enum InBattleMechanicusConfirmCardNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5378;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PlayerUid = 2;
+	uint32 CardId = 1;
+	uint32 PlayIndex = 7;
+	uint32 GroupId = 12;
+}

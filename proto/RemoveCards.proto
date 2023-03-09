@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGZoneType.proto";
+import "GCGReason.proto";
+
+message RemoveCards {
+	repeated uint32 CardGuidList = 14;
+	GCGZoneType Zone = 9;
+	uint32 ControllerId = 4;
+	GCGReason Reason = 6;
+}

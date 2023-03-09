@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SalvageEscortInfo {
+	uint32 MaxBoxCount = 6;
+	uint32 BoxCount = 2;
+	uint32 MaxMonsterCount = 4;
+	uint32 MonsterCount = 1;
+}

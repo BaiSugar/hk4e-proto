@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerWorldSceneInfo {
+	repeated uint32 SceneTagIdList = 13;
+	bool IsLocked = 5;
+	uint32 SceneId = 11;
+}

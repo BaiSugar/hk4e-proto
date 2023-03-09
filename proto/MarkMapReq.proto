@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MarkMapReq_Operation.proto";
+import "MapMarkPoint.proto";
+
+message MarkMapReq {
+	enum MarkMapReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3176;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	MarkMapReq_Operation Op = 3;
+	MapMarkPoint Old = 7;
+	MapMarkPoint Mark = 10;
+}

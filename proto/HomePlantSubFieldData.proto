@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomePlantFieldStatus.proto";
+
+message HomePlantSubFieldData {
+	uint32 EndTime = 15;
+	repeated uint32 EntityIdList = 4;
+	uint32 HomeGatherId = 10;
+	HomePlantFieldStatus FieldStatus = 8;
+	uint32 SeedId = 6;
+}

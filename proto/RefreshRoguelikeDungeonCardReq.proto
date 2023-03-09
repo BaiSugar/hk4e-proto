@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RefreshRoguelikeDungeonCardReq {
+	enum RefreshRoguelikeDungeonCardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8070;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

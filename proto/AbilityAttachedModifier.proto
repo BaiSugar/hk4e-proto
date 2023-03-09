@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityAttachedModifier {
+	bool IsInvalid = 1;
+	uint32 OwnerEntityId = 2;
+	uint32 InstancedModifierId = 3;
+	bool IsServerbuffModifier = 4;
+	int32 AttachNameHash = 5;
+}

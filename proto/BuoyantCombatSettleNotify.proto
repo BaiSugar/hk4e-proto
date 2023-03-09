@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BuoyantCombatSettleInfo.proto";
+
+message BuoyantCombatSettleNotify {
+	enum BuoyantCombatSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8267;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	BuoyantCombatSettleInfo SettleInfo = 5;
+	uint32 GalleryId = 15;
+}

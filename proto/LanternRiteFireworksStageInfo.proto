@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LanternRiteFireworksChallengeInfo.proto";
+
+message LanternRiteFireworksStageInfo {
+	bool IsOpen = 7;
+	repeated LanternRiteFireworksChallengeInfo ChallengeInfoList = 9;
+	uint32 StageId = 15;
+}

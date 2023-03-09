@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DigMarkPoint.proto";
+
+message DigActivityMarkPointChangeNotify {
+	enum DigActivityMarkPointChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8508;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated DigMarkPoint DigMarkPointList = 4;
+}

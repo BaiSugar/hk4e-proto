@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetAuthkeyReq {
+	enum GetAuthkeyReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1470;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 AuthkeyVer = 6;
+	string AuthAppid = 14;
+	uint32 SignType = 8;
+}

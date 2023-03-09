@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "OnlinePlayerInfo.proto";
+
+message ScenePlayerInfo {
+	string Name = 10;
+	uint32 Uid = 13;
+	uint32 PeerId = 5;
+	uint32 SceneId = 4;
+	bool IsConnected = 7;
+	OnlinePlayerInfo OnlinePlayerInfo = 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+enum CodexType {
+	CodexNone = 0;
+	CodexQuest = 1;
+	CodexWeapon = 2;
+	CodexAnimal = 3;
+	CodexMaterial = 4;
+	CodexBooks = 5;
+	CodexPushtips = 6;
+	CodexView = 7;
+	CodexReliquary = 8;
+}

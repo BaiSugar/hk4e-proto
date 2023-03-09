@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TowerGetFloorStarRewardRsp {
+	enum TowerGetFloorStarRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2458;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 11;
+	uint32 FloorId = 12;
+}

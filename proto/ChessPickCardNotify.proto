@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChessNormalCardInfo.proto";
+
+message ChessPickCardNotify {
+	enum ChessPickCardNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5304;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	ChessNormalCardInfo NormalCardInfo = 7;
+	uint32 CurseCardId = 5;
+}

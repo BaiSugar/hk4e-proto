@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MainCoop_Status.proto";
+
+message MainCoop {
+	uint32 SelfConfidence = 3;
+	repeated uint32 SavePointIdList = 6;
+	uint32 Id = 15;
+	map<uint32, int32> NormalVarMap = 12;
+	MainCoop_Status Status = 8;
+	map<uint32, int32> TempVarMap = 2;
+	map<uint32, uint32> SeenEndingMap = 4;
+}

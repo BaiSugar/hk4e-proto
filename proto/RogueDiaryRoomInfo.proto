@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Uint32Pair.proto";
+
+message RogueDiaryRoomInfo {
+	repeated Uint32Pair MonsterList = 8;
+	bool IsBoss = 4;
+	uint32 ConfigId = 14;
+}

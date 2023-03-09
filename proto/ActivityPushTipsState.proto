@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ActivityPushTipsState {
+  ActivityPushTipsStateNone = 0;
+  ActivityPushTipsStateStart = 1;
+  ActivityPushTipsStateRead = 2;
+}

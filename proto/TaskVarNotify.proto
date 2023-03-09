@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TaskVar.proto";
+
+message TaskVarNotify {
+	enum TaskVarNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 177;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated TaskVar TaskVarList = 9;
+}

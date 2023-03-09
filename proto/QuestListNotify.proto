@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Quest.proto";
+
+message QuestListNotify {
+	enum QuestListNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 405;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated Quest QuestList = 13;
+}

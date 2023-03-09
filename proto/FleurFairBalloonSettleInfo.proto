@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BalloonSettleInfo.proto";
+
+message FleurFairBalloonSettleInfo {
+	BalloonSettleInfo SettleInfo = 13;
+	bool IsNewRecord = 8;
+}

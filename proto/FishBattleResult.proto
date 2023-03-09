@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FishBattleResult {
+	None = 0;
+	Succ = 1;
+	Fail = 2;
+	Timeout = 3;
+	Cancel = 4;
+	Exit = 5;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetBattlePassProductRsp {
+	enum GetBattlePassProductRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2625;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string PriceTier = 15;
+	int32 Retcode = 4;
+	uint32 BattlePassProductPlayType = 9;
+	uint32 CurScheduleId = 6;
+	string ProductId = 7;
+}

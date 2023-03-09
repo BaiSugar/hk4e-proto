@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FurnitureMakeData {
+	uint32 DurTime = 5;
+	uint32 MakeId = 6;
+	uint32 BeginTime = 13;
+	uint32 AccelerateTime = 9;
+	uint32 Index = 10;
+	uint32 AvatarId = 1;
+}

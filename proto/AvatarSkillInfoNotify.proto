@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarSkillInfo.proto";
+
+message AvatarSkillInfoNotify {
+	enum AvatarSkillInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1070;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, AvatarSkillInfo> SkillMap = 2;
+	uint64 Guid = 4;
+}

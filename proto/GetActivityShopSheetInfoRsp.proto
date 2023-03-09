@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ActivityShopSheetInfo.proto";
+
+message GetActivityShopSheetInfoRsp {
+	enum GetActivityShopSheetInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 770;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ShopType = 7;
+	repeated ActivityShopSheetInfo SheetInfoList = 10;
+	int32 Retcode = 5;
+}

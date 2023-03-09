@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GearLevelData {
+	uint32 ShortestTime = 1;
+	uint32 OpenTime = 4;
+	uint32 LevelId = 7;
+	uint32 LastDuration = 12;
+	bool IsFinished = 13;
+	bool IsOpen = 9;
+}

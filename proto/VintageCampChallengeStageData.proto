@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "VintageCampChallengeLevelData.proto";
+
+message VintageCampChallengeStageData {
+	map<uint32, VintageCampChallengeLevelData> CampLevelMap = 1;
+	bool IsOpen = 13;
+	uint32 MaxFinishedLevel = 7;
+	bool IsFinish = 4;
+	uint32 StageId = 9;
+	uint32 OpenTime = 10;
+}

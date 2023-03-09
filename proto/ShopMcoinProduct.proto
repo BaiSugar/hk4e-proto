@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ShopMcoinProduct {
+	string ProductId = 1;
+	string PriceTier = 2;
+	uint32 McoinBase = 3;
+	uint32 McoinNonFirst = 4;
+	uint32 McoinFirst = 5;
+	uint32 BoughtNum = 6;
+	bool IsAudit = 7;
+}

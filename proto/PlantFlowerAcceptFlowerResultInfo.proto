@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlantFlowerAcceptFlowerResultInfo {
+	map<uint32, uint32> UnacceptFlowerNumMap = 9;
+	uint32 Uid = 10;
+	map<uint32, uint32> AcceptFlowerNumMap = 4;
+}

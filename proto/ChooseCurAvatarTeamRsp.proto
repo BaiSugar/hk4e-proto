@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChooseCurAvatarTeamRsp {
+	enum ChooseCurAvatarTeamRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1770;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 2;
+	uint32 CurTeamId = 8;
+}

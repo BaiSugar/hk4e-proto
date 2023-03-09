@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LuaSetOptionNotify_LuaOptionType.proto";
+
+message LuaSetOptionNotify {
+	enum LuaSetOptionNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 395;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string LuaSetParam = 4;
+	LuaSetOptionNotify_LuaOptionType OptionType = 14;
+}

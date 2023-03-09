@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ShowClientTutorialNotify {
+	enum ShowClientTutorialNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3381;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TutorialId = 10;
+}

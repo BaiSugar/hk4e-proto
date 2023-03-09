@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FlightActivityRestartRsp {
+	enum FlightActivityRestartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2071;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ScheduleId = 6;
+	int32 Retcode = 13;
+	uint32 GroupId = 12;
+}

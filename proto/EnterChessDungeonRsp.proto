@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EnterChessDungeonRsp {
+	enum EnterChessDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8741;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MapId = 1;
+	int32 Retcode = 4;
+}

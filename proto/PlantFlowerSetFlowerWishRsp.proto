@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlantFlowerSetFlowerWishRsp {
+	enum PlantFlowerSetFlowerWishRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8902;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ScheduleId = 4;
+	int32 Retcode = 15;
+}

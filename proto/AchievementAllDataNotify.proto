@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Achievement.proto";
+
+message AchievementAllDataNotify {
+	enum AchievementAllDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2688;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 RewardTakenGoalIdList = 8;
+	repeated Achievement AchievementList = 4;
+}

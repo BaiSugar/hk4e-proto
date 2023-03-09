@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeAvatarTalkFinishInfo {
+	uint32 AvatarId = 11;
+	repeated uint32 FinishTalkIdList = 7;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "StoreType.proto";
+import "TrifleItem.proto";
+
+message PlayerStoreNotify {
+	enum PlayerStoreNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 605;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated TrifleItem ItemList = 5;
+	uint32 WeightLimit = 6;
+	StoreType StoreType = 10;
+}

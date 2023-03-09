@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RogueSwitchAvatarReq {
+	enum RogueSwitchAvatarReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8262;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 CurAvatarGuid = 15;
+	repeated uint64 OnstageAvatarGuidList = 14;
+	uint32 CellId = 8;
+	uint32 DungeonId = 1;
+}

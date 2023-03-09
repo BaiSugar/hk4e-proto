@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneDataNotify {
+	enum SceneDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3295;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated string LevelConfigNameList = 6;
+	repeated uint32 SceneTagIdList = 8;
+}

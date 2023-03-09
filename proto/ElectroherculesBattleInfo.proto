@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ElectroherculesBattleStageInfo.proto";
+
+message ElectroherculesBattleInfo {
+	repeated ElectroherculesBattleStageInfo StageInfoList = 7;
+	bool pdpfimhpajd = 14;
+}

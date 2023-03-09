@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ServerAnnounceRevokeNotify {
+	enum ServerAnnounceRevokeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2140;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 ConfigIdList = 12;
+}

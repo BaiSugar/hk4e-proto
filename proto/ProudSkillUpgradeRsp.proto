@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ProudSkillUpgradeRsp {
+	enum ProudSkillUpgradeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1014;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ProudSkillId = 8;
+	uint64 AvatarGuid = 11;
+	int32 Retcode = 5;
+}

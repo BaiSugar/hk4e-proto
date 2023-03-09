@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HuntingPair.proto";
+import "HuntingOfferData.proto";
+
+message GetCityHuntingOfferRsp {
+	enum GetCityHuntingOfferRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4341;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 10;
+	uint32 NextRefreshTime = 8;
+	uint32 CurWeekFinishedCount = 14;
+	HuntingPair OngoingHuntingPair = 7;
+	repeated HuntingOfferData HuntingOfferList = 11;
+	uint32 CityId = 9;
+}

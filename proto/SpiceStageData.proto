@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SpiceStageData {
+	bool IsOpen = 10;
+	uint32 SuccessTimes = 3;
+	uint32 StageId = 9;
+}

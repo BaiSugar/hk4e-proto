@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EvtAvatarStandUpNotify {
+	enum EvtAvatarStandUpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 336;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 ChairId = 11;
+	int32 PerformID = 14;
+	int32 Direction = 5;
+	uint32 EntityId = 4;
+}

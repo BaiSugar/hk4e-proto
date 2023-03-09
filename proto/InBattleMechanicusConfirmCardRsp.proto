@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InBattleMechanicusConfirmCardRsp {
+	enum InBattleMechanicusConfirmCardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5329;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 3;
+	uint32 GroupId = 12;
+	uint32 PlayIndex = 11;
+	uint32 CardId = 6;
+}

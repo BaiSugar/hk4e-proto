@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ScenePlayGuestReplyInviteReq {
+	enum ScenePlayGuestReplyInviteReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4430;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 PlayId = 9;
+	bool IsAgree = 1;
+}

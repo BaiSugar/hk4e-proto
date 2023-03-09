@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ExpeditionState {
+	ExpeditionNone = 0;
+	ExpeditionStarted = 1;
+	ExpeditionFinished = 2;
+	ExpeditionRewarded = 3;
+	ExpeditionLocked = 4;
+}

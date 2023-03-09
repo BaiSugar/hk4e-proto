@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "UgcMusicTrack.proto";
+
+message MusicRecord {
+	repeated UgcMusicTrack MusicTrackList = 3;
+	uint32 MusicId = 2;
+}

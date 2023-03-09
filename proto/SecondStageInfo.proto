@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SecondStageInfo {
+	map<uint32, uint32> AnimalCountMap = 7;
+	uint32 TotalNum = 14;
+	uint32 CaptureAnimalNum = 1;
+}

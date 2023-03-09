@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TreasureMapRegionInfo.proto";
+import "TreasureMapBonusChallengeInfo.proto";
+
+message TreasureMapActivityDetailInfo {
+	bool IsMpChallengeTouched = 6;
+	uint32 TotalMpSpotNum = 14;
+	repeated TreasureMapRegionInfo RegionInfoList = 7;
+	uint32 CurrencyNum = 1;
+	uint32 MinOpenPlayerLevel = 3;
+	uint32 ActiveRegionIndex = 2;
+	repeated TreasureMapBonusChallengeInfo BonusChallengeList = 15;
+	uint32 PreviewRewardId = 12;
+	uint32 TreasureCloseTime = 5;
+}

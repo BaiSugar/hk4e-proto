@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "VehicleLocationInfo.proto";
+import "PlayerLocationInfo.proto";
+
+message ScenePlayerLocationNotify {
+	enum ScenePlayerLocationNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 278;
+		EnetChannelId = 1;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SceneId = 1;
+	repeated VehicleLocationInfo VehicleLocList = 3;
+	repeated PlayerLocationInfo PlayerLocList = 12;
+}

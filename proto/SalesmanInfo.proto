@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SalesmanStatusType.proto";
+
+message SalesmanInfo {
+	SalesmanStatusType Status = 4;
+	uint32 LastDeliverTime = 7;
+	uint32 SpecialRewardPreviewId = 6;
+	uint32 DayIndex = 8;
+	bool IsTodayHasDelivered = 15;
+	map<uint32, uint32> SelectedRewardIdMap = 13;
+	uint32 CondDayCount = 11;
+	bool IsHasTakenSpecialReward = 5;
+	uint32 DayRewardId = 2;
+	uint32 DeliverCount = 9;
+}

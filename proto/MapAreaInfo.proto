@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MapAreaInfo {
+	uint32 MapAreaId = 1;
+	bool IsOpen = 2;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintagePresentLevelData {
+	bool IsOpen = 2;
+	uint32 StageId = 7;
+	uint32 PresentId = 5;
+	bool IsFinish = 3;
+}

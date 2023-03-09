@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SceneGalleryInfo.proto";
+
+message GetAllSceneGalleryInfoRsp {
+	enum GetAllSceneGalleryInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5570;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	repeated SceneGalleryInfo GalleryInfoList = 8;
+}

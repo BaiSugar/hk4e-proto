@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ActivityScheduleInfo.proto";
+
+message GetActivityScheduleRsp {
+	enum GetActivityScheduleRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2015;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 RemainFlySeaLampNum = 10;
+	int32 Retcode = 9;
+	repeated ActivityScheduleInfo ActivityScheduleList = 12;
+}

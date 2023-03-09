@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ScenePlayGuestReplyNotify {
+	enum ScenePlayGuestReplyNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4412;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GuestUid = 15;
+	uint32 PlayId = 12;
+	bool IsAgree = 10;
+}

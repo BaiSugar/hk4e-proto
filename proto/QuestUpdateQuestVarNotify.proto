@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message QuestUpdateQuestVarNotify {
+	enum QuestUpdateQuestVarNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 500;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ParentQuestId = 11;
+	uint32 ParentQuestVarSeq = 14;
+	repeated int32 QuestVar = 7;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGPhaseType {
+	GCGPhaseInvalid = 0;
+	GCGPhaseStart = 1;
+	GCGPhaseDraw = 2;
+	GCGPhaseOnStage = 3;
+	GCGPhaseDice = 4;
+	GCGPhaseMain = 5;
+	GCGPhaseEnd = 6;
+	GCGPhaseDie = 7;
+	GCGPhaseFin = 8;
+	GCGPhasePreMain = 9;
+	GCGPhaseReroll = 10;
+}

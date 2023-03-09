@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FurnitureMakeSlot.proto";
+import "ItemParam.proto";
+
+message TakeFurnitureMakeRsp {
+	enum TakeFurnitureMakeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4806;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ItemParam ReturnItemList = 7;
+	FurnitureMakeSlot FurnitureMakeSlot = 6;
+	uint32 MakeId = 4;
+	repeated ItemParam OutputItemList = 1;
+	int32 Retcode = 10;
+}

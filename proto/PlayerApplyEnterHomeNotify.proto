@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "OnlinePlayerInfo.proto";
+
+message PlayerApplyEnterHomeNotify {
+	enum PlayerApplyEnterHomeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4771;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	OnlinePlayerInfo SrcPlayerInfo = 7;
+	uint32 SrcAppId = 13;
+}

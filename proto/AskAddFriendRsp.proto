@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AskAddFriendRsp {
+	enum AskAddFriendRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4074;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 Retcode = 11;
+	uint32 Param = 13;
+	uint32 TargetUid = 10;
+}

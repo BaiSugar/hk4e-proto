@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GravenInnocenceRaceRestartRsp {
+	enum KALBMOGIAAD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24627;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 12;
+	uint32 GalleryId = 8;
+}

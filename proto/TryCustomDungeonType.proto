@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum TryCustomDungeonType {
+	TryCustomDungeonNone = 0;
+	TryCustomDungeonRoom = 1;
+	TryCustomDungeonAll = 2;
+	TryCustomDungeonOfficialPlay = 3;
+}

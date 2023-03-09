@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGSkillPreviewReactionInfo {
+	uint32 TargetElement = 9;
+	uint32 SourceElement = 10;
+}

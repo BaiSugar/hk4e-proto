@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGGameBriefData.proto";
+
+message GCGGameBriefDataNotify {
+	enum BKKLKPMDKMP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7654;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	GCGGameBriefData GcgBriefData = 4;
+	bool IsNewGame = 12;
+}

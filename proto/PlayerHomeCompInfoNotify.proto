@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayerHomeCompInfo.proto";
+
+message PlayerHomeCompInfoNotify {
+	enum PlayerHomeCompInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4844;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	PlayerHomeCompInfo CompInfo = 5;
+}

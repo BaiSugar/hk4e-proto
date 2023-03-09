@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message IrodoriEditFlowerCombinationRsp {
+	enum IrodoriEditFlowerCombinationRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8542;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 2;
+	bool IsAlreadyFinished = 10;
+	bool IsCanTakeReward = 1;
+}

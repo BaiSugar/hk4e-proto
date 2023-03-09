@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BartenderLevelProgressNotify {
+	enum BartenderLevelProgressNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8317;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 LevelId = 13;
+	uint32 Score = 3;
+	bool IsNewRecord = 10;
+	bool IsFinish = 5;
+}

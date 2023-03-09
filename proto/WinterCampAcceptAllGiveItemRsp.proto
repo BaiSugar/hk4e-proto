@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WinterCampAcceptItemResultInfo.proto";
+
+message WinterCampAcceptAllGiveItemRsp {
+	enum WinterCampAcceptAllGiveItemRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8366;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated WinterCampAcceptItemResultInfo AcceptItemResultInfo = 1;
+	int32 Retcode = 6;
+}

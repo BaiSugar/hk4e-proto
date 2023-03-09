@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneGalleryInstableSprayBuffInfo {
+	uint32 BuffId = 9;
+	uint64 BuffMaxTime = 3;
+	uint64 BuffEndTime = 8;
+}

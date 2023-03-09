@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ElectroherculesBattleSelectDifficultyRsp {
+	enum AOIIIGEEGIA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24683;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	uint32 GalleryId = 7;
+	uint32 Diffculty = 1;
+	uint32 StageId = 10;
+}

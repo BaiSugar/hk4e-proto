@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LocationInfo.proto";
+import "WidgetCreatorOpType.proto";
+
+message CreatorInfo {
+	uint32 EntityId = 9;
+	LocationInfo LocationInfo = 12;
+	WidgetCreatorOpType OpType = 5;
+}

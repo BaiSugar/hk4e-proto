@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ShellInfo {
+	uint32 ShellId = 1;
+}

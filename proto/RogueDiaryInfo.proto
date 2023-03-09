@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueDiaryProgress.proto";
+import "RogueDiaryStageInfo.proto";
+
+message RogueDiaryInfo {
+	RogueDiaryProgress CurProgress = 5;
+	repeated RogueDiaryStageInfo StageList = 8;
+	bool IsContentClosed = 1;
+	bool IsHaveProgress = 13;
+}

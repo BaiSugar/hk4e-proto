@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetAllMailNotify {
+	enum LDGGOIEFPDE {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1416;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsCollected = 11;
+}

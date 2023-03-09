@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RogueDungeonPlayerCellChangeNotify {
+	enum RogueDungeonPlayerCellChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8954;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CellId = 9;
+	uint32 OldCellId = 1;
+}

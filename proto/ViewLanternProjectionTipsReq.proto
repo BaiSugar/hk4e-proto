@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ClientInputType.proto";
+
+message ViewLanternProjectionTipsReq {
+	enum ViewLanternProjectionTipsReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8102;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsInputTips = 2;
+	ClientInputType InputType = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CataLogGlobalWatcherFinishedData {
+	uint32 CatalogType = 5;
+	repeated uint32 FinishedGlobalWatcherList = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProfilePicture.proto";
+
+message HomeGroupPlayerInfo {
+	string Nickname = 15;
+	uint32 Uid = 3;
+	uint32 PlayerLevel = 14;
+	string OnlineId = 11;
+	ProfilePicture ProfilePicture = 2;
+	string PsnId = 1;
+}

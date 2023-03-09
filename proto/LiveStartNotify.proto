@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LiveStartNotify {
+	enum LiveStartNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 873;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 LiveId = 10;
+}

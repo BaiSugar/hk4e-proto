@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CommonPlayerTipsNotify {
+	enum CommonPlayerTipsNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8996;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 NotifyType = 11;
+	repeated string TextMapIdList = 14;
+}

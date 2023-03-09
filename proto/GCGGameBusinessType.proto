@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGGameBusinessType {
+	GCGGameNone = 0;
+	GCGGameGm = 1;
+	GCGGameMatch = 2;
+	GCGGamePvp = 3;
+	GCGGameTavernChallenge = 4;
+	GCGGameConstChallenge = 5;
+	GCGGameWorldChallenge = 6;
+	GCGGameBossChallenge = 7;
+	GCGGameWeekChallenge = 8;
+	GCGGameBreakChallenge = 9;
+	GCGGameQuest = 10;
+	GCGGameGuideGroup = 11;
+	KOGBPIPKHNF = 12;
+}

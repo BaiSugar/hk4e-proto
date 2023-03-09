@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LocationInfo.proto";
+import "CreatorInfo.proto";
+
+message WidgetDoBagReq {
+	enum WidgetDoBagReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4255;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 MaterialId = 12;
+	oneof WidgetDoBagReq_OpInfoOneofCase {
+		LocationInfo location_info = 135;
+		CreatorInfo widget_creator_info = 362;
+	}
+}

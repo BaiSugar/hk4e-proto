@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProfilePicture.proto";
+
+message FleurFairPlayerStatInfo {
+	int32 Param = 4;
+	ProfilePicture ProfilePicture = 14;
+	string OnlineId = 3;
+	string NickName = 5;
+	uint32 StatId = 2;
+	uint32 HeadImage = 8;
+	uint32 Uid = 13;
+}

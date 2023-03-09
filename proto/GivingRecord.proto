@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GivingRecord {
+	bool IsGadgetGiving = 6;
+	uint32 GroupId = 14;
+	uint32 GivingId = 4;
+	uint32 ConfigId = 7;
+	uint32 LastGroupId = 8;
+	bool IsFinished = 1;
+	map<uint32, uint32> MaterialCntMap = 10;
+}

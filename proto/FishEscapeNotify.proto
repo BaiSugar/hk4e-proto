@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "FishEscapeReason.proto";
+
+message FishEscapeNotify {
+	enum FishEscapeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5835;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	Rotation Pos = 9;
+	uint32 Uid = 15;
+	repeated uint32 FishIdList = 5;
+	FishEscapeReason Reason = 7;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DestroyMaterialRsp {
+	enum DestroyMaterialRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 637;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 ItemIdList = 7;
+	int32 Retcode = 12;
+	repeated uint32 ItemCountList = 13;
+}

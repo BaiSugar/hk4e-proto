@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HostPlayerNotify {
+	enum HostPlayerNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 387;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 HostUid = 4;
+	uint32 HostPeerId = 5;
+}

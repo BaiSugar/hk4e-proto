@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TransmitReason.proto";
+
+message ClientTransmitRsp {
+	enum ClientTransmitRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 253;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	TransmitReason Reason = 12;
+	int32 Retcode = 7;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WatcherChangeNotify {
+	enum WatcherChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2255;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 NewWatcherList = 4;
+	repeated uint32 RemovedWatcherList = 3;
+}

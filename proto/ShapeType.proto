@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ShapeType {
+	ObstacleShapeCapsule = 0;
+	ObstacleShapeBox = 1;
+}

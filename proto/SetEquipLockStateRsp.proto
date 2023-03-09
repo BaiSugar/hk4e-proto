@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SetEquipLockStateRsp {
+	enum SetEquipLockStateRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 611;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	bool IsLocked = 4;
+	uint64 TargetEquipGuid = 11;
+}

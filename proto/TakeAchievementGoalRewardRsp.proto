@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message TakeAchievementGoalRewardRsp {
+	enum TakeAchievementGoalRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2693;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	repeated ItemParam ItemList = 6;
+	repeated uint32 IdList = 15;
+}

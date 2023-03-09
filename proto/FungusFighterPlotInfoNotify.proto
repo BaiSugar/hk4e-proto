@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FungusFighterPlotInfoNotify {
+	enum MDJGOPHLFOJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24391;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 FungusIdList = 1;
+	uint32 DungeonId = 12;
+}

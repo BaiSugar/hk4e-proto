@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForwardType.proto";
+import "Rotation.proto";
+
+message EvtAvatarUpdateFocusNotify {
+	enum EvtAvatarUpdateFocusNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 318;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 EntityId = 5;
+	ForwardType ForwardType = 15;
+	Rotation FocusForward = 3;
+}

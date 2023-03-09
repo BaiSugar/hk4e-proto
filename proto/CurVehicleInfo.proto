@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CurVehicleInfo {
+	uint32 EntityId = 1;
+	uint32 Pos = 2;
+}

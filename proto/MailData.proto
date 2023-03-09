@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MailTextContent.proto";
+import "MailCollectState.proto";
+import "MailItem.proto";
+
+message MailData {
+	uint32 MailId = 1;
+	MailTextContent MailTextContent = 4;
+	repeated MailItem ItemList = 7;
+	uint32 SendTime = 8;
+	uint32 ExpireTime = 9;
+	uint32 Importance = 10;
+	bool IsRead = 11;
+	bool IsAttachmentGot = 12;
+	uint32 ConfigId = 13;
+	repeated string ArgumentList = 14;
+	MailCollectState CollectState = 15;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MatchPlayerInfo.proto";
+
+message GCGMatchInfo {
+	repeated MatchPlayerInfo PlayerList = 5;
+}

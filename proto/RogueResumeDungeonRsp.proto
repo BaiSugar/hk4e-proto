@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RogueResumeDungeonRsp {
+	enum RogueResumeDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8241;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 StageId = 1;
+	int32 Retcode = 11;
+}

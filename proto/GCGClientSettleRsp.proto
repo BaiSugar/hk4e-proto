@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGClientSettleRsp {
+	enum MPINNEEFPFP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7490;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	uint32 CloseTime = 7;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RefreshRoguelikeDungeonCardRsp {
+	enum RefreshRoguelikeDungeonCardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8302;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 9;
+	repeated uint32 ResCardList = 12;
+}

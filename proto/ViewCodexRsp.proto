@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CodexTypeData.proto";
+
+message ViewCodexRsp {
+	enum ViewCodexRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4209;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 PushTipsRewardList = 14;
+	repeated uint32 RecentViewedPushtipsList = 13;
+	repeated CodexTypeData TypeDataList = 8;
+	int32 Retcode = 10;
+	repeated uint32 PushTipsReadList = 7;
+}

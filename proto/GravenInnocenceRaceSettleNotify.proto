@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GalleryStopReason.proto";
+
+message GravenInnocenceRaceSettleNotify {
+	enum GECMEJKBGJK {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20447;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Score = 6;
+	bool IsNewRecord = 11;
+	bool IsSuccess = 1;
+	uint32 TotalCointCount = 13;
+	GalleryStopReason Reason = 9;
+	uint32 CoinCount = 8;
+	uint32 GalleryId = 14;
+	uint32 RemainTime = 12;
+	uint32 ChallengeProgress = 3;
+	uint32 LevelId = 2;
+}

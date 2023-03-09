@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FishEscapeReason {
+	FisnEscapeNone = 0;
+	FishEscapeShocked = 1;
+	FishEscapeUnhook = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RockBoardExploreStageData.proto";
+
+message RockBoardExploreInfo {
+	repeated RockBoardExploreStageData StageDataList = 10;
+}

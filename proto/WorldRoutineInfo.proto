@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WorldRoutineInfo {
+	bool IsFinished = 9;
+	uint32 FinishProgress = 15;
+	uint32 Progress = 5;
+	uint32 RoutineId = 4;
+}

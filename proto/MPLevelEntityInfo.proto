@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilitySyncStateInfo.proto";
+
+message MPLevelEntityInfo {
+	AbilitySyncStateInfo AbilityInfo = 2;
+	uint32 EntityId = 11;
+	uint32 AuthorityPeerId = 9;
+}

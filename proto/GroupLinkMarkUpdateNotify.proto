@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GroupLinkBundle.proto";
+
+message GroupLinkMarkUpdateNotify {
+	enum GroupLinkMarkUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5791;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	GroupLinkBundle Bundle = 7;
+}

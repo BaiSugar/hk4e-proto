@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGCardSkillLimitsInfo.proto";
+
+message GCGMsgSkillLimitsChange {
+	map<uint32, GCGCardSkillLimitsInfo> CardLimitsChangeMap = 13;
+}

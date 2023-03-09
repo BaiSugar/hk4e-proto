@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SignatureAuditConfigNotify {
+	enum SignatureAuditConfigNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4034;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsOpen = 11;
+	uint32 SubmitLimit = 13;
+}

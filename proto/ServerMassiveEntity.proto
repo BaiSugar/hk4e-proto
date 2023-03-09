@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WaterInfo.proto";
+import "GrassInfo.proto";
+import "BoxInfo.proto";
+
+message ServerMassiveEntity {
+	uint32 EntityType = 1;
+	uint32 ConfigId = 2;
+	uint32 RuntimeId = 3;
+	uint32 AuthorityPeerId = 4;
+	int64 ObjId = 5;
+	oneof ServerMassiveEntity_EntityInfoOneofCase {
+		WaterInfo water_info = 6;
+		GrassInfo grass_info = 7;
+		BoxInfo box_info = 8;
+	}
+}

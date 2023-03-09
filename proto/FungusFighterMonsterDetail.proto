@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FungusFighterMonsterDetail {
+	float CurHpPercentage = 9;
+	uint32 FungusId = 10;
+	bool IsAlive = 12;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProfilePicture.proto";
+
+message BlessingFriendPicData {
+	uint32 AvatarId = 2;
+	ProfilePicture ProfilePicture = 4;
+	string Nickname = 5;
+	string Signature = 6;
+	map<uint32, uint32> PicNumMap = 12;
+	string RemarkName = 3;
+	uint32 Uid = 9;
+}

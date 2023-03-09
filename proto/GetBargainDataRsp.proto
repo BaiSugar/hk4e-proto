@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BargainSnapshot.proto";
+
+message GetBargainDataRsp {
+	enum GetBargainDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 473;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	BargainSnapshot Snapshot = 13;
+	uint32 BargainId = 8;
+}

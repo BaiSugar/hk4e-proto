@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarRenameInfo {
+	uint32 AvatarId = 1;
+	string AvatarName = 8;
+}

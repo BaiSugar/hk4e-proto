@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SpiceStageData.proto";
+
+message SpiceInfo {
+	uint32 IncreaseAvatarFetterLimitTimes = 8;
+	repeated SpiceStageData SpiceStageDataList = 11;
+	uint32 CurrentIncreaseAvatarFetterTimes = 14;
+}

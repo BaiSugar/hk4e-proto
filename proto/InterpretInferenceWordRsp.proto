@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InterpretInferenceWordRsp {
+	enum ECEFHKMPMEE {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 415;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PageId = 2;
+	int32 Retcode = 13;
+	uint32 WordId = 6;
+}

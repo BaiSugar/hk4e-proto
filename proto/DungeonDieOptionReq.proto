@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayerDieOption.proto";
+
+message DungeonDieOptionReq {
+	enum DungeonDieOptionReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 929;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	PlayerDieOption DieOption = 3;
+	bool IsQuitImmediately = 11;
+}

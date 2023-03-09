@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGEndReason {
+  GCGEndReasonDefault = 0;
+  GCGEndReasonDie = 1;
+  GCGEndReasonSurrender = 2;
+  GCGEndReasonDisconnected = 3;
+  GCGEndReasonRoundLimit = 4;
+  GCGEndReasonGM = 5;
+  GCGEndReasonNoPlayer = 6;
+  GCGEndReasonGiveUp = 7;
+  GCGEndReasonIintTimeout = 8;
+  GCGEndReasonEffect = 9;
+	GHGBOGNDAJF = 10;
+}

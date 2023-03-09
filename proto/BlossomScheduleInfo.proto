@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlossomScheduleInfo {
+	uint32 RefreshId = 6;
+	uint32 State = 9;
+	uint32 CircleCampId = 1;
+	uint32 FinishProgress = 12;
+	uint32 Round = 14;
+	uint32 Progress = 15;
+}

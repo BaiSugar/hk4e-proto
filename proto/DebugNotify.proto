@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DebugNotify_Retcode.proto";
+
+message DebugNotify {
+	enum DebugNotify_Enum {
+		option allow_alias = true;
+		Zero = 0;
+		CmdId = 101;
+		TargetService = 101;
+		EnetChannelId = 2;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Id = 1;
+	string Name = 2;
+	DebugNotify_Retcode Retcode = 3;
+}

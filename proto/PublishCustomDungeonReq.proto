@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PublishCustomDungeonReq {
+	enum PublishCustomDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6214;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 DungeonGuid = 10;
+	repeated uint32 TagList = 1;
+}

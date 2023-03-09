@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SocialShowAvatarInfo {
+	uint32 AvatarId = 1;
+	uint32 Level = 2;
+	uint32 CostumeId = 3;
+}

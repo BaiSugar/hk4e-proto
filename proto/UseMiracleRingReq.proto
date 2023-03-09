@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message UseMiracleRingReq {
+	enum UseMiracleRingReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5238;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	Rotation Pos = 7;
+	Rotation Rot = 2;
+	uint32 MiracleRingOpType = 1;
+}

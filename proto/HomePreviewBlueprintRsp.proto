@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeSceneArrangementInfo.proto";
+
+message HomePreviewBlueprintRsp {
+	enum GACMGFBMJLD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4625;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string ShareCode = 3;
+	int32 Retcode = 4;
+	HomeSceneArrangementInfo SceneArrangementInfo = 15;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ShowAvatarInfo.proto";
+
+message GetFriendShowAvatarInfoRsp {
+	enum GetFriendShowAvatarInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4027;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ShowAvatarInfo ShowAvatarInfoList = 3;
+	int32 Retcode = 12;
+	uint32 Uid = 13;
+}

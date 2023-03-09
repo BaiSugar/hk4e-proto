@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageMarketDeliverItemRsp {
+	enum MLCPBOCDIPB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21050;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TraderId = 14;
+	int32 Retcode = 10;
+}

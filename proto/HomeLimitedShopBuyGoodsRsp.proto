@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeLimitedShopGoods.proto";
+
+message HomeLimitedShopBuyGoodsRsp {
+	enum HomeLimitedShopBuyGoodsRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4865;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated HomeLimitedShopGoods GoodsList = 5;
+	HomeLimitedShopGoods Goods = 8;
+	uint32 BuyCount = 11;
+	int32 Retcode = 1;
+}

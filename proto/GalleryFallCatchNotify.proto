@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GalleryFallCatchNotify {
+	enum GalleryFallCatchNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5520;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TimeCost = 1;
+	uint32 AddScore = 4;
+	uint32 GalleryId = 2;
+	uint32 CurScore = 5;
+	bool IsGround = 3;
+	map<uint32, uint32> BallCatchCountMap = 15;
+}

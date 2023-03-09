@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarExcelInfo {
+	uint64 PrefabPathHash = 1;
+	uint64 PrefabPathRemoteHash = 2;
+	uint64 ControllerPathHash = 3;
+	uint64 ControllerPathRemoteHash = 4;
+	uint64 CombatConfigHash = 5;
+}

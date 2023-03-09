@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarSkillChangeNotify {
+	enum AvatarSkillChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1016;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint64 AvatarGuid = 4;
+	uint32 EntityId = 12;
+	uint32 AvatarSkillId = 1;
+	uint32 SkillDepotId = 5;
+	uint32 OldLevel = 6;
+	uint32 CurLevel = 2;
+}

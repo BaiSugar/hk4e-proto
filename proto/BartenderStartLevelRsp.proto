@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BartenderStartLevelRsp {
+	enum BartenderStartLevelRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8495;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 OrderList = 3;
+	int32 Retcode = 4;
+	uint32 LevelId = 14;
+	uint32 Time = 6;
+}

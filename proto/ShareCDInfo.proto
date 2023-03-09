@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ShareCDInfo {
+	uint32 ShareCdId = 13;
+	uint64 CdStartTime = 1;
+	uint32 Index = 11;
+}

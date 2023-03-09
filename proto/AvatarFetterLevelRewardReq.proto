@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarFetterLevelRewardReq {
+	enum AvatarFetterLevelRewardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1682;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 AvatarGuid = 13;
+	uint32 FetterLevel = 12;
+}

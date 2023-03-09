@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CustomDungeonBrief.proto";
+
+message CustomDungeonUpdateNotify {
+	enum CustomDungeonUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6203;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	CustomDungeonBrief DungeonBrief = 14;
+}

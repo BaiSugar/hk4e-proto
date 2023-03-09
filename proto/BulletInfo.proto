@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BulletInfo {
+	uint32 EndTime = 8;
+	map<uint32, uint32> HitCountMap = 1;
+}

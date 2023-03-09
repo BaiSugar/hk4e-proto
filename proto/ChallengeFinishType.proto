@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ChallengeFinishType {
+	None = 0;
+	Fail = 1;
+	Succ = 2;
+	Pause = 3;
+}

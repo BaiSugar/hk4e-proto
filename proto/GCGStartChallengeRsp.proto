@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGLevelType.proto";
+
+message GCGStartChallengeRsp {
+	enum OBMPGGOELEB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7351;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ConfigId = 11;
+	GCGLevelType LevelType = 6;
+	uint32 LevelId = 5;
+	int32 Retcode = 14;
+}

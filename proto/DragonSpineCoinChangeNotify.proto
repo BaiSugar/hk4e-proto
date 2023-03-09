@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DragonSpineCoinChangeNotify {
+	enum DragonSpineCoinChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2067;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ShimmeringEssence = 7;
+	uint32 ScheduleId = 14;
+	uint32 WondrousEssence = 1;
+	uint32 WarmEssence = 5;
+}

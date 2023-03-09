@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package Proto;
+
+
+import "ResVersionConfig.proto";
+import "FeatureBlockInfo.proto";
+import "BlockInfo.proto";
+import "ShortAbilityHashPair.proto";
+
+message PlayerLoginRsp {
+	enum PlayerLoginRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 198;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsAudit = 201;
+	bool IsRelogin = 6;
+	string ClientMd5 = 1070;
+	uint32 PlayerDataVersion = 9;
+	string ClientVersionSuffix = 624;
+	uint64 LoginRand = 8;
+	repeated FeatureBlockInfo FeatureBlockInfoList = 2035;
+	bool IsUseAbilityHash = 15;
+	bool IsScOpen = 1852;
+	bytes PlayerData = 14;
+	double TotalTickTime = 1769;
+	map<uint32, BlockInfo> BlockInfoMap = 982;
+	string CountryCode = 238;
+	ResVersionConfig ResVersionConfig = 777;
+	uint32 ClientSilenceDataVersion = 2;
+	string ClientSilenceVersionSuffix = 935;
+	bool IsEnableClientHashDebug = 1254;
+	string ClientSilenceMd5 = 979;
+	bool IsDataNeedRelogin = 1021;
+	repeated ShortAbilityHashPair ShortAbilityHashMap = 1199;
+	uint32 TargetUid = 3;
+	string GameBiz = 4;
+	bool IsTransfer = 956;
+	int32 Retcode = 1;
+	map<string, int32> AbilityHashMap = 5;
+	bool IsLoginRspSplit = 1435;
+	bytes ScInfo = 151;
+	bool IsNewPlayer = 10;
+	uint32 ClientDataVersion = 7;
+	uint32 TargetHomeOwnerUid = 787;
+	string RegisterCps = 552;
+	string Birthday = 163;
+	ResVersionConfig NextResVersionConfig = 1331;
+	int32 AbilityHashCode = 13;
+	string NextResourceUrl = 1095;
+}

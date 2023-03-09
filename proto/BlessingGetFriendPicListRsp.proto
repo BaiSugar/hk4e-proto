@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BlessingFriendPicData.proto";
+
+message BlessingGetFriendPicListRsp {
+	enum BlessingGetFriendPicListRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2102;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated BlessingFriendPicData FriendPicDataList = 12;
+	int32 Retcode = 2;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WeaponPromoteRsp {
+	enum WeaponPromoteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 688;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CurPromoteLevel = 13;
+	uint64 TargetWeaponGuid = 2;
+	int32 Retcode = 14;
+	uint32 OldPromoteLevel = 10;
+}

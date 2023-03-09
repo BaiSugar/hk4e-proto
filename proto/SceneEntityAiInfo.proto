@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "ServantInfo.proto";
+
+message SceneEntityAiInfo {
+	bool IsAiOpen = 1;
+	Rotation BornPos = 2;
+	map<uint32, uint32> SkillCdMap = 3;
+	ServantInfo ServantInfo = 4;
+	map<uint32, uint32> AiThreatMap = 5;
+	map<uint32, uint32> SkillGroupCdMap = 6;
+	uint32 CurTactic = 7;
+}

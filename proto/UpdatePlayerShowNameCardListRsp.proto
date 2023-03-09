@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UpdatePlayerShowNameCardListRsp {
+	enum UpdatePlayerShowNameCardListRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4023;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 ShowNameCardIdList = 10;
+	int32 Retcode = 9;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RegionSearchState.proto";
+
+message RegionSearch {
+	uint32 RegionSearchId = 1;
+	RegionSearchState State = 15;
+	bool IsEntered = 6;
+	uint32 Progress = 8;
+}

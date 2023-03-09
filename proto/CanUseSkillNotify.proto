@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CanUseSkillNotify {
+	enum CanUseSkillNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1069;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsCanUseSkill = 2;
+}

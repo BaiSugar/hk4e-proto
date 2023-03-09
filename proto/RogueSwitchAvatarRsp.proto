@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RogueSwitchAvatarRsp {
+	enum RogueSwitchAvatarRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8548;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint64 BackstageAvatarGuidList = 2;
+	repeated uint64 OnstageAvatarGuidList = 13;
+	uint32 CellId = 12;
+	uint64 CurAvatarGuid = 3;
+	int32 Retcode = 15;
+	uint32 DungeonId = 7;
+}

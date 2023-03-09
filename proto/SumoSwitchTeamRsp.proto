@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SumoDungeonTeam.proto";
+
+message SumoSwitchTeamRsp {
+	enum SumoSwitchTeamRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8137;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 NextValidSwitchTime = 9;
+	uint32 ActivityId = 7;
+	int32 Retcode = 3;
+	uint32 StageId = 8;
+	uint32 CurTeamIndex = 13;
+	repeated SumoDungeonTeam DungeonTeamList = 5;
+}

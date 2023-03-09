@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGReason.proto";
+import "GCGDiceSideType.proto";
+
+message AddDice {
+	map<uint32, GCGDiceSideType> DiceMap = 15;
+	map<uint32, GCGDiceSideType> BeforeDiceMap = 5;
+	uint32 ControllerId = 3;
+	GCGReason Reason = 9;
+	int32 ChangeCount = 10;
+}

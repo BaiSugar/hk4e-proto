@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RoguelikeSettleCoinInfo.proto";
+
+message RoguelikeDungeonSettleInfo {
+	bool IsFinalLevel = 5;
+	uint32 TotalCoinCNum = 11;
+	uint32 CurLevel = 7;
+	bool IsCoinCReachLimit = 15;
+	uint32 StageId = 10;
+	uint32 TotalCoinBNum = 13;
+	map<uint32, RoguelikeSettleCoinInfo> FinishedChallengeCellNumMap = 2;
+}

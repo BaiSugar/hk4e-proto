@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ContentAuditInfo.proto";
+
+message PlayerNicknameAuditDataNotify {
+	enum PlayerNicknameAuditDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 168;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	ContentAuditInfo Info = 13;
+}

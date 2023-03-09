@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "VintageBoothUsedItemData.proto";
+import "VintageMarketInfo.proto";
+import "VintageHuntingStageData.proto";
+import "VintagePresentStageData.proto";
+import "VintageCampChallengeStageData.proto";
+
+message VintageInfo {
+	bool IsContentClosed = 12;
+	VintageBoothUsedItemData BoothData = 15;
+	map<uint32, VintageHuntingStageData> HuntingStageMap = 7;
+	map<uint32, VintagePresentStageData> PresentStageMap = 2;
+	map<uint32, VintageCampChallengeStageData> CampStageMap = 3;
+	VintageMarketInfo MarketInfo = 1;
+}

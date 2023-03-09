@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SetFriendRemarkNameRsp {
+	enum SetFriendRemarkNameRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4081;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string RemarkName = 12;
+	uint32 Uid = 14;
+	bool IsClearRemark = 6;
+	int32 Retcode = 1;
+}

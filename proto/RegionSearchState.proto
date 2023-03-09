@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum RegionSearchState {
+	RegionSearchNone = 0;
+	RegionSearchUnstarted = 1;
+	RegionSearchStarted = 2;
+	RegionSearchWaitReward = 3;
+	RegionSearchFinished = 4;
+}

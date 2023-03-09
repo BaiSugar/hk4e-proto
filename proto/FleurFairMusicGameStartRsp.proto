@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FleurFairMusicGameStartRsp {
+	enum FleurFairMusicGameStartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2088;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 3;
+	uint32 MusicBasicId = 5;
+}

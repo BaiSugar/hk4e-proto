@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FriendOnlineState.proto";
+import "FriendEnterHomeOption.proto";
+import "ProfilePicture.proto";
+import "PlatformType.proto";
+import "SocialShowAvatarInfo.proto";
+
+message FriendBrief {
+	uint32 Uid = 1;
+	string Nickname = 2;
+	uint32 Level = 3;
+	uint32 AvatarId = 4;
+	uint32 WorldLevel = 5;
+	string Signature = 6;
+	FriendOnlineState OnlineState = 7;
+	uint32 Param = 8;
+	bool IsMpModeAvailable = 10;
+	string OnlineId = 11;
+	uint32 LastActiveTime = 12;
+	uint32 NameCardId = 13;
+	uint32 MpPlayerNum = 14;
+	bool IsChatNoDisturb = 15;
+	uint32 ChatSequence = 16;
+	string RemarkName = 17;
+	repeated SocialShowAvatarInfo ShowAvatarInfoList = 22;
+	FriendEnterHomeOption FriendEnterHomeOption = 23;
+	ProfilePicture ProfilePicture = 24;
+	bool IsGameSource = 25;
+	bool IsPsnSource = 26;
+	PlatformType PlatformType = 27;
+}

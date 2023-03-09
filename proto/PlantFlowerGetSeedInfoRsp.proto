@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlantFlowerGetSeedInfoRsp {
+	enum PlantFlowerGetSeedInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8249;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SeedRewardId = 3;
+	uint32 ScheduleId = 8;
+	int32 Retcode = 11;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BrickBreakerLevelInfo.proto";
+import "BrickBreakerActivityStageInfo.proto";
+
+message BrickBreakerInfo {
+	repeated BrickBreakerLevelInfo DungeonLevelInfoList = 7;
+	repeated BrickBreakerActivityStageInfo StageInfoList = 9;
+	repeated BrickBreakerLevelInfo WorldLevelInfoList = 3;
+	map<uint32, uint32> SkillInfoMap = 8;
+}

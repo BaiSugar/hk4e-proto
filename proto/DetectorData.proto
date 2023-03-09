@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message DetectorData {
+	bool IsHintValid = 2;
+	uint32 ConfigId = 9;
+	Rotation HintCenterPos = 3;
+	uint32 MaterialId = 10;
+	bool IsAllCollected = 13;
+	uint32 GroupId = 14;
+	uint32 HintRadius = 5;
+}

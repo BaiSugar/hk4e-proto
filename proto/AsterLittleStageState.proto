@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum AsterLittleStageState {
+	AsterLittleStageNone = 0;
+	AsterLittleStageUnstarted = 1;
+	AsterLittleStageStarted = 2;
+	AsterLittleStageFinished = 3;
+}

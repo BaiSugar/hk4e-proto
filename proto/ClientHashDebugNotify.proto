@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ClientHashDebugNotify {
+	enum ClientHashDebugNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3279;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 JobId = 2;
+}

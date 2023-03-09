@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlessingGiveFriendPicRsp {
+	enum BlessingGiveFriendPicRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2082;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Uid = 5;
+	uint32 PicId = 15;
+	int32 Retcode = 11;
+}

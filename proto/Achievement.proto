@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Achievement_Status.proto";
+
+message Achievement {
+	uint32 CurProgress = 10;
+	uint32 Id = 13;
+	uint32 TotalProgress = 14;
+	Achievement_Status Status = 5;
+	uint32 FinishTimestamp = 6;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WorldRoutineTypeInfo.proto";
+
+message WorldAllRoutineTypeNotify {
+	enum WorldAllRoutineTypeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3545;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated WorldRoutineTypeInfo WorldRoutineTypeList = 4;
+}

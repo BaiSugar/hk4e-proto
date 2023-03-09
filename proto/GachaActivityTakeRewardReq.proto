@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GachaActivityTakeRewardReq {
+	enum GachaActivityTakeRewardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8947;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	map<uint32, uint32> RobotNumMap = 1;
+}

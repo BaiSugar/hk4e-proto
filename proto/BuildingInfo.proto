@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BuildingInfo {
+	uint32 BuildingId = 1;
+	uint32 PointConfigId = 2;
+	uint32 Cost = 3;
+	uint32 Refund = 5;
+	uint32 OwnerUid = 6;
+	uint32 CurrentNum = 7;
+	uint32 MaxNum = 8;
+}

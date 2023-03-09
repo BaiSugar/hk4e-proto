@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageHuntingStartGalleryRsp {
+	enum HMMGEFLBMFH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 24063;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 11;
+}

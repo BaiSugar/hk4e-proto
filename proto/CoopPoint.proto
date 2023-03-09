@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CoopPoint_State.proto";
+
+message CoopPoint {
+	uint32 Id = 10;
+	CoopPoint_State State = 5;
+	uint32 SelfConfidence = 15;
+}

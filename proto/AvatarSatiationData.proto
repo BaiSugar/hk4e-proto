@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarSatiationData {
+	uint64 AvatarGuid = 5;
+	float FinishTime = 15;
+	float PenaltyFinishTime = 12;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SceneEntityInfo.proto";
+
+message AvatarChangeCostumeNotify {
+	enum AvatarChangeCostumeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1648;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	SceneEntityInfo EntityInfo = 13;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message WeekendDjinnInfo {
+	Rotation Rot = 11;
+	Rotation Pos = 10;
+}

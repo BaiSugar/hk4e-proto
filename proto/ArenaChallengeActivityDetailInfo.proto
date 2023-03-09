@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ArenaChallengeMonsterLevel.proto";
+
+message ArenaChallengeActivityDetailInfo {
+	map<uint32, uint32> LevelOpenTimeMap = 2;
+	uint32 WorldLevel = 6;
+	repeated ArenaChallengeMonsterLevel LevelList = 7;
+	bool IsFinishAnyLevel = 5;
+}

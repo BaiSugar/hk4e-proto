@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GalleryStageType {
+	GalleryNone = 0;
+	GalleryPrestart = 1;
+	GalleryStart = 2;
+}

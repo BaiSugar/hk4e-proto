@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ShareCDInfo.proto";
+
+message AllShareCDDataNotify {
+	enum AllShareCDDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 9005;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, ShareCDInfo> ShareCdInfoMap = 2;
+}

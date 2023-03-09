@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message CustomDungeonBlock {
+	uint32 BlockId = 15;
+	Rotation Rot = 2;
+	Rotation Pos = 11;
+	uint32 Guid = 1;
+}

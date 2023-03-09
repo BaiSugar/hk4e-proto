@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UgcNotify {
+	enum UgcNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6337;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsUgcPublishBan = 13;
+	bool IsUgcPublishFeatureClosed = 5;
+	bool IsUgcFeatureClosed = 10;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FriendEnterHomeOption.proto";
+
+message PlayerHomeCompInfo {
+	repeated uint32 SeenModuleIdList = 2;
+	FriendEnterHomeOption FriendEnterHomeOption = 4;
+	repeated uint32 UnlockedModuleIdList = 10;
+	repeated uint32 LevelupRewardGotLevelList = 12;
+}

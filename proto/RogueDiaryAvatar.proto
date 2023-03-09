@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ActivityDungeonAvatar.proto";
+import "RogueDiaryAvatarDisableStatus.proto";
+
+message RogueDiaryAvatar {
+	repeated RogueDiaryAvatarDisableStatus DisableStatusList = 4;
+	uint32 Level = 2;
+	uint32 TiredRound = 9;
+	ActivityDungeonAvatar Avatar = 6;
+}

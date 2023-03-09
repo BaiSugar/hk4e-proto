@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGReason.proto";
+
+message SelectOnStage {
+	GCGReason Reason = 13;
+	uint32 CardGuid = 5;
+	uint32 ControllerId = 2;
+}

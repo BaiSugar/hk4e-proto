@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DungeonEntryInfo.proto";
+
+message DungeonEntryPointInfo {
+	uint32 SceneId = 1;
+	uint32 PointId = 15;
+	repeated DungeonEntryInfo DungeonEntryList = 5;
+	uint32 RecommendDungeonId = 7;
+}

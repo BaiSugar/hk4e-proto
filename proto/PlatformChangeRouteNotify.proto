@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlatformInfo.proto";
+
+message PlatformChangeRouteNotify {
+	enum PlatformChangeRouteNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 211;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SceneTime = 9;
+	PlatformInfo Platform = 6;
+	uint32 EntityId = 1;
+}

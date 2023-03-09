@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeGroupPlayerInfo.proto";
+
+message HomeBalloonGalleryRecord {
+	uint32 HitCount = 2;
+	uint32 Score = 12;
+	HomeGroupPlayerInfo PlayerInfo = 11;
+	uint32 Timestamp = 13;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "ForwardType.proto";
+
+message EvtBulletDeactiveNotify {
+	enum EvtBulletDeactiveNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 316;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 EntityId = 4;
+	Rotation DisappearPos = 5;
+	ForwardType ForwardType = 12;
+}

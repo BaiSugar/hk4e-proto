@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProfilePicture.proto";
+
+message ActivityFriendGiftWishData {
+	uint32 Uid = 4;
+	map<uint32, uint32> GiftNumMap = 1;
+	string RemarkName = 2;
+	string Nickname = 9;
+	ProfilePicture ProfilePicture = 3;
+}

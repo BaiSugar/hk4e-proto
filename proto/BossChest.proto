@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WeeklyBossResinDiscountInfo.proto";
+
+message BossChest {
+	uint32 MonsterConfigId = 1;
+	uint32 Resin = 2;
+	repeated uint32 RemainUidList = 3;
+	repeated uint32 QualifyUidList = 4;
+	map<uint32, WeeklyBossResinDiscountInfo> UidDiscountMap = 5;
+}

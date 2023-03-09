@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "OnlinePlayerInfo.proto";
+import "ExhibitionDisplayInfo.proto";
+
+message BounceConjuringGallerySettleInfo {
+	uint32 NormalHitCount = 8;
+	float Damage = 5;
+	uint32 FeverCount = 9;
+	uint32 Score = 7;
+	OnlinePlayerInfo PlayerInfo = 11;
+	repeated ExhibitionDisplayInfo CardList = 15;
+	uint32 PerfectHitCount = 2;
+	map<uint32, uint32> GadgetCountMap = 3;
+	uint32 DestroyedMachineCount = 4;
+}

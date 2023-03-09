@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FlightDailyRecord {
+	uint32 GroupId = 14;
+	uint32 StartTime = 15;
+	repeated uint32 WatcherIdList = 6;
+	bool IsTouched = 8;
+	uint32 BestScore = 3;
+}

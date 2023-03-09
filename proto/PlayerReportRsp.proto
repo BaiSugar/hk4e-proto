@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerReportRsp {
+	enum PlayerReportRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4036;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 9;
+	uint32 CdTime = 13;
+	uint32 TargetUid = 4;
+}

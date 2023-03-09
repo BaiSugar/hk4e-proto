@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BreakoutPhysicalObjectModifier {
+	uint32 Type = 1;
+	uint32 Id = 2;
+	int32 Param1 = 3;
+	int32 Param2 = 4;
+	int32 Param3 = 5;
+	int32 Param4 = 6;
+	int32 Param5 = 7;
+	int32 Param6 = 8;
+	bool Bool1 = 9;
+	int32 Duration = 10;
+	int32 EndTime = 11;
+	uint32 Combo = 12;
+	uint32 PeerId = 13;
+	uint32 SkillType = 14;
+	uint32 Level = 15;
+	uint32 ChoosePlayerCount = 16;
+}

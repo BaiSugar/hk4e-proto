@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSTakeCardProficiencyRewardRsp {
+	enum JNIEFIACMPI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7198;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 11;
+	uint32 CardId = 14;
+	uint32 RewardIndex = 12;
+}

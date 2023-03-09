@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RedPointData.proto";
+
+message UpdateRedPointNotify {
+	enum UpdateRedPointNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 58;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated RedPointData RedPointList = 8;
+}

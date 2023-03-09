@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Reliquary.proto";
+import "Weapon.proto";
+
+message Equip {
+	oneof Equip_DetailOneofCase {
+		Reliquary reliquary = 1;
+		Weapon weapon = 2;
+	}
+	bool IsLocked = 3;
+}

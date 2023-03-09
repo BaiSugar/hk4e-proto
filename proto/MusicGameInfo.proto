@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MusicBriefInfo.proto";
+import "MusicGameRecord.proto";
+
+message MusicGameInfo {
+	repeated MusicBriefInfo UgcRecordList = 2;
+	repeated MusicBriefInfo UgcSearchList = 6;
+	map<uint32, MusicGameRecord> MusicGameRecordMap = 8;
+}

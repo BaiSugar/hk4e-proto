@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "OpActivityInfo.proto";
+
+message GetOpActivityInfoRsp {
+	enum GetOpActivityInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5155;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated OpActivityInfo OpActivityInfoList = 11;
+	int32 Retcode = 14;
+}

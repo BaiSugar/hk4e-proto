@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CompoundBoostTakeStatusType.proto";
+import "CompoundQueueData.proto";
+import "ItemParam.proto";
+
+message PlayerCompoundMaterialBoostRsp {
+	enum HAJAHDPJKBC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 119;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated CompoundQueueData CompoundQueDataList = 6;
+	int32 Retcode = 15;
+	repeated ItemParam TakeItemList = 14;
+	CompoundBoostTakeStatusType TakeStatus = 8;
+}

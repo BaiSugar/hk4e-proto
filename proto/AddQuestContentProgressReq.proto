@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AddQuestContentProgressReq {
+	enum AddQuestContentProgressReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 474;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 AddProgress = 2;
+	uint32 Param = 9;
+	uint32 ContentType = 14;
+}

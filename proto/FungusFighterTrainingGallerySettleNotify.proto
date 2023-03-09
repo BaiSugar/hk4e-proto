@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GalleryStopReason.proto";
+
+message FungusFighterTrainingGallerySettleNotify {
+	enum PCMLJAAPJMF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23677;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FinalScore = 6;
+	uint32 GadgetLifePercentage = 14;
+	GalleryStopReason Reason = 3;
+	uint32 SettleRound = 11;
+	uint32 DeadFungusNum = 12;
+	uint32 TotalUsedTime = 9;
+	bool IsFinalSettle = 7;
+	bool IsNewRecord = 5;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ActivityInfo.proto";
+
+message ActivityInfoNotify {
+	enum ActivityInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2136;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ActivityInfo ActivityInfo = 3;
+}

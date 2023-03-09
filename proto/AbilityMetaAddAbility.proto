@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityAppliedAbility.proto";
+
+message AbilityMetaAddAbility {
+	AbilityAppliedAbility Ability = 4;
+}

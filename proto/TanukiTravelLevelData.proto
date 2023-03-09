@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TanukiTravelLevelData {
+	bool IsFinish = 2;
+	uint32 RouteId = 1;
+	bool IsOpen = 8;
+}

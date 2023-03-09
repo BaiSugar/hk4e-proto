@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ClientMassiveEntity.proto";
+
+message CreateMassiveEntityReq {
+	enum CreateMassiveEntityReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 394;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated ClientMassiveEntity MassiveEntityList = 5;
+}

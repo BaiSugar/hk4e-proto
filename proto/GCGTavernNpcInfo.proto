@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGTavernNpcInfo {
+	uint32 LevelId = 3;
+	uint32 ScenePointId = 2;
+	uint32 Id = 6;
+}

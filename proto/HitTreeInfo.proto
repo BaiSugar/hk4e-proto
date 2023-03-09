@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message HitTreeInfo {
+	uint32 TreeType = 1;
+	Rotation TreePos = 2;
+}

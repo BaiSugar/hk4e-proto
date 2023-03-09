@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message IrodoriChessMonsterInfo {
+	uint32 MonsterId = 12;
+	uint32 Level = 13;
+	uint32 GrantPoints = 14;
+	repeated uint32 AffixList = 1;
+}

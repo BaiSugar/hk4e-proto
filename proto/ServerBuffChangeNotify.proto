@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ServerBuffChangeNotify_ServerBuffChangeType.proto";
+import "ServerBuff.proto";
+
+message ServerBuffChangeNotify {
+	enum ServerBuffChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 315;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ServerBuff ServerBuffList = 12;
+	repeated uint64 AvatarGuidList = 10;
+	ServerBuffChangeNotify_ServerBuffChangeType ServerBuffChangeType = 4;
+	repeated uint32 EntityIdList = 1;
+	bool IsCreatureBuff = 5;
+}

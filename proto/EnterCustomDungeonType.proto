@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum EnterCustomDungeonType {
+	EnterCustomDungeonNone = 0;
+	EnterCustomDungeonEdit = 1;
+	EnterCustomDungeonPlay = 2;
+	EnterCustomDungeonOfficial = 3;
+}

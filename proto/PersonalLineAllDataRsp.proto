@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LockedPersonallineData.proto";
+
+message PersonalLineAllDataRsp {
+	enum PersonalLineAllDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 443;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 OngoingPersonalLineList = 5;
+	uint32 LegendaryKeyCount = 7;
+	uint32 CurFinishedDailyTaskCount = 2;
+	repeated uint32 CanBeUnlockedPersonalLineList = 4;
+	int32 Retcode = 11;
+	repeated LockedPersonallineData LockedPersonalLineList = 10;
+}

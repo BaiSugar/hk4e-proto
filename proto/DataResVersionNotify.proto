@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ResVersionConfig.proto";
+import "DataResVersionNotify_DataResVersionOpType.proto";
+
+message DataResVersionNotify {
+	enum DataResVersionNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 164;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string ClientSilenceMd5 = 12;
+	string ClientMd5 = 1;
+	uint32 ClientDataVersion = 3;
+	string ClientSilenceVersionSuffix = 15;
+	ResVersionConfig ResVersionConfig = 7;
+	bool IsDataNeedRelogin = 6;
+	uint32 ClientSilenceDataVersion = 5;
+	DataResVersionNotify_DataResVersionOpType OpType = 14;
+	string ClientVersionSuffix = 8;
+}

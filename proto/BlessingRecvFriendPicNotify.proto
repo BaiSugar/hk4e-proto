@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlessingRecvFriendPicNotify {
+	enum BlessingRecvFriendPicNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2159;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Uid = 15;
+	uint32 PicId = 14;
+}

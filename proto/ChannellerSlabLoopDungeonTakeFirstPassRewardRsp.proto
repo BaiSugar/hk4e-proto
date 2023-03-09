@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChannellerSlabLoopDungeonTakeFirstPassRewardRsp {
+	enum ChannellerSlabLoopDungeonTakeFirstPassRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8654;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	uint32 DungeonIndex = 2;
+}

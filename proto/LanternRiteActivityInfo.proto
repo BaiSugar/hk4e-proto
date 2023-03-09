@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LanternRiteFireworksInfo.proto";
+import "LanternProjectionInfo.proto";
+import "SalvageStageInfo.proto";
+
+message LanternRiteActivityInfo {
+	LanternRiteFireworksInfo FireworksInfo = 6;
+	LanternProjectionInfo ProjectionInfo = 11;
+	bool IsContentClosed = 9;
+	bool IsTakenSkinReward = 3;
+	repeated SalvageStageInfo StageInfoList = 1;
+	bool IsMiniEldritchDungeonOpen = 7;
+}

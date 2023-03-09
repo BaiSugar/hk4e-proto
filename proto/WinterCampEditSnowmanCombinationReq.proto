@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CustomGadgetTreeInfo.proto";
+
+message WinterCampEditSnowmanCombinationReq {
+	enum WinterCampEditSnowmanCombinationReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8170;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 EntityId = 2;
+	CustomGadgetTreeInfo CombinationInfo = 4;
+}

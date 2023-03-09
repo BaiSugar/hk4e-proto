@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MatchType.proto";
+
+message PlayerCancelMatchReq {
+	enum PlayerCancelMatchReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4191;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	MatchType MatchType = 1;
+}

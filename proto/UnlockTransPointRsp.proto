@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UnlockTransPointRsp {
+	enum UnlockTransPointRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3057;
+		EnetChannelId = 1;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 3;
+}

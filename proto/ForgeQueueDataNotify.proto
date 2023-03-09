@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForgeQueueData.proto";
+
+message ForgeQueueDataNotify {
+	enum ForgeQueueDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 643;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 RemovedForgeQueueList = 10;
+	map<uint32, ForgeQueueData> ForgeQueueMap = 14;
+}

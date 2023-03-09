@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SalvageEscortGallerySettleInfo.proto";
+
+message SalvageEscortSettleInfo {
+	SalvageEscortGallerySettleInfo SettleInfo = 8;
+	bool IsNewRecord = 9;
+}

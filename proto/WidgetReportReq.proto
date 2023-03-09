@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WidgetReportReq {
+	enum WidgetReportReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4287;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsClearHint = 15;
+	bool IsClearSkyCrystalHint = 9;
+	uint32 WeatherWizardShieldValue = 12;
+	uint32 MaterialId = 5;
+	bool IsClientCollect = 7;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ActivityAcceptGiftResultInfo.proto";
+
+message ActivityAcceptAllGiveGiftRsp {
+	enum ActivityAcceptAllGiveGiftRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8316;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ScheduleId = 15;
+	int32 Retcode = 11;
+	repeated ActivityAcceptGiftResultInfo AcceptGiftResultInfoList = 14;
+}

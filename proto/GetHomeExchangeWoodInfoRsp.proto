@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetHomeExchangeWoodInfoRsp {
+	enum GGMEHEFODIO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4757;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	message HomeExchangeWoodInfo {
+		uint32 ExchangeLimit = 8;
+		uint32 WoodId = 2;
+		uint32 NextRefreshTime = 3;
+		uint32 ExchangedCount = 9;
+	}
+
+	repeated HomeExchangeWoodInfo WoodInfoList = 11;
+	int32 Retcode = 2;
+}

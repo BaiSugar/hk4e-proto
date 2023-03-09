@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGMsgUseSkillEnd {
+	uint32 SkillId = 5;
+	uint32 CardGuid = 13;
+}

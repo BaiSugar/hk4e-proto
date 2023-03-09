@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayerOfferingData.proto";
+import "ItemParam.proto";
+
+message PlayerOfferingRsp {
+	enum PlayerOfferingRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2916;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 1;
+	PlayerOfferingData OfferingData = 15;
+	repeated ItemParam ItemList = 14;
+}

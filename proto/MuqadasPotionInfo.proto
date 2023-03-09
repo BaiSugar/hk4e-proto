@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MuqadasPotionInfo {
+	uint32 SkillUseLimit = 13;
+	uint32 Score = 14;
+	uint32 SkillEnergy = 3;
+	uint32 CaptureWeaknessCount = 5;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CityInfo {
+	uint32 CrystalNum = 15;
+	uint32 CityId = 6;
+	uint32 Level = 11;
+}

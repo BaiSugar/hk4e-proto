@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerApplyEnterMpResultRsp {
+	enum PlayerApplyEnterMpResultRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1843;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ApplyUid = 10;
+	bool IsAgreed = 9;
+	int32 Retcode = 2;
+	uint32 Param = 4;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message APHNJHLAANL {
+	enum FAKNJNGOBKG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 109;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 12;
+	repeated uint32 pbahnigkopb = 11;
+}

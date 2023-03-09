@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AsterMidCampInfo {
+	Rotation Pos = 10;
+	uint32 CampId = 14;
+}

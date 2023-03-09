@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AiSyncInfo {
+	uint32 EntityId = 1;
+	bool IsSelfKilling = 2;
+	bool HasPathToTarget = 10;
+}

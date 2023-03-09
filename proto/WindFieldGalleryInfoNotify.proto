@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WindFieldGalleryInfoNotify {
+	enum JOCNCDOAALP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5573;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ElementBallNum = 9;
+	uint32 ChallengeTimestamp = 4;
+	uint32 ShowId = 13;
+	uint32 CoinNum = 1;
+	uint32 ChallengeBallCurCount = 5;
+	uint32 ChallengeBallMaxCount = 15;
+	uint32 ChallengeTotalTime = 11;
+	uint32 KilledMonsterNum = 3;
+}

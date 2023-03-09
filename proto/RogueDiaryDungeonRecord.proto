@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RogueDiaryDungeonRecord {
+	uint32 FinishTime = 9;
+	uint32 MaxRound = 12;
+	bool IsFinish = 7;
+	uint32 Difficulty = 13;
+}

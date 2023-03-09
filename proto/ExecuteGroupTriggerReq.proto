@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ExecuteGroupTriggerReq {
+	enum ExecuteGroupTriggerReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 290;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 Param3 = 2;
+	int32 Param1 = 7;
+	uint32 SourceEntityId = 8;
+	int32 Param2 = 4;
+	uint32 TargetEntityId = 3;
+	string SourceName = 5;
+}

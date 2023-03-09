@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PostEnterSceneRsp {
+	enum PostEnterSceneRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3303;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 EnterSceneToken = 3;
+	int32 Retcode = 13;
+}

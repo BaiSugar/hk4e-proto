@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtAnimatorStateChangedInfo {
+	uint32 NormalizedTimeCompact = 9;
+	float FadeDuration = 8;
+	uint32 EntityId = 11;
+	bool ForceSync = 13;
+	bool HandleAnimatorStateImmediately = 12;
+	int32 FaceAngleCompact = 3;
+	uint32 ToStateHash = 4;
+	uint32 Layer = 5;
+	Rotation Pos = 7;
+}

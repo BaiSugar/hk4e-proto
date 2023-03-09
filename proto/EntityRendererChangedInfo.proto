@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EntityRendererChangedInfo {
+	map<string, uint32> ChangedRenderers = 1;
+	uint32 VisibilityCount = 2;
+	bool IsCached = 3;
+}

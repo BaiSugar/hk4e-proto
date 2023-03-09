@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TrackingIOInfo {
+	string Rydevicetype = 2;
+	string ClientTz = 6;
+	string CurrentCaid = 15;
+	string CachedCaid = 11;
+	string Deviceid = 5;
+	string Mac = 9;
+	string Appid = 3;
+}

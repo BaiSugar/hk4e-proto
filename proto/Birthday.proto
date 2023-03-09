@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message Birthday {
+	uint32 Month = 1;
+	uint32 Day = 2;
+}

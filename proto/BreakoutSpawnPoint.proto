@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BreakoutPhysicalObject.proto";
+
+message BreakoutSpawnPoint {
+	uint32 Id = 1;
+	uint32 BrickSuiteId = 2;
+	repeated BreakoutPhysicalObject SpawnedBrickList = 3;
+}

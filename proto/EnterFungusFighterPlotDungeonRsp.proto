@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EnterFungusFighterPlotDungeonRsp {
+	enum BJGOKLGJCHD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23496;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 3;
+	repeated uint32 FungusIdList = 13;
+	uint32 DungeonId = 4;
+}

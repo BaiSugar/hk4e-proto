@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayerQuitFromMpNotify_QuitReason.proto";
+
+message PlayerQuitFromMpNotify {
+	enum PlayerQuitFromMpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1831;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	PlayerQuitFromMpNotify_QuitReason Reason = 1;
+}

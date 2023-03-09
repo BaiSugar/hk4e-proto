@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GMObstacleInfo.proto";
+
+message GMShowObstacleRsp {
+	enum GMShowObstacleRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2356;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 12;
+	repeated GMObstacleInfo Obstacles = 7;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FurnitureMakeSlot.proto";
+
+message FurnitureMakeCancelRsp {
+	enum FurnitureMakeCancelRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4561;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 4;
+	FurnitureMakeSlot FurnitureMakeSlot = 14;
+	uint32 MakeId = 10;
+}

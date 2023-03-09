@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerApplyEnterMpRsp {
+	enum PlayerApplyEnterMpRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1846;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Param = 5;
+	uint32 TargetUid = 10;
+	int32 Retcode = 11;
+}

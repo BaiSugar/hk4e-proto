@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BackMyWorldReq {
+	enum BackMyWorldReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 231;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

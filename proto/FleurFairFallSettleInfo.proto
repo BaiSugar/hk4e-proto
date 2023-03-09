@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FallSettleInfo.proto";
+
+message FleurFairFallSettleInfo {
+	FallSettleInfo SettleInfo = 11;
+	bool IsNewRecord = 14;
+}

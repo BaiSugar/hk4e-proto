@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CoopPoint.proto";
+
+message CoopPointUpdateNotify {
+	enum CoopPointUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1987;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	CoopPoint CoopPoint = 11;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonCandidateTeamRefuseNotify {
+	enum DungeonCandidateTeamRefuseNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 928;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PlayerUid = 10;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarDelNotify {
+	enum AvatarDelNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1670;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint64 AvatarGuidList = 1;
+}

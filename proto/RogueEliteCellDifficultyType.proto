@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum RogueEliteCellDifficultyType {
+	RogueEliteNormal = 0;
+	RogueEliteHard = 1;
+}

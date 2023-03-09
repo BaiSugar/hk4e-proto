@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "NpcData.proto";
+import "SuiteData.proto";
+
+message HomeMarkPointFurnitureData {
+	uint32 Guid = 1;
+	uint32 FurnitureId = 2;
+	uint32 FurnitureType = 3;
+	Rotation Pos = 4;
+	oneof HomeMarkPointFurnitureData_ExtraOneofCase {
+		NpcData npc_data = 6;
+		SuiteData suite_data = 7;
+	}
+}

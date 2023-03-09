@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LanternRiteFireworksChallengeInfo {
+	bool IsFullScore = 11;
+	uint32 BestScore = 14;
+	uint32 ChallengeId = 15;
+}

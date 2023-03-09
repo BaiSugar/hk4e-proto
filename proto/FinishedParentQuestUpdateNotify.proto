@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ParentQuest.proto";
+
+message FinishedParentQuestUpdateNotify {
+	enum FinishedParentQuestUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 420;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ParentQuest ParentQuestList = 15;
+}

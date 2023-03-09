@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarTeamResonanceInfo {
+	uint64 AvatarGuid = 10;
+	repeated uint32 DelTeamResonanceIdList = 8;
+	uint32 EntityId = 15;
+	repeated uint32 AddTeamResonanceIdList = 2;
+}

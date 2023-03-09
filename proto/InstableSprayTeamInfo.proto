@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "InstableSprayAvatarInfo.proto";
+
+message InstableSprayTeamInfo {
+	repeated InstableSprayAvatarInfo AvatarInfoList = 12;
+}

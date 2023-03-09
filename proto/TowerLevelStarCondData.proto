@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TowerLevelStarCondData {
+	uint32 CondValue = 5;
+	bool IsFail = 1;
+	bool IsPause = 2;
+	uint32 StarCondIndex = 8;
+}

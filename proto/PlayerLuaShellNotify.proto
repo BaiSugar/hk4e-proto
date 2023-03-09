@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+import "LuaShellType.proto";
+
+message PlayerLuaShellNotify {
+	enum PlayerLuaShellNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 191;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bytes LuaShell = 5;
+	uint32 UseType = 8;
+	LuaShellType ShellType = 7;
+	uint32 Id = 12;
+}

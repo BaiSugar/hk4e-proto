@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DraftGuestReplyInviteNotify {
+	enum DraftGuestReplyInviteNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5470;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GuestUid = 13;
+	uint32 DraftId = 15;
+	bool IsAgree = 7;
+}

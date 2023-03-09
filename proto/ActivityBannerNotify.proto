@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivityBannerNotify {
+	enum ActivityBannerNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2005;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ScheduleId = 11;
+	uint32 ActivityId = 6;
+}

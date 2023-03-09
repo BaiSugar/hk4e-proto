@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CoopReward_State.proto";
+
+message CoopReward {
+	CoopReward_State State = 8;
+	uint32 Id = 1;
+}

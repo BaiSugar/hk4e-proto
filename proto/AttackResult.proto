@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AttackHitEffectResult.proto";
+import "AbilityIdentifier.proto";
+import "HitCollision.proto";
+import "Rotation.proto";
+
+message AttackResult {
+	uint32 EndureBreak = 6;
+	uint32 BulletFlyTimeMs = 1940;
+	float Damage = 12;
+	bool IsCrit = 9;
+	AttackHitEffectResult HitEffResult = 5;
+	float ElementDurabilityAttenuation = 1333;
+	float DamageShield = 198;
+	bool UseGadgetDamageAction = 1698;
+	uint32 ElementType = 1;
+	uint32 TargetType = 346;
+	bool IsResistText = 531;
+	uint32 CriticalRand = 1576;
+	AbilityIdentifier AbilityIdentifier = 2;
+	HitCollision HitCollision = 14;
+	uint32 AttackTimestampMs = 1829;
+	uint32 AttackerId = 4;
+	string AnimEventId = 11;
+	int32 HitRetreatAngleCompat = 15;
+	uint32 GadgetDamageActionIdx = 55;
+	uint32 DefenseId = 13;
+	bool MuteElementHurt = 555;
+	uint32 AttackCount = 1593;
+	Rotation ResolvedDir = 8;
+	uint32 HitPosType = 7;
+	uint32 HashedAnimEventId = 2009;
+	uint32 AddhurtReactionType = 1569;
+	float EndureDelta = 1169;
+	uint32 CreateCountSyncToServer = 701;
+	float ElementAmplifyRate = 1858;
+	uint32 AmplifyReactionType = 888;
+}

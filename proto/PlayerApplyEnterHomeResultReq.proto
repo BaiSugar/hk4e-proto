@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerApplyEnterHomeResultReq {
+	enum PlayerApplyEnterHomeResultReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4549;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ApplyUid = 5;
+	bool IsAgreed = 4;
+}

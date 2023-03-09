@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+enum FoundationOpType {
+	FoundationOpNone = 0;
+	FoundationOpBuild = 1;
+	FoundationOpDemolition = 2;
+	FoundationOpRebuild = 3;
+	FoundationOpRotate = 4;
+	FoundationOpLock = 5;
+	FoundationOpUnlock = 6;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ServerMessageNotify {
+	enum ServerMessageNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5745;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Index = 6;
+}

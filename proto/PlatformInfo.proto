@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "RotationSpeed.proto";
+import "MovingPlatformType.proto";
+import "Route.proto";
+
+message PlatformInfo {
+	uint32 RouteId = 1;
+	int32 StartIndex = 2;
+	uint32 StartRouteTime = 3;
+	uint32 StartSceneTime = 4;
+	Rotation StartPos = 7;
+	bool IsStarted = 8;
+	RotationSpeed StartRot = 9;
+	uint32 StopSceneTime = 10;
+	Rotation PosOffset = 11;
+	RotationSpeed RotOffset = 12;
+	MovingPlatformType MovingPlatformType = 13;
+	bool IsActive = 14;
+	Route Route = 15;
+	uint32 PointId = 16;
+}

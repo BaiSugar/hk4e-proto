@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForgeQueueManipulateType.proto";
+import "ItemParam.proto";
+
+message ForgeQueueManipulateRsp {
+	enum ForgeQueueManipulateRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 636;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ItemParam ReturnItemList = 3;
+	ForgeQueueManipulateType ManipulateType = 7;
+	repeated ItemParam ExtraOutputItemList = 13;
+	repeated ItemParam OutputItemList = 12;
+	int32 Retcode = 5;
+}

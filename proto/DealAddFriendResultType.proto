@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum DealAddFriendResultType {
+	DealAddFriendReject = 0;
+	DealAddFriendAccept = 1;
+}

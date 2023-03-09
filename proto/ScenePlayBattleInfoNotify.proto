@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ScenePlayBattleInfo.proto";
+
+message ScenePlayBattleInfoNotify {
+	enum ScenePlayBattleInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4355;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	ScenePlayBattleInfo BattleInfo = 3;
+}

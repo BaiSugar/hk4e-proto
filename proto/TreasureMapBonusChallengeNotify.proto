@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TreasureMapBonusChallengeInfo.proto";
+
+message TreasureMapBonusChallengeNotify {
+	enum TreasureMapBonusChallengeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2056;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	TreasureMapBonusChallengeInfo Info = 5;
+}

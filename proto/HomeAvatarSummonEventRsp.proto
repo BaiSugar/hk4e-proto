@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeAvatarSummonEventRsp {
+	enum HomeAvatarSummonEventRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4696;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 EventId = 9;
+	int32 Retcode = 13;
+}

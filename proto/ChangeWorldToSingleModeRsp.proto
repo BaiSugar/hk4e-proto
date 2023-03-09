@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChangeWorldToSingleModeRsp {
+	enum ChangeWorldToSingleModeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3197;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 QuitMpValidTime = 13;
+	int32 Retcode = 3;
+}

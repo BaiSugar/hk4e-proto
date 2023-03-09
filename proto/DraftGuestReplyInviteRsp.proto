@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DraftGuestReplyInviteRsp {
+	enum DraftGuestReplyInviteRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5480;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DraftId = 4;
+	bool IsAgree = 7;
+	int32 Retcode = 2;
+}

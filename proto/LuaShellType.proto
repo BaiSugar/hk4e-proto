@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum LuaShellType {
+	LuashellNone = 0;
+	LuashellNormal = 1;
+	LuashellSecurity = 2;
+	LuashellShellCode = 3;
+}

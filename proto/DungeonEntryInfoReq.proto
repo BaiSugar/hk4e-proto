@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Uint32Pair.proto";
+
+message DungeonEntryInfoReq {
+	enum DungeonEntryInfoReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 905;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 PointId = 14;
+	repeated Uint32Pair ScenePointIdList = 12;
+	uint32 SceneId = 3;
+}

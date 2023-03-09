@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForwardType.proto";
+import "Rotation.proto";
+
+message EvtDoSkillSuccNotify {
+	enum EvtDoSkillSuccNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 398;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 SkillId = 13;
+	ForwardType ForwardType = 5;
+	uint32 CasterId = 2;
+	Rotation Forward = 14;
+}

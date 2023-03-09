@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message NightCrowGadgetObservationMatchReq {
+	enum NightCrowGadgetObservationMatchReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 843;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 GadgetEntityId = 7;
+	uint32 TargetGadgetState = 9;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EquipParam {
+	uint32 ItemId = 1;
+	uint32 ItemNum = 2;
+	uint32 ItemLevel = 3;
+	uint32 PromoteLevel = 4;
+}

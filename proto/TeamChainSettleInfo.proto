@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TeamChainSettleInfo {
+	bool IsNewRecord = 13;
+	uint32 StageId = 4;
+	uint32 TotalScore = 3;
+	uint32 Difficulty = 15;
+	repeated uint32 ScoreList = 9;
+}

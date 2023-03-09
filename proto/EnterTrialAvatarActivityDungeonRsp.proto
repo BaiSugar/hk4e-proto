@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EnterTrialAvatarActivityDungeonRsp {
+	enum EnterTrialAvatarActivityDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2046;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TrialAvatarIndexId = 8;
+	uint32 ActivityId = 2;
+	int32 Retcode = 11;
+}

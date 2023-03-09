@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CustomGadgetTreeInfo.proto";
+
+message GravenInnocenceEditCarveCombinationReq {
+	enum OGPPNOHCCAM {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23125;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	CustomGadgetTreeInfo CombinationInfo = 15;
+	uint32 EntityId = 5;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum BrickBreakerStageType {
+	BrickBreakerStagePrepare = 0;
+	BrickBreakerStagePick = 1;
+	BrickBreakerStageGame = 2;
+	BrickBreakerStagePlay = 3;
+	BrickBreakerStageSettle = 4;
+}

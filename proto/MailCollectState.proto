@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum MailCollectState {
+	MailCollectibleUnkonw = 0;
+	MailNotCollectible = 1;
+	MailCollectibleUncollected = 2;
+	MailCollectibleCollected = 3;
+}

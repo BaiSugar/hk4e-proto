@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChannellerSlabLoopDungeonChallengeInfoNotify {
+	enum ChannellerSlabLoopDungeonChallengeInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8499;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DifficultyId = 9;
+	uint32 ChallengeScore = 1;
+	repeated uint32 ConditionIdList = 10;
+	uint32 DungeonIndex = 3;
+	repeated uint32 SchemeBuffIdList = 8;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+
+
+message PingReq {
+	enum PingReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Seq = 11;
+	bytes ScData = 13;
+	double TotalTickTime = 4;
+	float UeTime = 15;
+	uint32 ClientTime = 8;
+}

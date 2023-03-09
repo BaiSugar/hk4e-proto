@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DailyTaskInfo.proto";
+
+message DailyTaskProgressNotify {
+	enum DailyTaskProgressNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 179;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	DailyTaskInfo Info = 12;
+}

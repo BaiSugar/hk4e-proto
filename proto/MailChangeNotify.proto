@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MailData.proto";
+
+message MailChangeNotify {
+	enum MailChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1455;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 DelMailIdList = 4;
+	repeated MailData MailList = 5;
+}

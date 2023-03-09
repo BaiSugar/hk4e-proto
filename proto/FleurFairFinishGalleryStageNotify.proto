@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FleurFairFinishGalleryStageNotify {
+	enum FleurFairFinishGalleryStageNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5394;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+}

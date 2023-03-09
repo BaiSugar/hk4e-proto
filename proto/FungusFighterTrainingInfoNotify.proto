@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FungusFighterTrainingInfoNotify {
+	enum JBHPHCENNEO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5545;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 BuffLastTime = 15;
+	uint32 MaxSkillCount = 14;
+	uint32 KilledMonsterCount = 1;
+	uint32 RestSkillCount = 7;
+	uint32 MaxMonsterCount = 3;
+	uint32 BuffId = 6;
+	uint32 BuffStartTime = 13;
+}

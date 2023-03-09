@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VectorPlane {
+	float X = 1;
+	float Y = 2;
+}

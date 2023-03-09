@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGDSCardData.proto";
+import "GCGDSDeckData.proto";
+
+message GCGDSDataNotify {
+	enum EGDHDJOMKPG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7558;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 UnlockCardBackIdList = 5;
+	repeated GCGDSCardData CardList = 7;
+	uint32 CurDeckId = 2;
+	repeated uint32 UnlockDeckIdList = 13;
+	repeated GCGDSDeckData DeckList = 11;
+	repeated uint32 UnlockFieldIdList = 8;
+}

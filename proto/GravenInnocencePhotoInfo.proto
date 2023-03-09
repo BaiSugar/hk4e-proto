@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GravenInnocencePhotoObjectInfo.proto";
+import "GravenInnocencePhotoStageInfo.proto";
+
+message GravenInnocencePhotoInfo {
+	repeated GravenInnocencePhotoObjectInfo ObjectInfoList = 10;
+	repeated GravenInnocencePhotoStageInfo StageInfoList = 3;
+}

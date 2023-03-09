@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSChangeCurDeckRsp {
+	enum BAHGDHIPKGL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7565;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 9;
+	uint32 DeckId = 12;
+}

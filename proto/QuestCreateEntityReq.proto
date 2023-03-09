@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CreateEntityInfo.proto";
+
+message QuestCreateEntityReq {
+	enum QuestCreateEntityReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 414;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ParentQuestId = 4;
+	bool IsRewind = 12;
+	CreateEntityInfo Entity = 11;
+	uint32 QuestId = 10;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message BattlePassBuySuccNotify {
+	enum BattlePassBuySuccNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2642;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ProductPlayType = 11;
+	uint32 AddPoint = 6;
+	uint32 ScheduleId = 14;
+	repeated ItemParam ItemList = 2;
+}

@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "ForwardType.proto";
+import "HitColliderType.proto";
+
+message EvtBulletHitNotify {
+	enum EvtBulletHitNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 378;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	Rotation HitNormal = 4;
+	uint32 HitEntityId = 14;
+	int32 HitBoxIndex = 15;
+	ForwardType ForwardType = 6;
+	uint32 EntityId = 10;
+	uint32 ForwardPeer = 13;
+	uint32 SingleBulletId = 12;
+	HitColliderType HitColliderType = 8;
+	Rotation HitPoint = 1;
+}

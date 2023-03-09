@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DungeonCandidateTeamPlayerLeaveReason.proto";
+
+message DungeonCandidateTeamPlayerLeaveNotify {
+	enum DungeonCandidateTeamPlayerLeaveNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 973;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	DungeonCandidateTeamPlayerLeaveReason Reason = 2;
+	uint32 PlayerUid = 12;
+}

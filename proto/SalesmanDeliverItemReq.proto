@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SalesmanDeliverItemReq {
+	enum SalesmanDeliverItemReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2117;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ScheduleId = 9;
+}

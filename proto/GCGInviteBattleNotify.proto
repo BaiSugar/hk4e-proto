@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGInviteBattleNotify {
+	enum BBKBNGLJNAL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7482;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ljemjfinpph = 8;
+	uint32 ConfirmEndTime = 9;
+}

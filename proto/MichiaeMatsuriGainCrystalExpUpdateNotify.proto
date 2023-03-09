@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MichiaeMatsuriGainCrystalExpUpdateNotify {
+	enum MichiaeMatsuriGainCrystalExpUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8794;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GainCrystalExp = 13;
+	uint32 ActivityId = 4;
+}

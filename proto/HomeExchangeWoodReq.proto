@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeExchangeWoodReq {
+	enum NIIPNNDOJGL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4672;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	map<uint32, uint32> MaterialCountMap = 1;
+	uint32 WoodId = 8;
+}

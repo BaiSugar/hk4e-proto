@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message VehicleLocationInfo {
+	repeated uint32 UidList = 11;
+	uint32 GadgetId = 7;
+	Rotation Pos = 12;
+	uint32 EntityId = 2;
+	Rotation Rot = 14;
+	float CurHp = 5;
+	uint32 OwnerUid = 9;
+	float MaxHp = 6;
+}

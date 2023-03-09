@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeAvatarRewardEventGetReq {
+	enum HomeAvatarRewardEventGetReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4692;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 EventId = 7;
+	uint32 AvatarId = 12;
+}

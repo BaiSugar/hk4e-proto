@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message DropHintNotify {
+	enum DropHintNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 642;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	Rotation Position = 9;
+	repeated uint32 ItemIdList = 10;
+}

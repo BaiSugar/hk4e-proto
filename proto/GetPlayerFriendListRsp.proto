@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FriendBrief.proto";
+
+message GetPlayerFriendListRsp {
+	enum GetPlayerFriendListRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4055;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated FriendBrief AskFriendList = 7;
+	repeated FriendBrief FriendList = 11;
+	int32 Retcode = 12;
+}

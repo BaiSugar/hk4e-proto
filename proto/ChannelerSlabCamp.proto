@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message ChannelerSlabCamp {
+	Rotation Pos = 14;
+	uint32 RewardId = 11;
+	uint32 GroupId = 5;
+	uint32 BuffNum = 15;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LuminanceStoneChallengeInfo {
+	uint32 KillSpecialMonsterCount = 7;
+	uint32 Score = 15;
+	uint32 KillMonsterCount = 4;
+	uint32 CleanMudCount = 13;
+}

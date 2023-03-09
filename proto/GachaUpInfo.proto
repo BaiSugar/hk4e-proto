@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GachaUpInfo {
+	repeated uint32 ItemIdList = 11;
+	uint32 ItemParentType = 15;
+}

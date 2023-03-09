@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GravenInnocencePhotoFinishRsp {
+	enum DPEEEFFDLIH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22592;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 2;
+	uint32 ObjectId = 5;
+	uint32 Param = 11;
+}

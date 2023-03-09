@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+
+message BlockInfo {
+	uint32 BlockId = 1;
+	uint32 DataVersion = 2;
+	bytes BinData = 3;
+	bool IsDirty = 4;
+}

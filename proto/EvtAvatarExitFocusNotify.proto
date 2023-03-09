@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "ForwardType.proto";
+
+message EvtAvatarExitFocusNotify {
+	enum EvtAvatarExitFocusNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 358;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	Rotation FinishForward = 7;
+	uint32 EntityId = 13;
+	ForwardType ForwardType = 14;
+}

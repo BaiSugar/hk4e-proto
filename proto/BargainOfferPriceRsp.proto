@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BargainResultType.proto";
+
+message BargainOfferPriceRsp {
+	enum BargainOfferPriceRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 418;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	BargainResultType BargainResult = 2;
+	int32 Retcode = 13;
+	int32 CurMood = 7;
+	uint32 ResultParam = 11;
+}

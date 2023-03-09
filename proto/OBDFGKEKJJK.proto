@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message OBDFGKEKJJK {
+	enum PKCBBJPGNKL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6548;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 PlayIndex = 11;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CustomDungeonSocial {
+	uint32 StoreNum = 7;
+	uint32 WinNum = 11;
+	uint32 LikeNum = 6;
+	uint32 PlayNum = 12;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ServerLogLevel {
+	LogLevelNone = 0;
+	LogLevelDebug = 1;
+	LogLevelInfo = 2;
+	LogLevelWarning = 3;
+	LogLevelError = 4;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageHuntingStageData {
+	bool IsOpen = 12;
+	bool IsFinish = 11;
+	uint32 StageId = 10;
+	uint32 OpenTime = 1;
+	uint32 RecordValue = 2;
+}

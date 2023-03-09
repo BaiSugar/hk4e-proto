@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MultistagePlayEndNotify {
+	enum MultistagePlayEndNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5393;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GroupId = 2;
+	uint32 PlayIndex = 3;
+}

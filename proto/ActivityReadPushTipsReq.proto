@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivityReadPushTipsReq {
+	enum ActivityReadPushTipsReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8896;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 ActivityPushTipsIdList = 11;
+	uint32 ActivityId = 14;
+}

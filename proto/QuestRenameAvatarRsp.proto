@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message QuestRenameAvatarRsp {
+	enum LLGBKAMNLLC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 401;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string AvatarName = 15;
+	bool IsCheck = 2;
+	uint32 RenameId = 13;
+	int32 Retcode = 10;
+}

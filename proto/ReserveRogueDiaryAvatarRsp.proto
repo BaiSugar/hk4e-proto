@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReserveRogueDiaryAvatarRsp {
+	enum ReserveRogueDiaryAvatarRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8800;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+}

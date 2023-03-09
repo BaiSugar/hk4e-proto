@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReunionPrivilegeInfo {
+	uint32 TotalCount = 7;
+	uint32 PrivilegeId = 12;
+	uint32 CurDayCount = 8;
+}

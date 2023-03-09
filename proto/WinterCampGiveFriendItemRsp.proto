@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WinterCampGiveFriendItemRsp {
+	enum WinterCampGiveFriendItemRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8656;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 LimitItemIdList = 7;
+	int32 Retcode = 15;
+}

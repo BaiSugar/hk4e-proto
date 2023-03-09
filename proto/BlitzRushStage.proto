@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlitzRushStage {
+	uint32 OpenTime = 14;
+	bool IsOpen = 6;
+}

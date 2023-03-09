@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "CylinderSize.proto";
+import "PolygonSize.proto";
+
+message PlayerEyePointStateNotify {
+	enum PlayerEyePointStateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3435;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsUseEyePoint = 1;
+	Rotation EyePointPos = 14;
+	uint32 RegionGroupId = 11;
+	uint32 RegionShape = 2;
+	uint32 RegionConfigId = 4;
+	int32 FixLodLevel = 6;
+	uint32 RegionEntityId = 5;
+	bool IsFilterStreamPos = 10;
+	oneof PlayerEyePointStateNotify_RegionSizeOneofCase {
+		float sphere_radius = 152;
+		Rotation cubic_size = 879;
+		CylinderSize cylinder_size = 1320;
+		PolygonSize polygon_size = 1996;
+	}
+}

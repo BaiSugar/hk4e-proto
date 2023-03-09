@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BartenderCancelOrderReq {
+	enum BartenderCancelOrderReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8663;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 QuestId = 10;
+}

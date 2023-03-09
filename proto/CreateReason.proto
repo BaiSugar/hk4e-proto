@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum CreateReason {
+	CreateNone = 0;
+	CreateQuest = 1;
+	CreateEnergy = 2;
+}

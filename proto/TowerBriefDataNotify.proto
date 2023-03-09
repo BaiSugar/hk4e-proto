@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TowerBriefDataNotify {
+	enum TowerBriefDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2405;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsFinishedEntranceFloor = 2;
+	uint32 TotalStarNum = 5;
+	uint32 TowerScheduleId = 3;
+	uint32 LastFloorIndex = 4;
+	uint32 ScheduleStartTime = 13;
+	uint32 NextScheduleChangeTime = 12;
+	uint32 LastLevelIndex = 14;
+}

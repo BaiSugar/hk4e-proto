@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message H5ActivityInfo {
+	string PrefabPath = 13;
+	uint32 ContentCloseTime = 1;
+	bool IsEntranceOpen = 6;
+	uint32 EndTime = 11;
+	uint32 H5ActivityId = 4;
+	uint32 BeginTime = 8;
+	string Url = 3;
+	uint32 H5ScheduleId = 9;
+}

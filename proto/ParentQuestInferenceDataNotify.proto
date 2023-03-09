@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "InferencePageInfo.proto";
+
+message ParentQuestInferenceDataNotify {
+	enum BJCFOHDNKDI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 463;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ParentQuestId = 8;
+	repeated InferencePageInfo InferencePageList = 11;
+}

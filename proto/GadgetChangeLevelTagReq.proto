@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CustomGadgetTreeInfo.proto";
+
+message GadgetChangeLevelTagReq {
+	enum GadgetChangeLevelTagReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 850;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 GadgetEntityId = 5;
+	uint32 LevelTagId = 13;
+	CustomGadgetTreeInfo CombinationInfo = 10;
+}

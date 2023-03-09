@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayerPreEnterMpNotify_State.proto";
+
+message PlayerPreEnterMpNotify {
+	enum PlayerPreEnterMpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1835;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	PlayerPreEnterMpNotify_State State = 7;
+	uint32 Uid = 10;
+	string Nickname = 15;
+}

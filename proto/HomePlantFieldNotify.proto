@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomePlantFieldData.proto";
+
+message HomePlantFieldNotify {
+	enum HomePlantFieldNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4731;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	HomePlantFieldData Field = 4;
+}

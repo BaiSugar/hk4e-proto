@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SummerTimeSprintBoatRestartReq {
+	enum SummerTimeSprintBoatRestartReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8994;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ScheduleId = 10;
+	uint32 GroupId = 5;
+}

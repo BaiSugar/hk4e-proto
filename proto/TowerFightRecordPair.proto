@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TowerFightRecordPair {
+	uint32 Data = 12;
+	uint32 AvatarId = 15;
+}

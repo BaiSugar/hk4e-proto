@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CharAmusementSettleNotify {
+	enum PPKKMCEDOFG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21939;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FinishTime = 9;
+	bool IsNewRecord = 11;
+	bool IsSucc = 13;
+}

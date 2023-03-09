@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeAllUnlockedBgmIdListNotify {
+	enum HomeAllUnlockedBgmIdListNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4563;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 AllUnlockedBgmIdList = 13;
+}

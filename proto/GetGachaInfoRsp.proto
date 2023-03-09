@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GachaInfo.proto";
+
+message GetGachaInfoRsp {
+	enum GetGachaInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1555;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	bool IsUnderGeneralRestrict = 11;
+	uint32 DailyGachaTimes = 1;
+	uint32 GachaRandom = 6;
+	bool IsUnderMinorsRestrict = 13;
+	repeated GachaInfo GachaInfoList = 3;
+}

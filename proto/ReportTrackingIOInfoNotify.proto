@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReportTrackingIOInfoNotify {
+	enum ReportTrackingIOInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4131;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	string Appid = 5;
+	string Rydevicetype = 8;
+	string Mac = 3;
+	string ClientTz = 2;
+	string Deviceid = 9;
+}

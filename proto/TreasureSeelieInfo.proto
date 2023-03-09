@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TreasureSeelieInfo {
+	uint32 Progress = 11;
+	uint32 Goal = 2;
+}

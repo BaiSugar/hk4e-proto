@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message QuickOpenActivityRsp {
+	enum QuickOpenActivityRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8108;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ActivityId = 7;
+	int32 Retcode = 6;
+}

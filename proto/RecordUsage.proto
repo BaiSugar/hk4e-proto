@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum RecordUsage {
+	UgcRecordUsageNone = 0;
+	UgcRecordUsageImport = 1;
+	UgcRecordUsagePlay = 2;
+	UgcRecordUsageTrial = 3;
+	UgcRecordUsageCompare = 4;
+}

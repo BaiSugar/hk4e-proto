@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ExpeditionChallengeInfo {
+	uint32 OpenTime = 11;
+	uint32 Id = 13;
+	bool IsFinished = 15;
+}

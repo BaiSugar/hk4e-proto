@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DelBackupAvatarTeamRsp {
+	enum HMFPBAACAFA {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1756;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 BackupAvatarTeamId = 11;
+	int32 Retcode = 12;
+}

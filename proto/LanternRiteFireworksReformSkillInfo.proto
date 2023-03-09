@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LanternRiteFireworksReformSkillInfo {
+	bool IsUnlock = 10;
+	uint32 UnlockChallengeTime = 6;
+	uint32 UnlockChallengeId = 11;
+	uint32 SkillId = 3;
+}

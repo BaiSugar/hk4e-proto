@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AbilityGadgetInfo {
+	uint32 CampId = 1;
+	uint32 CampTargetType = 2;
+	uint32 TargetEntityId = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarTeam {
+	string TeamName = 11;
+	repeated uint64 AvatarGuidList = 5;
+}

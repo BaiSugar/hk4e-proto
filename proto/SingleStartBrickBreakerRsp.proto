@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SingleStartBrickBreakerRsp {
+	enum BIHKAFCIBLF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23349;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsDungeon = 15;
+	uint32 LevelId = 11;
+	int32 Retcode = 3;
+}

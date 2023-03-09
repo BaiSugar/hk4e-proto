@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReliquaryFilterStateSaveNotify {
+	enum LBCPMMCKAIH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 672;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	map<uint32, uint32> ReliquaryFilterStateMap = 3;
+}

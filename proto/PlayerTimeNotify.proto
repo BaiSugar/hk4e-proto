@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerTimeNotify {
+	enum PlayerTimeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 103;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint64 PlayerTime = 13;
+	uint64 ServerTime = 15;
+	bool IsPaused = 7;
+}

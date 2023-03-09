@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PropValue.proto";
+
+message PlayerDataNotify {
+	enum PlayerDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 170;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string NickName = 11;
+	uint32 RegionId = 9;
+	uint64 ServerTime = 3;
+	bool IsFirstLoginToday = 7;
+	map<uint32, PropValue> PropMap = 5;
+}

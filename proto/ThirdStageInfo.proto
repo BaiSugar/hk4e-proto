@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ThirdStageInfo {
+	uint32 LeftTime = 7;
+	bool IsSuccess = 6;
+}

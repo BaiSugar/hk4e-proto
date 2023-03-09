@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RoguelikeRefreshCardCostUpdateNotify {
+	enum RoguelikeRefreshCardCostUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8164;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ItemId = 4;
+	uint32 ItemCount = 8;
+}

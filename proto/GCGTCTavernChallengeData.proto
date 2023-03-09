@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGTCTavernChallengeData {
+	repeated uint32 UnlockLevelIdList = 13;
+	uint32 CharacterId = 1;
+}

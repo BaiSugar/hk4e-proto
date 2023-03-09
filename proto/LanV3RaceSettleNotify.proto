@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LanV3RaceSettleNotify {
+	enum PCKFCBDIILI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23477;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsNewRecord = 3;
+	uint32 Score = 8;
+	uint32 GalleryId = 9;
+	uint32 TotalCointCount = 15;
+	bool IsSuccess = 7;
+	uint32 LevelId = 14;
+	uint32 CoinCount = 11;
+	uint32 RemainTime = 5;
+}

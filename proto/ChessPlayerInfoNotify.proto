@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChessPlayerInfo.proto";
+
+message ChessPlayerInfoNotify {
+	enum ChessPlayerInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5326;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	ChessPlayerInfo PlayerInfo = 15;
+}

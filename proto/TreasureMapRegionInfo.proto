@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message TreasureMapRegionInfo {
+	uint32 CurrentProgress = 5;
+	uint32 GoalPoints = 12;
+	uint32 StartTime = 6;
+	uint32 SceneId = 1;
+	uint32 RegionId = 14;
+	uint32 RegionRadius = 8;
+	bool IsFindMpSpot = 15;
+	bool IsDoneMpSpot = 2;
+	Rotation RegionCenterPos = 13;
+}

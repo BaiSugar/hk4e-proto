@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "IrodoriChessPlayerInfo.proto";
+
+message IrodoriChessPlayerInfoNotify {
+	enum IrodoriChessPlayerInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5338;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	IrodoriChessPlayerInfo PlayerInfo = 13;
+}

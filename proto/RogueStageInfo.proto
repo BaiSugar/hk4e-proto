@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueShowAvatarTeamInfo.proto";
+import "RoguelikeRuneRecord.proto";
+
+message RogueStageInfo {
+	uint32 CachedCoinBNum = 8;
+	repeated RoguelikeRuneRecord RuneRecordList = 3;
+	uint32 MaxPassedLevel = 4;
+	uint32 CoinCNum = 14;
+	uint32 ExploreCellNum = 15;
+	uint32 ReviseMonsterLevel = 520;
+	RogueShowAvatarTeamInfo AvatarTeam = 10;
+	uint32 CachedCoinCNum = 1765;
+	bool IsExplored = 12;
+	bool IsPassed = 9;
+	bool IsInCombat = 2;
+	bool IsTakenReward = 7;
+	uint32 StageId = 13;
+	uint32 CurLevel = 6;
+	bool IsOpen = 11;
+}

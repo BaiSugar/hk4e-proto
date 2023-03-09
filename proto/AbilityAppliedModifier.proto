@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityString.proto";
+import "AbilityAttachedModifier.proto";
+import "ModifierDurability.proto";
+
+message AbilityAppliedModifier {
+	int32 ModifierLocalId = 1;
+	uint32 ParentAbilityEntityId = 2;
+	AbilityString ParentAbilityName = 3;
+	AbilityString ParentAbilityOverride = 4;
+	uint32 InstancedAbilityId = 5;
+	uint32 InstancedModifierId = 6;
+	float ExistDuration = 7;
+	AbilityAttachedModifier AttachedInstancedModifier = 8;
+	uint32 ApplyEntityId = 9;
+	bool IsAttachedParentAbility = 10;
+	ModifierDurability ModifierDurability = 11;
+	uint32 SbuffUid = 12;
+	bool IsServerbuffModifier = 13;
+}

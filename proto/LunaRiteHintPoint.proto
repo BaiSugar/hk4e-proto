@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "LunaRiteHintPointType.proto";
+
+message LunaRiteHintPoint {
+	uint32 Index = 4;
+	Rotation Pos = 11;
+	uint32 AreaId = 2;
+	LunaRiteHintPointType Type = 15;
+}

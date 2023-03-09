@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BlossomBriefInfo.proto";
+
+message BlossomBriefInfoNotify {
+	enum BlossomBriefInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2787;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated BlossomBriefInfo BriefInfoList = 9;
+}

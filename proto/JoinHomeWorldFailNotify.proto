@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message JoinHomeWorldFailNotify {
+	enum JoinHomeWorldFailNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4567;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 4;
+	uint32 TargetUid = 11;
+}

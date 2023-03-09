@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "VintageMarketStoreOpInfo.proto";
+
+message VintageMarketStoreChooseStrategyReq {
+	enum MEMBHLBAAFD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20971;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 StoreId = 10;
+	repeated uint32 StrategyList = 2;
+	repeated VintageMarketStoreOpInfo StoreOpList = 15;
+}

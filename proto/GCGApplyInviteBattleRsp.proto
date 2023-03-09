@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGApplyInviteBattleRsp {
+	enum NCBEIOCBEMI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7358;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PunishEndTime = 6;
+	int32 Retcode = 10;
+}

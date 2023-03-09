@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CrystalLinkTeamInfo.proto";
+
+message CrystalLinkEnterDungeonRsp {
+	enum CrystalLinkEnterDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8936;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 LevelId = 11;
+	uint32 DifficultyId = 2;
+	int32 Retcode = 3;
+	repeated CrystalLinkTeamInfo TeamInfoList = 10;
+}

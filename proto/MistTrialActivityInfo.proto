@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MistTrialLevelData.proto";
+
+message MistTrialActivityInfo {
+	repeated MistTrialLevelData TrialLevelDataList = 7;
+}

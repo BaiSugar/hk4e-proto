@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InstableSprayAvatarInfo {
+	bool IsTrial = 2;
+	uint64 AvatarId = 12;
+}

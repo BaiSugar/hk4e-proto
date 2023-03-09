@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GmTalkReq {
+	enum GmTalkReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 55;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	string Msg = 7;
+}

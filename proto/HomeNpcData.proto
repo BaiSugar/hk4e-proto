@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message HomeNpcData {
+	Rotation SpawnPos = 4;
+	uint32 CostumeId = 13;
+	uint32 AvatarId = 5;
+	Rotation SpawnRot = 6;
+}

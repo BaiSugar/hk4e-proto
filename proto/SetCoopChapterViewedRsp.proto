@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SetCoopChapterViewedRsp {
+	enum SetCoopChapterViewedRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1961;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 8;
+	uint32 ChapterId = 9;
+}

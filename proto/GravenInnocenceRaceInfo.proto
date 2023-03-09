@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GravenInnocenceRaceLevelInfo.proto";
+
+message GravenInnocenceRaceInfo {
+	repeated GravenInnocenceRaceLevelInfo LevelInfoList = 7;
+}

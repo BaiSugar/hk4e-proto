@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EvtCostStaminaNotify {
+	enum EvtCostStaminaNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 362;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	float CostStamina = 8;
+	uint32 SkillId = 14;
+}

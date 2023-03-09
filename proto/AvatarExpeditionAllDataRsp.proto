@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarExpeditionInfo.proto";
+
+message AvatarExpeditionAllDataRsp {
+	enum AvatarExpeditionAllDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1654;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ExpeditionCountLimit = 12;
+	repeated uint32 OpenExpeditionList = 9;
+	int32 Retcode = 4;
+	map<uint64, AvatarExpeditionInfo> ExpeditionInfoMap = 10;
+}

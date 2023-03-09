@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGSkillPreviewReactionInfo.proto";
+
+message GCGSkillPreviewElementReactionInfo {
+	repeated uint32 FreshList = 12;
+	repeated uint32 SourceList = 2;
+	repeated GCGSkillPreviewReactionInfo ReactionList = 9;
+}

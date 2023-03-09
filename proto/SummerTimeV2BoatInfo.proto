@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SummerTimeV2BoatInfo {
+	uint32 Param3 = 10;
+	uint32 UsedTime = 6;
+	uint32 Param1 = 4;
+	uint32 Param2 = 5;
+}

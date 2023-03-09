@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BattlePassSchedule.proto";
+
+message BattlePassCurScheduleUpdateNotify {
+	enum BattlePassCurScheduleUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2641;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool HaveCurSchedule = 5;
+	BattlePassSchedule CurSchedule = 14;
+}

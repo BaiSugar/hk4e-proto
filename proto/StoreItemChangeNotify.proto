@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "StoreType.proto";
+import "TrifleItem.proto";
+
+message StoreItemChangeNotify {
+	enum StoreItemChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 687;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated TrifleItem ItemList = 13;
+	StoreType StoreType = 5;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CoinCollectInfo {
+	uint32 CoinTotalNum = 11;
+	uint32 CoinCollectNum = 9;
+}

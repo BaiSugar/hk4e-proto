@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SpiceActivityFinishMakeSpiceRsp {
+	enum SpiceActivityFinishMakeSpiceRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8964;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 2;
+	bool IsSuccess = 4;
+	uint32 StageId = 1;
+}

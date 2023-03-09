@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarEquipAffixInfo.proto";
+
+message AvatarEquipAffixStartNotify {
+	enum AvatarEquipAffixStartNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1602;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	AvatarEquipAffixInfo EquipAffixInfo = 5;
+	uint64 AvatarGuid = 15;
+}

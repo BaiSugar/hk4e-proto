@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LanternProjectionLevelInfo {
+	bool IsCanStart = 4;
+	uint32 Id = 7;
+	uint32 MinFinishTime = 1;
+	bool IsFinished = 14;
+	bool IsShowTips = 2;
+}

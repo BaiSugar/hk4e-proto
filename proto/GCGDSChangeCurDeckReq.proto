@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSChangeCurDeckReq {
+	enum HCIELDHJKAO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7372;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 DeckId = 11;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGPlayerGCGState.proto";
+
+message GCGWorldPlayerGCGStateRsp {
+	enum NGMOOLEDMPJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7280;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 2;
+	repeated GCGPlayerGCGState PlayerState = 5;
+}

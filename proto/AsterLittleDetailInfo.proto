@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AsterLittleStageState.proto";
+
+message AsterLittleDetailInfo {
+	uint32 StageBeginTime = 13;
+	AsterLittleStageState StageState = 9;
+	uint32 StageId = 6;
+	uint32 BeginTime = 11;
+	bool IsOpen = 12;
+}

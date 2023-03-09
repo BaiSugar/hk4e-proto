@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ScenePlayBattleUidOpNotify {
+	enum ScenePlayBattleUidOpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4366;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 EntityId = 4;
+	uint32 ParamIndex = 7;
+	repeated uint32 ParamTargetList = 9;
+	repeated uint32 UidList = 1;
+	uint32 PlayId = 11;
+	repeated uint32 ParamList = 2;
+	uint32 PlayType = 5;
+	uint32 Op = 13;
+	string ParamStr = 12;
+	uint32 ParamDuration = 8;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityInvokeEntryHead.proto";
+import "ForwardType.proto";
+import "AbilityInvokeArgument.proto";
+
+
+message AbilityInvokeEntry {
+	AbilityInvokeEntryHead Head = 13;
+	ForwardType ForwardType = 15;
+	AbilityInvokeArgument ArgumentType = 12;
+	uint32 ForwardPeer = 10;
+	bytes AbilityData = 4;
+	uint32 EventId = 8;
+	uint32 EntityId = 11;
+	double TotalTickTime = 14;
+	bool IsIgnoreAuth = 6;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WinterCampStageInfo.proto";
+
+message WinterCampStageInfoChangeNotify {
+	enum WinterCampStageInfoChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8517;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	WinterCampStageInfo BattleInfo = 15;
+	WinterCampStageInfo ExploreInfo = 3;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "QueryPathRsp_PathStatusType.proto";
+import "Rotation.proto";
+
+message QueryPathRsp {
+	enum QueryPathRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2355;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 13;
+	repeated Rotation Corners = 11;
+	QueryPathRsp_PathStatusType QueryStatus = 6;
+	int32 QueryId = 15;
+}

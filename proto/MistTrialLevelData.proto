@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MistTrialBestAvatar.proto";
+
+message MistTrialLevelData {
+	uint32 OpenTime = 2;
+	uint32 FirstPassTime = 4;
+	uint32 LevelId = 12;
+	bool IsOpen = 6;
+	MistTrialBestAvatar BestHitAvatar = 14;
+	repeated MistTrialBestAvatar BestAvatarList = 13;
+}

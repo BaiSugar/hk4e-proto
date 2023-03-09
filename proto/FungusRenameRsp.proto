@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FungusRenameRsp {
+	enum NJFOKBFCGEJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23858;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 12;
+	uint32 FungusId = 3;
+	uint32 NameId = 7;
+}

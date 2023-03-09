@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message DigMarkPoint {
+	Rotation Rot = 14;
+	Rotation Pos = 2;
+	uint32 BundleId = 3;
+}

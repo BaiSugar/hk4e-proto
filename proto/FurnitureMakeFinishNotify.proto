@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FurnitureMakeFinishNotify {
+	enum FurnitureMakeFinishNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4789;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+}

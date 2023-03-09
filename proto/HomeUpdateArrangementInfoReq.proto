@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeSceneArrangementInfo.proto";
+
+message HomeUpdateArrangementInfoReq {
+	enum HomeUpdateArrangementInfoReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4689;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	HomeSceneArrangementInfo SceneArrangementInfo = 2;
+}

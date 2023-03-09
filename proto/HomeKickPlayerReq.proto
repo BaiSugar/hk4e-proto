@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeKickPlayerReq {
+	enum HomeKickPlayerReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4511;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsKickAll = 7;
+	uint32 TargetUid = 15;
+}

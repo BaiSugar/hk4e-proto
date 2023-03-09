@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MotionInfo.proto";
+
+message EntityMoveFailInfo {
+	MotionInfo FailMotion = 2;
+	uint32 SceneTime = 7;
+	int32 Retcode = 3;
+	uint32 EntityId = 6;
+	uint32 ReliableSeq = 4;
+}

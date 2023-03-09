@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "HomeFurnitureData.proto";
+import "HomeBlockArrangementInfo.proto";
+
+message HomeSceneArrangementInfo {
+	Rotation DjinnPos = 15;
+	uint32 SceneId = 1;
+	bool IsSetBornPos = 5;
+	Rotation BornPos = 10;
+	uint32 ComfortValue = 9;
+	repeated HomeFurnitureData StairList = 11;
+	HomeFurnitureData MainHouse = 6;
+	Rotation BornRot = 8;
+	uint32 TmpVersion = 4;
+	repeated HomeFurnitureData DoorList = 7;
+	repeated HomeBlockArrangementInfo BlockArrangementInfoList = 3;
+	uint32 BgmId = 12;
+}

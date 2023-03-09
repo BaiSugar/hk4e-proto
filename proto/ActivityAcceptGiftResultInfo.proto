@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivityAcceptGiftResultInfo {
+	map<uint32, uint32> AcceptGiftNumMap = 14;
+	uint32 Uid = 11;
+	map<uint32, uint32> UnacceptGiftNumMap = 4;
+}

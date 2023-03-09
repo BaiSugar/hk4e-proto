@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "UgcType.proto";
+
+message CheckUgcUpdateReq {
+	enum CheckUgcUpdateReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6302;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	UgcType UgcType = 3;
+}

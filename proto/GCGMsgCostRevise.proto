@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGCostReviseInfo.proto";
+
+message GCGMsgCostRevise {
+	uint32 ControllerId = 15;
+	GCGCostReviseInfo CostRevise = 10;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DuelHeartSettleNotify {
+	enum DCPKPJOKOHK {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20655;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsNewRecord = 4;
+	bool IsSucc = 5;
+	uint32 CostTime = 1;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChallengeRecord {
+	uint32 BestValue = 2;
+	uint32 ChallengeIndex = 15;
+	uint32 ChallengeId = 3;
+	uint32 ChallengeRecordType = 5;
+}

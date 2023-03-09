@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FriendBrief.proto";
+
+message AddFriendNotify {
+	enum AddFriendNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4092;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TargetUid = 4;
+	FriendBrief TargetFriendBrief = 12;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GalleryStopReason.proto";
+import "IslandPartyGallerySettleInfo.proto";
+import "ExhibitionDisplayInfo.proto";
+
+message IslandPartySettleNotify {
+	enum IslandPartySettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 22820;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated IslandPartyGallerySettleInfo SettleInfoList = 9;
+	repeated ExhibitionDisplayInfo ScoreList = 8;
+	bool IsNewRecord = 14;
+	uint32 TimeRemain = 2;
+	GalleryStopReason Reason = 13;
+}

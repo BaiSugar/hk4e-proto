@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeLimitedShopInfo.proto";
+
+message HomeLimitedShopInfoRsp {
+	enum HomeLimitedShopInfoRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4517;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 10;
+	HomeLimitedShopInfo ShopInfo = 7;
+}

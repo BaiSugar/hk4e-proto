@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGReason.proto";
+
+message GCGMsgModifyRemove {
+	uint32 ControllerId = 7;
+	repeated uint32 CardGuidList = 3;
+	GCGReason Reason = 1;
+	uint32 OwnerCardGuid = 2;
+}

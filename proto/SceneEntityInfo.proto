@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProtEntityType.proto";
+import "MotionInfo.proto";
+import "Avatar.proto";
+import "Monster.proto";
+import "Npc.proto";
+import "Gadget.proto";
+import "EntityClientData.proto";
+import "EntityAuthorityInfo.proto";
+import "PropPair.proto";
+import "FightPropPair.proto";
+import "AnimatorParameterValueInfoPair.proto";
+import "EntityEnvironmentInfo.proto";
+import "ServerBuff.proto";
+
+message SceneEntityInfo {
+	ProtEntityType EntityType = 1;
+	uint32 EntityId = 2;
+	string Name = 3;
+	MotionInfo MotionInfo = 4;
+	repeated PropPair PropList = 5;
+	repeated FightPropPair FightPropList = 6;
+	uint32 LifeState = 7;
+	repeated AnimatorParameterValueInfoPair AnimatorParaList = 9;
+	oneof SceneEntityInfo_EntityOneofCase {
+		Avatar avatar = 10;
+		Monster monster = 11;
+		Npc npc = 12;
+		Gadget gadget = 13;
+	}
+	uint32 LastMoveSceneTimeMs = 17;
+	uint32 LastMoveReliableSeq = 18;
+	EntityClientData EntityClientData = 19;
+	repeated EntityEnvironmentInfo EntityEnvironmentInfoList = 20;
+	EntityAuthorityInfo EntityAuthorityInfo = 21;
+	repeated string TagList = 22;
+	repeated ServerBuff ServerBuffList = 23;
+}

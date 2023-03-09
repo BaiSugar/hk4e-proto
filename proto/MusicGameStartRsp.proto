@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MusicGameStartRsp {
+	enum MusicGameStartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8893;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 10;
+	uint64 UgcGuid = 8;
+	uint32 MusicBasicId = 15;
+}

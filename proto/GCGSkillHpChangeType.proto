@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGSkillHpChangeType {
+	None = 0;
+	Damage = 1;
+	Heal = 2;
+}

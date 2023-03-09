@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGDuelChallenge.proto";
+
+message GCGChallengeUpdateNotify {
+	enum PHDBJKPOOMO {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7731;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	GCGDuelChallenge Challenge = 4;
+	uint32 ServerSeq = 9;
+}

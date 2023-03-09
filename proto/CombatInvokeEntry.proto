@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+import "CombatTypeArgument.proto";
+import "ForwardType.proto";
+
+message CombatInvokeEntry {
+	bytes CombatData = 7;
+	CombatTypeArgument ArgumentType = 8;
+	ForwardType ForwardType = 15;
+}

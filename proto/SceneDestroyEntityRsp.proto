@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneDestroyEntityRsp {
+	enum SceneDestroyEntityRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 245;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 10;
+	uint32 EntityId = 4;
+}

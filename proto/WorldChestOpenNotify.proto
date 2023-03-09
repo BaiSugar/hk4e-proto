@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WorldChestOpenNotify {
+	enum GCDLLCOAPND {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3085;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GroupId = 3;
+	uint32 SceneId = 6;
+	uint32 ConfigId = 8;
+}

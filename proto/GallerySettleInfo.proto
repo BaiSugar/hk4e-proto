@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GallerySettleInfo {
+	bool IsSuccess = 5;
+	uint32 Energy = 7;
+	map<uint32, int32> EnergyStatMap = 9;
+	uint32 GalleryStageCount = 14;
+	uint32 GalleryStageIndex = 15;
+}

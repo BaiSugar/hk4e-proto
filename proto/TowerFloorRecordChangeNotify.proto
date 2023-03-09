@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TowerFloorRecord.proto";
+
+message TowerFloorRecordChangeNotify {
+	enum TowerFloorRecordChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2455;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsFinishedEntranceFloor = 11;
+	repeated TowerFloorRecord TowerFloorRecordList = 12;
+}

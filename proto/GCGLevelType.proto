@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGLevelType {
+	GCGLevelNone = 0;
+	GCGLevelConst = 1;
+	GCGLevelWeek = 2;
+	GCGLevelWorld = 3;
+	GCGLevelBoss = 4;
+	GCGLevelCharacter = 5;
+	GCGLevelBreak = 6;
+	GCGLevelQuest = 7;
+	GCGLevelGuideGroup = 8;
+	HLFDBCIJMHL = 9;
+}

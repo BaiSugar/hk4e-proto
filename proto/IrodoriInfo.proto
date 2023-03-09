@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "IrodoriFlowerData.proto";
+import "IrodoriPoetryData.proto";
+import "IrodoriChessData.proto";
+import "IrodoriMasterLevelInfo.proto";
+
+message IrodoriInfo {
+	IrodoriFlowerData FlowerData = 6;
+	IrodoriPoetryData PoetryData = 14;
+	IrodoriChessData ChessData = 10;
+	repeated IrodoriMasterLevelInfo MasterLevelList = 15;
+}

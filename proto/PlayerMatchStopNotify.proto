@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MatchReason.proto";
+
+message PlayerMatchStopNotify {
+	enum PlayerMatchStopNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4193;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 HostUid = 4;
+	MatchReason Reason = 9;
+}

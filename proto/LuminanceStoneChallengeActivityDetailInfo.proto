@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LuminanceStoneChallengeActivityDetailInfo {
+	uint32 BestScore = 10;
+	bool IsFinalGalleryComplete = 12;
+	bool IsContentClosed = 4;
+	uint32 CurrentStageId = 11;
+}

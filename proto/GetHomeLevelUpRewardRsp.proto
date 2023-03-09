@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetHomeLevelUpRewardRsp {
+	enum GetHomeLevelUpRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4668;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Level = 5;
+	int32 Retcode = 6;
+}

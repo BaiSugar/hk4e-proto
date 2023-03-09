@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SummerTimeV2DungeonStageInfo {
+	bool IsPrevDungeonSucceed = 4;
+	bool IsOpen = 14;
+	uint32 OpenTime = 13;
+	uint32 StageId = 6;
+}

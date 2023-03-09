@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum PlayerDieOption {
+	DieOptNone = 0;
+	DieOptReplay = 1;
+	DieOptCancel = 2;
+	DieOptRevive = 3;
+}

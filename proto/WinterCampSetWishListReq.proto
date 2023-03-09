@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WinterCampSetWishListReq {
+	enum WinterCampSetWishListReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8363;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 ItemIdList = 7;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetPushTipsRewardRsp {
+	enum GetPushTipsRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2275;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 PushTipsIdList = 8;
+	int32 Retcode = 13;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GadgetPlayUidOpNotify {
+	enum GadgetPlayUidOpNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 829;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 UidList = 12;
+	uint32 PlayType = 14;
+	uint32 Op = 9;
+	string ParamStr = 2;
+	repeated uint32 ParamList = 11;
+	uint32 EntityId = 7;
+}

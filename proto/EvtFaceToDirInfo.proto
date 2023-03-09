@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message EvtFaceToDirInfo {
+	Rotation FaceDir = 2;
+	uint32 EntityId = 5;
+}

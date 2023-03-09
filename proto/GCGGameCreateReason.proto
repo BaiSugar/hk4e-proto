@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGGameCreateReason {
+	None = 0;
+	GameMax = 1;
+	ClientVersionNotLatest = 2;
+	ResourceNotComplete = 3;
+	Timeout = 4;
+	JBAKJAPPIEL = 5;
+}

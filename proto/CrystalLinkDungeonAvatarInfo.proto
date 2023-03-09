@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CrystalLinkDungeonAvatarInfo {
+	uint64 AvatarGuid = 2;
+	bool IsTrial = 12;
+}

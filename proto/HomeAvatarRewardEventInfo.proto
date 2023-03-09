@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeAvatarRewardEventInfo {
+	uint32 AvatarId = 6;
+	uint32 RandomPosition = 4;
+	uint32 EventId = 14;
+	uint32 Guid = 5;
+	uint32 SuiteId = 2;
+}

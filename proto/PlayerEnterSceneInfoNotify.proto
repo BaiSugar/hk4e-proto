@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MPLevelEntityInfo.proto";
+import "TeamEnterSceneInfo.proto";
+import "AvatarEnterSceneInfo.proto";
+
+message PlayerEnterSceneInfoNotify {
+	enum PlayerEnterSceneInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 212;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	MPLevelEntityInfo MpLevelEntityInfo = 7;
+	TeamEnterSceneInfo TeamEnterInfo = 5;
+	uint32 CurAvatarEntityId = 8;
+	uint32 EnterSceneToken = 13;
+	repeated AvatarEnterSceneInfo AvatarEnterInfo = 12;
+}

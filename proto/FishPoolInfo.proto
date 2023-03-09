@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FishPoolInfo {
+	uint32 PoolId = 1;
+	repeated uint32 FishAreaList = 2;
+	uint32 TodayFishNum = 3;
+}

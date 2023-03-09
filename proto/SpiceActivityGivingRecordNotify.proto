@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SpiceActivityGivingRecordNotify {
+	enum SpiceActivityGivingRecordNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8085;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CurrentIncreaseAvatarFetterTimes = 3;
+	uint32 AvatarId = 8;
+	uint32 IncreaseAvatarFetterLimitTimes = 4;
+}

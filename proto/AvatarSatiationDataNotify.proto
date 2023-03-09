@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarSatiationData.proto";
+
+message AvatarSatiationDataNotify {
+	enum AvatarSatiationDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1722;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated AvatarSatiationData SatiationDataList = 9;
+}

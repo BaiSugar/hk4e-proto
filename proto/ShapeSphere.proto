@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message ShapeSphere {
+	Rotation Center = 1;
+	float Radius = 2;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "WorldRoutineInfo.proto";
+
+message WorldRoutineTypeInfo {
+	uint32 RoutineType = 13;
+	uint32 NextRefreshTime = 15;
+	repeated WorldRoutineInfo WorldRoutineInfoList = 6;
+}

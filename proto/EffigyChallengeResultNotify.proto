@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EffigyChallengeResultNotify {
+	enum EffigyChallengeResultNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2145;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ChallengeId = 14;
+	uint32 ChallengeMaxScore = 1;
+	uint32 ChallengeScore = 5;
+	bool IsSuccess = 4;
+}

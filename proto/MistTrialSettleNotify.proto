@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MistTrialBestAvatar.proto";
+
+message MistTrialSettleNotify {
+	enum MistTrialSettleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8408;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	MistTrialBestAvatar BestHitAvatar = 2;
+	map<uint32, uint32> ExhibitionListDataResultMap = 10;
+	repeated MistTrialBestAvatar BestAvatarList = 5;
+	uint32 FirstPassTime = 9;
+	uint32 DungeonSceneId = 14;
+	map<uint32, uint32> ExhibitionListDataRecordMap = 11;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FallPlayerBrief.proto";
+
+message GalleryFallScoreNotify {
+	enum GalleryFallScoreNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5574;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GalleryId = 8;
+	map<uint32, FallPlayerBrief> UidBriefMap = 4;
+}

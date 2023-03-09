@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BattlePassRewardTakeOption.proto";
+
+message TakeBattlePassRewardReq {
+	enum TakeBattlePassRewardReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2619;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated BattlePassRewardTakeOption TakeOptionList = 1;
+}

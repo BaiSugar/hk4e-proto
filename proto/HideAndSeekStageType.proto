@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+enum HideAndSeekStageType {
+	HideAndSeekStagePrepare = 0;
+	HideAndSeekStagePick = 1;
+	HideAndSeekStageGame = 2;
+	HideAndSeekStageHide = 3;
+	HideAndSeekStageSeek = 4;
+	HideAndSeekStageSettle = 5;
+}

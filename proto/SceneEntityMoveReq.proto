@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MotionInfo.proto";
+
+message SceneEntityMoveReq {
+	enum SceneEntityMoveReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 270;
+		EnetChannelId = 1;
+		EnetIsReliable = 0;
+		IsAllowClient = 1;
+	}
+
+	MotionInfo MotionInfo = 5;
+	uint32 ReliableSeq = 3;
+	uint32 EntityId = 1;
+	uint32 SceneTime = 14;
+}

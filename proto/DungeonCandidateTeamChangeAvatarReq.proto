@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonCandidateTeamChangeAvatarReq {
+	enum DungeonCandidateTeamChangeAvatarReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 936;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint64 AvatarGuidList = 5;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChangeTeamNameRsp {
+	enum ChangeTeamNameRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1741;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	string TeamName = 2;
+	int32 TeamId = 3;
+}

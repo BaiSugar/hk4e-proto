@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGTCInviteRsp {
+	enum MINOBCLFFCG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7188;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CharacterId = 13;
+	int32 Retcode = 4;
+}

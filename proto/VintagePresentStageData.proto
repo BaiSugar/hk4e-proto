@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "VintagePresentLevelData.proto";
+
+message VintagePresentStageData {
+	bool IsFinish = 4;
+	uint32 OpenTime = 14;
+	bool IsOpen = 9;
+	map<uint32, VintagePresentLevelData> PresentLevelMap = 7;
+	uint32 StageId = 15;
+}

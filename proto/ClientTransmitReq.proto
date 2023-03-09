@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+import "TransmitReason.proto";
+
+message ClientTransmitReq {
+	enum ClientTransmitReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 203;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	Rotation Rot = 9;
+	TransmitReason Reason = 13;
+	Rotation Pos = 12;
+	uint32 SceneId = 8;
+}

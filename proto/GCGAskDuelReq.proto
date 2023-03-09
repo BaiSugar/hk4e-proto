@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGAskDuelReq {
+	enum CIIBFDEIFGD {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7646;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

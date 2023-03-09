@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message ShopGoods {
+	uint32 DiscountEndTime = 655;
+	uint32 MaxLevel = 3;
+	uint32 Hcoin = 13;
+	uint32 SecondarySheetId = 363;
+	uint32 Scoin = 11;
+	uint32 GoodsId = 2;
+	uint32 BuyLimit = 10;
+	repeated uint32 PreGoodsIdList = 12;
+	ItemParam GoodsItem = 6;
+	repeated ItemParam CostItemList = 7;
+	uint32 SingleLimit = 424;
+	uint32 NextRefreshTime = 1;
+	uint32 DiscountId = 182;
+	uint32 BoughtNum = 4;
+	uint32 DiscountBeginTime = 636;
+	uint32 MinLevel = 14;
+	uint32 EndTime = 15;
+	uint32 BeginTime = 8;
+	uint32 DisableType = 9;
+	uint32 Mcoin = 5;
+}

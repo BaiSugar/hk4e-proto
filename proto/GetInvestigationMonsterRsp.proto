@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "InvestigationMonster.proto";
+
+message GetInvestigationMonsterRsp {
+	enum GetInvestigationMonsterRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1927;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 Retcode = 6;
+	repeated InvestigationMonster MonsterList = 2;
+	bool IsForMark = 11;
+}

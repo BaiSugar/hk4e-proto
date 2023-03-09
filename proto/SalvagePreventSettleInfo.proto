@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SalvagePreventGallerySettleInfo.proto";
+
+message SalvagePreventSettleInfo {
+	bool IsNewRecord = 4;
+	SalvagePreventGallerySettleInfo SettleInfo = 6;
+}

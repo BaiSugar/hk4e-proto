@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ForgeFormulaDataNotify {
+	enum ForgeFormulaDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 661;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsLocked = 1;
+	uint32 ForgeId = 12;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ReadMailNotify {
+	enum ReadMailNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1487;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated uint32 MailIdList = 15;
+}

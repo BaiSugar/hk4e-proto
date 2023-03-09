@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message BlossomBriefInfo {
+	bool IsGuideOpened = 6;
+	uint32 Resin = 3;
+	Rotation Pos = 9;
+	uint32 SceneId = 13;
+	uint32 State = 10;
+	uint32 CityId = 8;
+	uint32 RewardId = 11;
+	uint32 CircleCampId = 2;
+	uint32 MonsterLevel = 15;
+	uint32 RefreshId = 5;
+}

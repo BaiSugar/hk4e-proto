@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EnterFishingRsp {
+	enum EnterFishingRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5845;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 1;
+	uint32 FishPoolId = 7;
+}

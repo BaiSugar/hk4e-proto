@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TowerLevelStarCondData.proto";
+
+message TowerLevelStarCondNotify {
+	enum TowerLevelStarCondNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2485;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FloorId = 13;
+	uint32 LevelIndex = 4;
+	repeated TowerLevelStarCondData CondDataList = 15;
+}

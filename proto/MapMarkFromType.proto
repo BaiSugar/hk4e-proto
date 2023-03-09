@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum MapMarkFromType {
+	MapMarkFromTypeNone = 0;
+	MapMarkFromTypeMonster = 1;
+	MapMarkFromTypeQuest = 2;
+}

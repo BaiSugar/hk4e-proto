@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SummerTimeSprintBoatRecord {
+	repeated uint32 WatcherIdList = 5;
+	uint32 StartTime = 3;
+	bool IsTouched = 9;
+	uint32 BestScore = 2;
+	uint32 GroupId = 14;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SyncFinishGame {
+	bool IsWin = 1;
+	uint64 ServerGameTime = 5;
+	bool IsStopGallery = 8;
+}

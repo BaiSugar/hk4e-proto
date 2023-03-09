@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message VintageMarketDeliverItemReq {
+	enum IADAEOHIPCK {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 21636;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated ItemParam DeliverItemList = 15;
+	uint32 TraderId = 4;
+}

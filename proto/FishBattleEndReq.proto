@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FishBattleResult.proto";
+
+message FishBattleEndReq {
+	enum FishBattleEndReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5837;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	FishBattleResult BattleResult = 11;
+	uint32 MaxBonusTime = 10;
+	bool IsAlwaysBonus = 5;
+}

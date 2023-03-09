@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ObstacleInfo_ShapeType.proto";
+import "Rotation.proto";
+import "RotationSpeed.proto";
+import "Vector3Int.proto";
+
+message GMObstacleInfo {
+	int64 Timestamp = 13;
+	ObstacleInfo_ShapeType Shape = 3;
+	Rotation Center = 9;
+	int32 ObstacleId = 15;
+	RotationSpeed Rotation = 4;
+	Vector3Int Extents = 5;
+}

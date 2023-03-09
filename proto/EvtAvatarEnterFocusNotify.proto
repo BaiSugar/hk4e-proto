@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForwardType.proto";
+import "Rotation.proto";
+
+message EvtAvatarEnterFocusNotify {
+	enum EvtAvatarEnterFocusNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 325;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ForwardType ForwardType = 14;
+	bool UseAutoFocus = 5;
+	bool EnterNormalFocusShoot = 13;
+	bool DisableAimLayer = 6;
+	bool FastFocus = 10;
+	bool UseFocusSticky = 4;
+	bool ShowCrossHair = 12;
+	bool EnterHoldingFocusShoot = 11;
+	bool CanMove = 9;
+	bool UseGyro = 15;
+	Rotation FocusForward = 8;
+	uint32 EntityId = 2;
+	bool DisableAnim = 3;
+}

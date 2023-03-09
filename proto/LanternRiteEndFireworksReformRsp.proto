@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LanternRiteEndFireworksReformRsp {
+	enum LanternRiteEndFireworksReformRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8114;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FinalScore = 8;
+	uint32 ChallengeId = 10;
+	uint32 StageId = 9;
+	bool IsUnlockFireworks = 6;
+	bool IsFullScore = 4;
+	int32 Retcode = 13;
+	bool IsStaminaUp = 7;
+	bool IsUnlockNewSkill = 11;
+	bool IsNewRecord = 12;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeAvatarCostumeChangeNotify {
+	enum HomeAvatarCostumeChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4523;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 AvatarId = 7;
+	uint32 CostumeId = 13;
+}

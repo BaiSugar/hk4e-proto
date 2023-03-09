@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FungusTrainingPoolPreviewDetail.proto";
+import "FungusFighterMonsterDetail.proto";
+
+message FungusTrainingProgressDetail {
+	repeated uint32 BackupMonsterList = 15;
+	uint32 CurRound = 1;
+	repeated uint32 ChoosenMonsterList = 8;
+	repeated FungusTrainingPoolPreviewDetail MonsterPoolPreviewList = 9;
+	uint32 TotalUsedTime = 4;
+	repeated FungusFighterMonsterDetail MonsterDetailList = 2;
+	uint32 DungeonId = 13;
+}

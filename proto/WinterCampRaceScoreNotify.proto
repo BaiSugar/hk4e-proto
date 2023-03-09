@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WinterCampRaceScoreNotify {
+	enum WinterCampRaceScoreNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8068;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MaxScore = 7;
+	uint32 Id = 11;
+}

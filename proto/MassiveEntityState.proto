@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MassiveEntityState {
+	uint32 EntityType = 1;
+	int64 ObjId = 2;
+	uint32 ElementState = 3;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message InstableSpraySettleInfo {
+	bool IsNewRecord = 5;
+	uint32 StageId = 4;
+	uint32 Difficulty = 15;
+	repeated uint32 ScoreList = 10;
+}

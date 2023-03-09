@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MusicGameSettleReq {
+	enum MusicGameSettleReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8066;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 UgcGuid = 4;
+	repeated uint32 ButtonList = 1626;
+	bool IsSaveScore = 11;
+	uint32 MusicBasicId = 7;
+	uint32 Score = 2;
+	uint32 IsFullCombo = 493;
+	repeated uint32 NoteList = 5;
+	float Speed = 484;
+	uint32 Combo = 15;
+	bool IsCustomSpeed = 527;
+	uint32 MaxCombo = 12;
+	uint32 Delay = 252;
+	uint32 CorrectHit = 13;
+	uint32 Volume = 108;
+	uint32 RestartTimes = 9;
+	bool IsCustomDelay = 497;
+	uint32 StarRating = 3;
+	uint32 ScoreRating = 8;
+}

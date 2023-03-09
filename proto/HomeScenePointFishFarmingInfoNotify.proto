@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeScenePointFishFarmingInfo.proto";
+
+message HomeScenePointFishFarmingInfoNotify {
+	enum JNJIJCHNAMH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4895;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated HomeScenePointFishFarmingInfo FishFarmingInfoList = 9;
+}

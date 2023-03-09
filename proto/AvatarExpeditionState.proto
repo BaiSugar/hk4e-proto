@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum AvatarExpeditionState {
+	AvatarExpeditionNone = 0;
+	AvatarExpeditionDoing = 1;
+	AvatarExpeditionFinishWaitReward = 2;
+	AvatarExpeditionCallbackWaitReward = 3;
+	AvatarExpeditionLocked = 4;
+}

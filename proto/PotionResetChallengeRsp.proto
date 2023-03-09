@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PotionStageData.proto";
+
+message PotionResetChallengeRsp {
+	enum PotionResetChallengeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8220;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	PotionStageData StageData = 7;
+	int32 Retcode = 13;
+}

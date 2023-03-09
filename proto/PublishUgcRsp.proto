@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "UgcType.proto";
+
+message PublishUgcRsp {
+	enum PublishUgcRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6325;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	UgcType UgcType = 8;
+	int32 Retcode = 14;
+	uint64 UgcGuid = 4;
+}

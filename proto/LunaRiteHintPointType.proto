@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum LunaRiteHintPointType {
+	LunaRiteHintTypeNone = 0;
+	LunaRiteHintTypeRune = 1;
+	LunaRiteHintTypeChest = 2;
+}

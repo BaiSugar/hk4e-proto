@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ArenaChallengeChildChallengeInfo.proto";
+
+message ArenaChallengeFinishNotify {
+	enum ArenaChallengeFinishNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2199;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsSuccess = 7;
+	repeated ArenaChallengeChildChallengeInfo ChildChallengeList = 6;
+	uint32 ArenaChallengeId = 15;
+	uint32 ArenaChallengeLevel = 9;
+}

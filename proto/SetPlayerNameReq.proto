@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SetPlayerNameReq {
+	enum SetPlayerNameReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 200;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	string NickName = 3;
+}

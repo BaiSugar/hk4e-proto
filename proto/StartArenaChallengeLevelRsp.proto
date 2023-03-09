@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message StartArenaChallengeLevelRsp {
+	enum StartArenaChallengeLevelRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2116;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ArenaChallengeId = 1;
+	uint32 GadgetEntityId = 2;
+	int32 Retcode = 6;
+	uint32 ArenaChallengeLevel = 7;
+}

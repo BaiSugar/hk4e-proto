@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GuestPostEnterSceneNotify {
+	enum GuestPostEnterSceneNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3292;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SceneId = 12;
+	uint32 Uid = 5;
+}

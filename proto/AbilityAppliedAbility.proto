@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityString.proto";
+import "AbilityScalarValueEntry.proto";
+
+message AbilityAppliedAbility {
+	AbilityString AbilityName = 1;
+	AbilityString AbilityOverride = 2;
+	repeated AbilityScalarValueEntry OverrideMap = 3;
+	uint32 InstancedAbilityId = 4;
+}

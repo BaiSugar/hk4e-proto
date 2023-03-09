@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CookGradeDataNotify {
+	enum CookGradeDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 151;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Grade = 2;
+}

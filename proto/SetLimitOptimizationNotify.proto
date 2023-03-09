@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SetLimitOptimizationNotify {
+	enum SetLimitOptimizationNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8763;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsActive = 10;
+}

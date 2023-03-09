@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "IrodoriPoetryThemeData.proto";
+
+message IrodoriFillPoetryRsp {
+	enum IrodoriFillPoetryRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8762;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	IrodoriPoetryThemeData ThemeData = 14;
+	int32 Retcode = 15;
+}

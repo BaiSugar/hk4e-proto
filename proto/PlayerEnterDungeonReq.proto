@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DungeonEnterPosInfo.proto";
+
+message PlayerEnterDungeonReq {
+	enum PlayerEnterDungeonReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 987;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 DungeonId = 2;
+	uint32 PointId = 9;
+	DungeonEnterPosInfo EnterPosInfo = 4;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TowerTeam.proto";
+
+message TowerTeamSelectReq {
+	enum TowerTeamSelectReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2474;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated TowerTeam TowerTeamList = 1;
+	uint32 FloorId = 11;
+}

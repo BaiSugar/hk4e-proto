@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MuqadasPotionRestartDungeonReq {
+	enum MKJDHLGHMME {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20619;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

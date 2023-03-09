@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EffigyChallengeV2LevelData {
+	bool IsLevelOpen = 13;
+	uint32 ChallengeModeDifficultyOpen = 14;
+	uint32 LevelId = 15;
+	uint32 ChallengeModeLastChooseSkillNo = 5;
+	uint32 BestCostTime = 7;
+	uint32 ChallengeModeDifficultyPass = 9;
+}

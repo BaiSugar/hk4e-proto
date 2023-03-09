@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message UseItemRsp {
+	enum UseItemRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 662;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint64 Guid = 12;
+	int32 Retcode = 7;
+	uint32 ItemId = 4;
+	uint64 TargetGuid = 11;
+	uint32 OptionIdx = 3;
+}

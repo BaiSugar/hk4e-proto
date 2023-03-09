@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CityReputationLevelupNotify {
+	enum CityReputationLevelupNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2820;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CityId = 10;
+	uint32 Level = 11;
+}

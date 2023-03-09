@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGTCTavernChallengeData.proto";
+
+message GCGTCTavernChallengeUpdateNotify {
+	enum BOGLAPKFCMG {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7570;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	GCGTCTavernChallengeData TavernChallenge = 10;
+}

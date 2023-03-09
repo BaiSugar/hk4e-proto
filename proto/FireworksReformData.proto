@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FireworksReformParam.proto";
+
+message FireworksReformData {
+	repeated FireworksReformParam ReformParamList = 2;
+	uint32 Id = 7;
+}

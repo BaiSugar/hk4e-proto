@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGActionType.proto";
+import "GCGMessage.proto";
+
+message GCGMessagePack {
+	uint32 ControllerId = 12;
+	uint32 ijojhencdld = 1;
+	repeated GCGMessage MsgList = 3;
+	GCGActionType ActionType = 8;
+}

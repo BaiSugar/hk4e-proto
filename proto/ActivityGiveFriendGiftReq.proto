@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivityGiveFriendGiftReq {
+	enum ActivityGiveFriendGiftReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8919;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 Uid = 15;
+	map<uint32, uint32> GiftNumMap = 9;
+	uint32 ScheduleId = 13;
+}

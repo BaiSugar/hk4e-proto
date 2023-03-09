@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForgeQueueManipulateType.proto";
+
+message ForgeQueueManipulateReq {
+	enum ForgeQueueManipulateReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 653;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 ForgeQueueId = 5;
+	ForgeQueueManipulateType ManipulateType = 2;
+}

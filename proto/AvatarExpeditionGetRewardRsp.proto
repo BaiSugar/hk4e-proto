@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+import "AvatarExpeditionInfo.proto";
+
+message AvatarExpeditionGetRewardRsp {
+	enum AvatarExpeditionGetRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1659;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 9;
+	repeated ItemParam ExtraItemList = 10;
+	map<uint64, AvatarExpeditionInfo> ExpeditionInfoMap = 4;
+	repeated ItemParam ItemList = 14;
+}

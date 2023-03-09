@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ProudSkillExtraLevelNotify {
+	enum ProudSkillExtraLevelNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1013;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TalentIndex = 4;
+	uint64 AvatarGuid = 2;
+	uint32 TalentType = 5;
+	uint32 ExtraLevel = 13;
+}

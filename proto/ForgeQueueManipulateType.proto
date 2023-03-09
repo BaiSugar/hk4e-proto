@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ForgeQueueManipulateType {
+	ReceiveOutput = 0;
+	StopForge = 1;
+}

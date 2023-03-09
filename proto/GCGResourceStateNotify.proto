@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGResourceStateNotify {
+	enum FPGBMFBIEEF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7894;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool IsComplete = 2;
+}

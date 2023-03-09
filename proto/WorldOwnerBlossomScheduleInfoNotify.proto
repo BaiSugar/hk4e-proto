@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BlossomScheduleInfo.proto";
+
+message WorldOwnerBlossomScheduleInfoNotify {
+	enum WorldOwnerBlossomScheduleInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2720;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	BlossomScheduleInfo ScheduleInfo = 4;
+}

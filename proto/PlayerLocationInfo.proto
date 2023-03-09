@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message PlayerLocationInfo {
+	Rotation Rot = 7;
+	Rotation Pos = 4;
+	uint32 Uid = 9;
+}

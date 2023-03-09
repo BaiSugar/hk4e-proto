@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AddRandTaskInfoNotify {
+	enum AddRandTaskInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 123;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	Rotation Pos = 6;
+	uint32 RandTaskId = 2;
+}

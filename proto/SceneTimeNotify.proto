@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneTimeNotify {
+	enum SceneTimeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 232;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsPaused = 4;
+	uint64 SceneTime = 10;
+	uint32 SceneId = 13;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ViewLanternProjectionTipsRsp {
+	enum ViewLanternProjectionTipsRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8742;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 3;
+}

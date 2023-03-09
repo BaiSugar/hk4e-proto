@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SceneAudioNotify {
+	enum SceneAudioNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3132;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	int32 Type = 14;
+	repeated string Param3 = 12;
+	repeated float Param2 = 4;
+	uint32 SourceUid = 5;
+	repeated uint32 Param1 = 9;
+}

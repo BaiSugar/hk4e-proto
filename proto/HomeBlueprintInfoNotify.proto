@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeBlueprintInfoNotify {
+	enum KAKDGDJKIHJ {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4870;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsAllowFriendCopy = 11;
+}

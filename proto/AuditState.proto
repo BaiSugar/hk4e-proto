@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum AuditState {
+	AuditNone = 0;
+	AuditWaiting = 1;
+	AuditFailed = 2;
+}

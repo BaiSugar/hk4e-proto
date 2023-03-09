@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PropValue.proto";
+
+message SetPlayerPropReq {
+	enum SetPlayerPropReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 116;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated PropValue PropList = 8;
+}

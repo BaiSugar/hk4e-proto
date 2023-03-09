@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FindHilichurlFinishSecondQuestNotify {
+	enum FindHilichurlFinishSecondQuestNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8774;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DayIndex = 9;
+}

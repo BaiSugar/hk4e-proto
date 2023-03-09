@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AbilityControlBlock.proto";
+
+message AbilityChangeNotify {
+	enum AbilityChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1124;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	AbilityControlBlock AbilityControlBlock = 10;
+	uint32 EntityId = 7;
+}

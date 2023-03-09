@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum IslandPartySailStage {
+	None = 0;
+	Sail = 1;
+	Battle = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+enum ChapterState {
+	Invalid = 0;
+	UnableToBegin = 1;
+	Begin = 2;
+	End = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGGrowthLevelNotify {
+	enum MDHCDLJDDCI {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7327;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Exp = 15;
+	uint32 Level = 5;
+}

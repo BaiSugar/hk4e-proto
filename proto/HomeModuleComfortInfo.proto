@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeModuleComfortInfo {
+	repeated uint32 WorldSceneBlockComfortValueList = 3;
+	uint32 ModuleId = 13;
+	uint32 RoomSceneComfortValue = 2;
+}

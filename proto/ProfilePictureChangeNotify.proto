@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ProfilePicture.proto";
+
+message ProfilePictureChangeNotify {
+	enum ProfilePictureChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4095;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ProfilePicture ProfilePicture = 13;
+}

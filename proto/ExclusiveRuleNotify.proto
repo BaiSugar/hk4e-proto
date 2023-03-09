@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ExclusiveRuleInfo.proto";
+
+message ExclusiveRuleNotify {
+	enum ExclusiveRuleNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 176;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ExclusiveRuleInfo RuleInfoList = 6;
+}

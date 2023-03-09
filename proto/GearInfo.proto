@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "JigsawPictureData.proto";
+import "GearLevelData.proto";
+
+message GearInfo {
+	repeated GearLevelData GearLevelDataList = 9;
+	JigsawPictureData JigsawPictureData = 13;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DeshretObeliskChestInfo.proto";
+
+message DeshretObeliskChestInfoNotify {
+	enum ABOJDFAFAIE {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 807;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated DeshretObeliskChestInfo ChestInfoList = 4;
+}

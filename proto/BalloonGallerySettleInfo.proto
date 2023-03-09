@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GalleryStopReason.proto";
+
+message BalloonGallerySettleInfo {
+	uint32 OwnerUid = 5;
+	uint32 HitCount = 3;
+	GalleryStopReason Reason = 15;
+	uint32 Score = 6;
+}

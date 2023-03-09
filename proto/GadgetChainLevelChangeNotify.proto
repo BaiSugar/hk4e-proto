@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GadgetChainLevelChangeNotify {
+	enum GadgetChainLevelChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 892;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, uint32> GadgetChainLevelMap = 14;
+}

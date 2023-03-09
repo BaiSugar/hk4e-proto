@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ActivityDungeonAvatar {
+	uint32 AvatarId = 1;
+	bool IsTrial = 2;
+	uint32 CostumeId = 3;
+}

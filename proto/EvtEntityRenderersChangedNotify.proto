@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForwardType.proto";
+import "EntityRendererChangedInfo.proto";
+
+message EvtEntityRenderersChangedNotify {
+	enum EvtEntityRenderersChangedNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 350;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ForwardType ForwardType = 10;
+	uint32 EntityId = 4;
+	bool IsServerCache = 8;
+	EntityRendererChangedInfo RendererChangedInfo = 13;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message GetScenePerformanceRsp {
+	enum GetScenePerformanceRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3336;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GatherNumInsight = 7;
+	uint32 DynamicGroupNum = 3;
+	int32 Retcode = 1;
+	uint32 EntityNum = 10;
+	uint32 GatherNum = 8;
+	Rotation Pos = 15;
+	uint32 MonsterNum = 11;
+	uint32 GroupNum = 13;
+	uint32 GadgetNum = 12;
+}

@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGCostReviseInfo.proto";
+import "GCGGameBusinessType.proto";
+import "GCGPhase.proto";
+import "GCGCard.proto";
+import "GCGMessagePack.proto";
+import "GCGControllerShowInfo.proto";
+import "JHNLKGDJFCC.proto";
+import "GCGPVEIntention.proto";
+import "GCGPlayerField.proto";
+import "GCGDuelChallenge.proto";
+
+message GCGDuel {
+	repeated GCGCard CardList = 1;
+	uint32 OperationSeq = 5;
+	repeated uint32 ForbidFinishChallengeList = 1985;
+	repeated GCGCard HistoryCardList = 1326;
+	repeated GCGMessagePack HistoryMsgPackList = 1636;
+	uint32 CurControllerId = 14;
+	repeated GCGControllerShowInfo ShowInfoList = 10;
+	repeated JHNLKGDJFCC cbjidpdhhbh = 1950;
+	repeated GCGPVEIntention IntetionList = 15;
+	GCGCostReviseInfo CostRevise = 6;
+	uint32 ControllerId = 2;
+	repeated GCGPlayerField FieldList = 3;
+	GCGGameBusinessType BusinessType = 7;
+	GCGPhase Phase = 8;
+	repeated GCGDuelChallenge ChallengeList = 37;
+	repeated uint32 CardIdList = 12;
+	uint32 ServerSeq = 11;
+	uint32 Round = 4;
+	uint32 GameId = 9;
+	uint32 GameType = 13;
+}

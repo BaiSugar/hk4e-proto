@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GalleryBrokenFloorFallNotify {
+	enum GalleryBrokenFloorFallNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5529;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 FallCount = 2;
+	uint32 GalleryId = 6;
+}

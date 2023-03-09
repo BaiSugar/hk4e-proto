@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PBNavMeshPoly_EdgeType.proto";
+
+message PBNavMeshPoly {
+	repeated PBNavMeshPoly_EdgeType EdgeTypes = 1;
+	int32 Area = 5;
+	repeated int32 Vects = 14;
+}

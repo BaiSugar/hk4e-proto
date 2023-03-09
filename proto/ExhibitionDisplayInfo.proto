@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ExhibitionDisplayInfo {
+	uint32 Id = 1;
+	uint32 Param = 2;
+	uint32 DetailParam = 3;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarDieAnimationEndRsp {
+	enum AvatarDieAnimationEndRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1657;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint64 DieGuid = 3;
+	uint32 SkillId = 6;
+	int32 Retcode = 5;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TakeEffigyFirstPassRewardRsp {
+	enum TakeEffigyFirstPassRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2170;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ChallengeId = 13;
+	int32 Retcode = 10;
+}

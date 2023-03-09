@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ClearRoguelikeCurseNotify {
+	enum ClearRoguelikeCurseNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8183;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsCurseAllClear = 14;
+	bool IsClearAll = 9;
+	map<uint32, uint32> ClearCurseMap = 12;
+	uint32 CardId = 6;
+}

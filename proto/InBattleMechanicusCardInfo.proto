@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "InBattleMechanicusCardChallengeState.proto";
+
+message InBattleMechanicusCardInfo {
+	uint32 BeginRound = 3;
+	uint32 CostPoints = 2;
+	uint32 EndRound = 9;
+	uint32 CardId = 15;
+	uint32 RandEffectId = 8;
+	InBattleMechanicusCardChallengeState ChallengeState = 5;
+}

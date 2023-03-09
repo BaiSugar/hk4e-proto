@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LunchBoxData.proto";
+
+message SetUpLunchBoxWidgetRsp {
+	enum SetUpLunchBoxWidgetRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4266;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	LunchBoxData LunchBoxData = 15;
+	int32 Retcode = 3;
+}

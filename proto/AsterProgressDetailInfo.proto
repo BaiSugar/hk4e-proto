@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AsterProgressDetailInfo {
+	uint32 LastAutoAddTime = 14;
+	uint32 Count = 8;
+}

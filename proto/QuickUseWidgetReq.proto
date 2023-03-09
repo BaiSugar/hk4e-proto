@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package Proto;
+
+import "LocationInfo.proto";
+import "CameraInfo.proto";
+import "CreatorInfo.proto";
+import "ThunderBirdFeatherInfo.proto";
+
+message QuickUseWidgetReq {
+	enum QuickUseWidgetReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4275;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	oneof QuickUseWidgetReq_ParamOneofCase {
+		LocationInfo location_info = 1542;
+		CameraInfo camera_info = 1754;
+		CreatorInfo creator_info = 825;
+		ThunderBirdFeatherInfo thunder_bird_feather_info = 1365;
+	}
+}

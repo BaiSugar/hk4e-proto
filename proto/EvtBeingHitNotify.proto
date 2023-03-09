@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ForwardType.proto";
+import "EvtBeingHitInfo.proto";
+
+message EvtBeingHitNotify {
+	enum EvtBeingHitNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 305;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ForwardType ForwardType = 4;
+	EvtBeingHitInfo BeingHitInfo = 15;
+}

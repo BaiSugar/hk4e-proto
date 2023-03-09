@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RogueEffectRecord {
+	bool IsNew = 3;
+	uint32 SourceId = 5;
+	uint32 Count = 1;
+	repeated uint32 ExtraParamList = 9;
+}

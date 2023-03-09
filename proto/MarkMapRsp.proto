@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MapMarkPoint.proto";
+
+message MarkMapRsp {
+	enum MarkMapRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3413;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 1;
+	repeated MapMarkPoint MarkList = 5;
+}

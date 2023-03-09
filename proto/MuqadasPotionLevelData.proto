@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MuqadasPotionLevelData {
+	uint32 LevelId = 14;
+	bool IsOpen = 10;
+	uint32 MaxScore = 6;
+}

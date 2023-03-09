@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SkyCrystalDetectorData.proto";
+import "WeatherWizardData.proto";
+import "LunchBoxData.proto";
+import "WidgetCoolDownData.proto";
+import "WidgetSlotData.proto";
+import "AnchorPointData.proto";
+import "ClientCollectorData.proto";
+import "DetectorData.proto";
+
+message AllWidgetDataNotify {
+	enum AllWidgetDataNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4286;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	SkyCrystalDetectorData SkyCrystalDetectorData = 2;
+	repeated WidgetCoolDownData NormalCoolDownDataList = 4;
+	repeated WidgetSlotData SlotList = 14;
+	repeated uint32 BackgroundActiveWidgetList = 5;
+	repeated AnchorPointData AnchorPointList = 11;
+	WeatherWizardData WeatherWizardData = 13;
+	uint32 NextAnchorPointUsableTime = 15;
+	repeated ClientCollectorData ClientCollectorDataList = 7;
+	repeated WidgetCoolDownData CoolDownGroupDataList = 6;
+	repeated DetectorData OneoffGatherPointDetectorDataList = 8;
+	LunchBoxData LunchBoxData = 1;
+}

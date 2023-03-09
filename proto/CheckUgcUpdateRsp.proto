@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "UgcType.proto";
+
+message CheckUgcUpdateRsp {
+	enum CheckUgcUpdateRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6340;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	UgcType UgcType = 6;
+	repeated uint64 UpdateUgcGuidList = 2;
+}

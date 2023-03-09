@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarTeamResonanceInfo.proto";
+
+message TeamResonanceChangeNotify {
+	enum TeamResonanceChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1006;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated AvatarTeamResonanceInfo InfoList = 3;
+}

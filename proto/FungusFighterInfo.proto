@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FungusDetail.proto";
+import "FungusTrainingProgressDetail.proto";
+import "FungusPlotStageDetail.proto";
+import "FungusTrainingDungeonDetail.proto";
+
+message FungusFighterInfo {
+	repeated FungusDetail FungusDetailList = 3;
+	repeated uint32 UnlockCampIdList = 9;
+	repeated FungusTrainingProgressDetail TrainingDungeonProgressDetailList = 4;
+	repeated uint32 FinishCampIdList = 2;
+	repeated uint32 UnlockCultivateIdList = 13;
+	repeated FungusPlotStageDetail PlotStageDetailList = 6;
+	repeated FungusTrainingDungeonDetail TrainingDungeonDetailList = 12;
+}

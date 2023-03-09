@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GCGZoneType {
+  GCGZoneInvalid = 0;
+  GCGZoneDeck = 1;
+  GCGZoneHand = 2;
+  GCGZoneCharacter = 3;
+  GCGZoneModify = 4;
+  GCGZoneSummon = 5;
+  GCGZoneAssist = 7;
+  GCGZoneOnstage = 8;
+  GCGZoneRule = 9;
+}

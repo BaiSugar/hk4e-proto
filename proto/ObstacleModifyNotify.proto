@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ObstacleInfo.proto";
+
+message ObstacleModifyNotify {
+	enum ObstacleModifyNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2387;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	repeated ObstacleInfo AddObstacles = 14;
+	repeated int32 RemoveObstacleIds = 7;
+	uint32 SceneId = 9;
+}

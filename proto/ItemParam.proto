@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ItemParam {
+	uint32 ItemId = 1;
+	uint32 Count = 2;
+}

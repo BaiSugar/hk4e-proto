@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGLevelChallengeFinishNotify {
+	enum JEGHNMNKFHL {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7360;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated uint32 FinishedChallengeIdList = 1;
+	uint32 LevelId = 7;
+}

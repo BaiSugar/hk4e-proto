@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "CrystalLinkTeamInfo.proto";
+
+message CrystalLinkLevelInfo {
+	uint32 LevelId = 3;
+	uint32 BestScore = 6;
+	bool IsOpen = 7;
+	repeated CrystalLinkTeamInfo TeamInfoList = 8;
+}

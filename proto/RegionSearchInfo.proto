@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RegionSearch.proto";
+
+message RegionSearchInfo {
+	uint32 Id = 7;
+	repeated RegionSearch RegionSearchList = 4;
+	bool IsEntered = 14;
+}

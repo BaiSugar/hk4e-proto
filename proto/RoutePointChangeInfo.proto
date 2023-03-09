@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RoutePointChangeInfo {
+	float TargetVelocity = 7;
+	uint32 PointIndex = 11;
+	float WaitTime = 15;
+}

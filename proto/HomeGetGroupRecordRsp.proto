@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomeGroupRecord.proto";
+
+message HomeGetGroupRecordRsp {
+	enum HomeGetGroupRecordRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4691;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 RecordType = 12;
+	int32 Retcode = 7;
+	HomeGroupRecord GroupRecord = 13;
+}

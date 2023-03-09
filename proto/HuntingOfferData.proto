@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HuntingOfferState.proto";
+import "HuntingPair.proto";
+
+message HuntingOfferData {
+	HuntingOfferState State = 11;
+	uint32 CityId = 8;
+	HuntingPair HuntingPair = 13;
+}

@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ResVersionConfig.proto";
+
+
+message RegionInfo {
+	string GateserverIp = 1;
+	uint32 GateserverPort = 2;
+	string PayCallbackUrl = 3;
+	string AreaType = 7;
+	string ResourceUrl = 8;
+	string DataUrl = 9;
+	string FeedbackUrl = 10;
+	string BulletinUrl = 11;
+	string ResourceUrlBak = 12;
+	string DataUrlBak = 13;
+	uint32 ClientDataVersion = 14;
+	string HandbookUrl = 16;
+	uint32 ClientSilenceDataVersion = 18;
+	string ClientDataMd5 = 19;
+	string ClientSilenceDataMd5 = 20;
+	ResVersionConfig ResVersionConfig = 22;
+	bytes SecretKey = 23;
+	string OfficialCommunityUrl = 24;
+	string ClientVersionSuffix = 26;
+	string ClientSilenceVersionSuffix = 27;
+	bool UseGateserverDomainName = 28;
+	string GateserverDomainName = 29;
+	string UserCenterUrl = 30;
+	string AccountBindUrl = 31;
+	string CdkeyUrl = 32;
+	string PrivacyPolicyUrl = 33;
+	string NextResourceUrl = 34;
+	ResVersionConfig NextResVersionConfig = 35;
+	string GameBiz = 36;
+}

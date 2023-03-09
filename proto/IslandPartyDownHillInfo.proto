@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GalleryStartSource.proto";
+
+message IslandPartyDownHillInfo {
+	uint32 MaxKillMonsterCount = 13;
+	GalleryStartSource StartSource = 4;
+	uint32 Coin = 1;
+	uint32 TotalKillMonsterCount = 7;
+}

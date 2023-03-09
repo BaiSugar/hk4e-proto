@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ChatChannelInfo.proto";
+
+message ChatChannelInfoNotify {
+	enum HDDAKDGMNMB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4963;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	ChatChannelInfo ChannelInfo = 15;
+}

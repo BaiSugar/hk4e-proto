@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "OtherPlayerEnterHomeNotify_Reason.proto";
+
+message OtherPlayerEnterHomeNotify {
+	enum OtherPlayerEnterHomeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4582;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	OtherPlayerEnterHomeNotify_Reason Reason = 15;
+	string Nickname = 11;
+}

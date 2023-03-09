@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ExpeditionStartRsp {
+	enum ExpeditionStartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2157;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 13;
+	uint32 AssistUid = 7;
+	uint32 AssistAvatarId = 9;
+	uint32 PathId = 4;
+	repeated uint32 AvatarIdList = 12;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message VintageCampChallengeLevelData {
+	bool IsOpen = 11;
+	bool IsFinish = 6;
+	uint32 StageId = 8;
+	uint32 LevelId = 9;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ActivityWatcherInfo.proto";
+
+message ActivityUpdateWatcherNotify {
+	enum ActivityUpdateWatcherNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2079;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	ActivityWatcherInfo WatcherInfo = 11;
+	uint32 ActivityId = 3;
+}

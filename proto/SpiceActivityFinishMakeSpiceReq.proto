@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SpiceActivityFinishMakeSpiceReq {
+	enum SpiceActivityFinishMakeSpiceReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8744;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 StageId = 9;
+	bool IsSuccess = 12;
+	repeated uint32 LeftMaterialIdList = 1;
+	uint32 LeftTurns = 4;
+}

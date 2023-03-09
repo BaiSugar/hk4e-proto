@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PotionDungeonAvatar.proto";
+
+message PotionEnterDungeonNotify {
+	enum PotionEnterDungeonNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8043;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DifficultyLevel = 5;
+	uint32 StageId = 8;
+	repeated PotionDungeonAvatar DungeonAvatarList = 1;
+	uint32 LevelId = 14;
+	uint32 ModeId = 6;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message OpRedraw {
+	repeated uint32 CardList = 12;
+}

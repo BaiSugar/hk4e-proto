@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGMessagePack.proto";
+
+message GCGMessagePackNotify {
+	enum DNMFDNBGPOC {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7329;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated GCGMessagePack MsgPackList = 13;
+	uint32 ServerSeq = 6;
+}

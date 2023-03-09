@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "DungeonCandidateTeamAvatar.proto";
+import "DungeonCandidateTeamPlayerState.proto";
+
+message DungeonCandidateTeamInfoNotify {
+	enum DungeonCandidateTeamInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 918;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 DungeonId = 9;
+	repeated DungeonCandidateTeamAvatar AvatarList = 8;
+	repeated uint32 ReadyPlayerUid = 11;
+	uint32 MatchType = 2;
+	map<uint32, DungeonCandidateTeamPlayerState> PlayerStateMap = 15;
+}

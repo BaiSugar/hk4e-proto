@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "TowerLevelRecord.proto";
+
+message TowerFloorRecord {
+	uint32 FloorStarRewardProgress = 4;
+	map<uint32, uint32> PassedLevelMap = 6;
+	repeated TowerLevelRecord PassedLevelRecordList = 7;
+	uint32 FloorId = 15;
+}

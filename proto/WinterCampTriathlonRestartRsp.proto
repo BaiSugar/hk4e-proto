@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WinterCampTriathlonRestartRsp {
+	enum WinterCampTriathlonRestartRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8323;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	uint32 GalleryId = 13;
+}

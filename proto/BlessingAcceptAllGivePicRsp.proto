@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BlessingAcceptAllGivePicRsp {
+	enum BlessingAcceptAllGivePicRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2048;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, uint32> AcceptPicNumMap = 13;
+	repeated uint32 AcceptIndexList = 3;
+	int32 Retcode = 11;
+}

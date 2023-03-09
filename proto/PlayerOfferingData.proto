@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PlayerOfferingData {
+	bool IsNewMaxLevel = 11;
+	uint32 OfferingId = 8;
+	bool IsFirstInteract = 4;
+	repeated uint32 TakenLevelRewardList = 7;
+	uint32 Level = 1;
+}

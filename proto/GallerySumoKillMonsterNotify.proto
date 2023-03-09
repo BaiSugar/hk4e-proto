@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GallerySumoKillMonsterNotify {
+	enum GallerySumoKillMonsterNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5506;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Score = 2;
+	uint32 KillNormalMosnterNum = 13;
+	uint32 KillEliteMonsterNum = 4;
+	uint32 GalleryId = 10;
+}

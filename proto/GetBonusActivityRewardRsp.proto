@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BonusActivityInfo.proto";
+
+message GetBonusActivityRewardRsp {
+	enum GetBonusActivityRewardRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2569;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	BonusActivityInfo BonusActivityInfoList = 9;
+	int32 Retcode = 15;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGLimitsInfo {
+	uint32 LimitType = 15;
+	uint32 LimitValue = 3;
+}

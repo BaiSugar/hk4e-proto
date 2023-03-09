@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AvatarSkillUpgradeReq {
+	enum AvatarSkillUpgradeReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1029;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 AvatarSkillId = 10;
+	uint64 AvatarGuid = 2;
+	uint32 OldLevel = 12;
+}

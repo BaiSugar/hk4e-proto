@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Material.proto";
+import "Equip.proto";
+import "Furniture.proto";
+
+message TrifleItem {
+	uint32 ItemId = 1;
+	uint64 Guid = 2;
+	oneof Item_DetailOneofCase {
+		Material material = 5;
+		Equip equip = 6;
+		Furniture furniture = 7;
+	}
+}

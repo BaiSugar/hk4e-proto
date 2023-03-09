@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message CAFAPMPMBPO {
+	enum AJHBMGOOHAM {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 6124;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	bool chfncchhlii = 14;
+}

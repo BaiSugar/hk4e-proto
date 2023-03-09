@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+enum RogueCellState {
+	RogueCellNone = 0;
+	RogueCellBattle = 1;
+	RogueCellSuccess = 2;
+	RogueCellFinish = 3;
+	RogueCellTakenChest = 4;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FindHilichurlDayContentInfo.proto";
+
+message FindHilichurlInfo {
+	uint32 DayIndex = 1;
+	bool IsEndQuestAccept = 14;
+	uint32 ContentCloseTime = 8;
+	bool IsContentClosed = 15;
+	repeated FindHilichurlDayContentInfo DayContentInfoList = 2;
+	uint32 MinOpenPlayerLevel = 4;
+	uint32 PlayerDayIndex = 10;
+}

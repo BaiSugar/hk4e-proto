@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ExpeditionStartReq {
+	enum ExpeditionStartReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2020;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 AssistAvatarId = 4;
+	uint32 PathId = 10;
+	repeated uint32 AvatarIdList = 8;
+	uint32 AssistUid = 7;
+}

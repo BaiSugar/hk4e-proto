@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message TowerTeam {
+	repeated uint64 AvatarGuidList = 4;
+	uint32 TowerTeamId = 10;
+}

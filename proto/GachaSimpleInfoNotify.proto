@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GachaSimpleInfoNotify {
+	enum GachaSimpleInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1570;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsNew = 8;
+}

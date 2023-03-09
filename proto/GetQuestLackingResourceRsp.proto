@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetQuestLackingResourceRsp {
+	enum GetQuestLackingResourceRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 483;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, uint32> LackedNpcMap = 3;
+	int32 Retcode = 14;
+	repeated uint32 LackedPlaceList = 9;
+	repeated uint32 LackedNpcList = 15;
+	uint32 QuestId = 6;
+	map<uint32, uint32> LackedPlaceMap = 1;
+}

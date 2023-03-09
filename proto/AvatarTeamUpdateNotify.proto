@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AvatarTeam.proto";
+
+message AvatarTeamUpdateNotify {
+	enum AvatarTeamUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1723;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, AvatarTeam> AvatarTeamMap = 6;
+	repeated uint64 TempAvatarGuidList = 8;
+}

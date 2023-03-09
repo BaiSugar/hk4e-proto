@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AdjustTrackingInfo {
+	string AppToken = 5;
+	string GpsAdid = 8;
+	string FireAdid = 15;
+	string Adid = 3;
+	string Idfa = 7;
+	string EventToken = 13;
+}

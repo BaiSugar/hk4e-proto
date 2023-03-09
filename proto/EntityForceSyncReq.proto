@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package Proto;
+
+import "MotionInfo.proto";
+
+message EntityForceSyncReq {
+	enum EntityForceSyncReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 230;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	MotionInfo MotionInfo = 13;
+	uint32 SceneTime = 11;
+	uint32 EntityId = 8;
+	uint32 RoomId = 9;
+}

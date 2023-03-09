@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ShopGoods.proto";
+
+message BuyGoodsParam {
+	ShopGoods Goods = 8;
+	uint32 BuyCount = 3;
+}

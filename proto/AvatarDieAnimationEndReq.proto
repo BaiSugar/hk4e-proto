@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message AvatarDieAnimationEndReq {
+	enum AvatarDieAnimationEndReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1652;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint64 DieGuid = 7;
+	uint32 SkillId = 4;
+	Rotation RebornPos = 10;
+}

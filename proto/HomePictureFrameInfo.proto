@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomePictureFrameInfo {
+	uint32 PictureId = 1;
+	uint32 Guid = 8;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GalleryStopReason {
+	GalleryStopNone = 0;
+	GalleryStopTimeup = 1;
+	GalleryStopClientInterrupt = 2;
+	GalleryStopLuaInterruptSuccess = 3;
+	GalleryStopLuaInterruptFail = 4;
+	GalleryStopOwnerLeaveScene = 5;
+	GalleryStopPlayInitFailed = 6;
+	GalleryStopOtherPlayerEnter = 7;
+	GalleryStopAvatarDie = 8;
+	GalleryStopFinished = 9;
+	GalleryStopFungusAllDie = 10;
+	GalleryStopLifeCountZero = 11;
+	LIFIACKICDO = 12;
+}

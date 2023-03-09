@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+enum GetUgcType {
+	GetUgcNone = 0;
+	Mine = 1;
+	Publish = 2;
+}

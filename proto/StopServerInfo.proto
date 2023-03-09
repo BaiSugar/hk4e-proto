@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message StopServerInfo {
+	uint32 StopBeginTime = 1;
+	uint32 StopEndTime = 2;
+	string Url = 3;
+	string ContentMsg = 4;
+}

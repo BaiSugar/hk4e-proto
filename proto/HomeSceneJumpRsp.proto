@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HomeSceneJumpRsp {
+	enum HomeSceneJumpRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4822;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsEnterRoomScene = 1;
+	int32 Retcode = 2;
+}

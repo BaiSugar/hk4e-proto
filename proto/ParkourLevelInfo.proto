@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message ParkourLevelInfo {
+	uint32 OpenTime = 10;
+	Rotation Pos = 5;
+	uint32 BestRecord = 1;
+	bool IsOpen = 12;
+}

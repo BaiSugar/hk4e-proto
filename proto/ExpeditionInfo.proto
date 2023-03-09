@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ExpeditionChallengeInfo.proto";
+import "ExpeditionPathInfo.proto";
+
+message ExpeditionInfo {
+	repeated ExpeditionChallengeInfo ChallengeInfoList = 2;
+	bool IsContentClosed = 12;
+	uint32 CurChallengeId = 3;
+	uint32 ContentCloseTime = 9;
+	uint32 ExpeditionCount = 4;
+	repeated ExpeditionPathInfo PathInfoList = 13;
+}

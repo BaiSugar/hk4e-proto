@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ScenePlayBattleInterruptNotify {
+	enum ScenePlayBattleInterruptNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4379;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 PlayType = 4;
+	uint32 InterruptState = 12;
+	uint32 PlayId = 14;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GetDungeonEntryExploreConditionReq {
+	enum GetDungeonEntryExploreConditionReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3123;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 DungeonEntryScenePointId = 11;
+	uint32 SceneId = 13;
+	uint32 DungeonEntryConfigId = 5;
+}

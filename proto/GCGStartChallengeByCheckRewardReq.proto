@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGLevelType.proto";
+
+message GCGStartChallengeByCheckRewardReq {
+	enum CNMDOPLFCKF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7187;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 LevelId = 7;
+	GCGLevelType LevelType = 11;
+	uint32 ConfigId = 13;
+}

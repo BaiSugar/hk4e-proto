@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AddNoGachaAvatarCardTransferItem {
+	uint32 Count = 10;
+	bool IsNew = 11;
+	uint32 ItemId = 12;
+}

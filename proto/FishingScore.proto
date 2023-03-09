@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message FishingScore {
+	bool IsNewRecord = 13;
+	uint32 FishingScore_ = 10;
+}

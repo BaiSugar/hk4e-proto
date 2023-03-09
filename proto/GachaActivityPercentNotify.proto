@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GachaActivityPercentNotify {
+	enum GachaActivityPercentNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8200;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	map<uint32, uint32> TargetNumMap = 5;
+	uint32 SubItemStage = 13;
+	uint32 ItemStage = 14;
+	uint32 Percent = 15;
+}

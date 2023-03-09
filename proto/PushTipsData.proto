@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message PushTipsData {
+	uint32 PushTipsId = 13;
+	uint32 State = 8;
+}

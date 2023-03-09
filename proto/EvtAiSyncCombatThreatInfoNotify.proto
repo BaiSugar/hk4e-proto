@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "AiThreatInfo.proto";
+
+message EvtAiSyncCombatThreatInfoNotify {
+	enum EvtAiSyncCombatThreatInfoNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 356;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	map<uint32, AiThreatInfo> CombatThreatInfoMap = 8;
+}

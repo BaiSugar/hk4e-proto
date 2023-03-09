@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGGrowthLevelTakeRewardRsp {
+	enum EFADHMKIAIP {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7671;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 13;
+	uint32 Level = 6;
+}

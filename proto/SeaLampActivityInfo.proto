@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "SeaLampSectionInfo.proto";
+
+message SeaLampActivityInfo {
+	bool IsContentClosed = 1;
+	bool IsMechanicusOpen = 3;
+	repeated SeaLampSectionInfo SectionInfoList = 2;
+	uint32 FirstDayStartTime = 10;
+	uint32 Popularity = 5;
+	bool IsMechanicusFeatureClose = 14;
+	uint32 DayIndex = 4;
+	uint32 MechanicusId = 12;
+	uint32 SeaLampCoin = 6;
+}

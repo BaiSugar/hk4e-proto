@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GadgetPlayUidInfo.proto";
+
+message GadgetPlayStopNotify {
+	enum GadgetPlayStopNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 814;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated GadgetPlayUidInfo UidInfoList = 13;
+	uint32 CostTime = 12;
+	uint32 Score = 14;
+	bool IsWin = 7;
+	uint32 EntityId = 1;
+	uint32 PlayType = 11;
+}

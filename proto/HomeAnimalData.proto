@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Proto;
+
+import "Rotation.proto";
+
+message HomeAnimalData {
+	Rotation SpawnRot = 13;
+	uint32 FurnitureId = 10;
+	Rotation SpawnPos = 4;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DragonSpineChapterFinishNotify {
+	enum DragonSpineChapterFinishNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2132;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 ScheduleId = 5;
+	uint32 WeaponEnhanceLevel = 2;
+	uint32 ChapterId = 9;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "RogueStageInfo.proto";
+import "RoguelikeShikigamiRecord.proto";
+
+message RoguelikeDungoenInfo {
+	repeated RogueStageInfo StageList = 6;
+	repeated uint32 EquippedRuneList = 12;
+	repeated RoguelikeShikigamiRecord ShikigamiList = 1;
+	repeated uint32 RuneList = 11;
+	bool IsContentClosed = 10;
+	uint32 ContentCloseTime = 8;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message ScenePlayBattleSettleRewardInfo {
+	uint32 Uid = 8;
+	repeated ItemParam RewardItemList = 5;
+}

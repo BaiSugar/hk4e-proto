@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message BuoyantCombatDailyInfo {
+	uint32 BestScore = 12;
+	uint32 StartTime = 2;
+}

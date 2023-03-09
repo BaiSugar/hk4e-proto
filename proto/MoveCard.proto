@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGZoneType.proto";
+import "GCGReason.proto";
+
+message MoveCard {
+	uint32 ControllerId = 6;
+	GCGZoneType From = 3;
+	repeated uint32 CardGuidList = 15;
+	repeated uint32 FailGuidList = 10;
+	GCGZoneType To = 12;
+	GCGReason Reason = 4;
+}

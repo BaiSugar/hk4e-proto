@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message SelectWorktopOptionRsp {
+	enum SelectWorktopOptionRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 874;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 11;
+	uint32 GadgetEntityId = 3;
+	uint32 OptionId = 4;
+}

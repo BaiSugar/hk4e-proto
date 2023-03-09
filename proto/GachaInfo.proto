@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GachaStageData.proto";
+
+message GachaInfo {
+	uint32 RobotFinishNum = 5;
+	map<uint32, uint32> RobotNumMap = 2;
+	repeated uint32 HaveGetRobotList = 14;
+	map<uint32, uint32> HaveRewardRobotNumMap = 15;
+	uint32 TechCreateRobotId = 8;
+	repeated GachaStageData GachaStageDataList = 9;
+}

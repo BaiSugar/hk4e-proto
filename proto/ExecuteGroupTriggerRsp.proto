@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ExecuteGroupTriggerRsp {
+	enum ExecuteGroupTriggerRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 254;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 13;
+}

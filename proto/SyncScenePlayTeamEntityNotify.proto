@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PlayTeamEntityInfo.proto";
+
+message SyncScenePlayTeamEntityNotify {
+	enum SyncScenePlayTeamEntityNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3227;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 SceneId = 1;
+	repeated PlayTeamEntityInfo EntityInfoList = 14;
+}

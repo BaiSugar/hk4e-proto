@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LanV3BoatGameTransferFinishNotify {
+	enum PFJCBLLEFGB {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 20696;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	bool IsReenter = 14;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGClientPerformType.proto";
+
+message ClientPerform {
+	GCGClientPerformType PerformType = 2;
+	repeated uint32 ParamList = 5;
+}

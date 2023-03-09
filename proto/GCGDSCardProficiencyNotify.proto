@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message GCGDSCardProficiencyNotify {
+	enum KJBMLLHFAPH {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 7895;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 Proficiency = 4;
+	uint32 CardId = 7;
+}

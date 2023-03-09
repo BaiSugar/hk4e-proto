@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message RogueHealAvatarsRsp {
+	enum RogueHealAvatarsRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8803;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 14;
+	uint32 CellId = 12;
+	uint32 DungeonId = 11;
+}

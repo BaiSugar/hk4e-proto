@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChannellerSlabEnterLoopDungeonRsp {
+	enum ChannellerSlabEnterLoopDungeonRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8892;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	int32 Retcode = 5;
+	uint32 DungeonIndex = 6;
+	repeated uint32 ConditionIdList = 11;
+	uint32 PointId = 2;
+	uint32 DifficultyId = 4;
+}

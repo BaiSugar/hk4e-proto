@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package Proto;
+
+import "GCGZone.proto";
+import "GCGDiceSideType.proto";
+import "GCGPVEIntention.proto";
+import "GCGWaitingCharacter.proto";
+
+message GCGPlayerField {
+	GCGZone SummonZone = 4;
+	uint32 DiceCount = 12;
+	repeated GCGDiceSideType DiceSideList = 7;
+	uint32 CurWaitingIndex = 181;
+	repeated GCGPVEIntention IntentionList = 1273;
+	uint32 CardBackShowId = 14;
+	uint32 FieldShowId = 1;
+	uint32 OnStageCharacterGuid = 6;
+	uint32 ControllerId = 3;
+	map<uint32, GCGZone> ModifyZoneMap = 11;
+	GCGZone OnStageZone = 10;
+	uint32 DeckCardNum = 15;
+	GCGZone AssistZone = 5;
+	GCGZone CharacterZone = 8;
+	GCGZone HandZone = 9;
+	repeated GCGWaitingCharacter WaitingList = 2;
+	bool IsPassed = 13;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WidgetGadgetDestroyNotify {
+	enum WidgetGadgetDestroyNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4254;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 EntityId = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ClientNewMailNotify {
+	enum ClientNewMailNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1414;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 NotReadNum = 3;
+	uint32 NotGotAttachmentNum = 11;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ScenePlayInfo.proto";
+
+message ScenePlayInfoListNotify {
+	enum ScenePlayInfoListNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4374;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated ScenePlayInfo PlayInfoList = 9;
+}

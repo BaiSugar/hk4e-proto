@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "HomePictureFrameInfo.proto";
+
+message HomeUpdatePictureFrameInfoReq {
+	enum HomeUpdatePictureFrameInfoReq_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4858;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	HomePictureFrameInfo PictureFrameInfo = 9;
+}

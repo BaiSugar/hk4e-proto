@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message WidgetUseAttachAbilityGroupChangeNotify {
+	enum WidgetUseAttachAbilityGroupChangeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 4270;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 MaterialId = 13;
+	bool IsAttach = 1;
+}

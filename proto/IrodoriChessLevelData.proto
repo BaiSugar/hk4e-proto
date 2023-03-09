@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Proto;
+
+import "IrodoriChessMapData.proto";
+
+message IrodoriChessLevelData {
+	uint32 LevelId = 10;
+	uint32 OpenTime = 7;
+	IrodoriChessMapData NormalMapData = 14;
+	IrodoriChessMapData HardMapData = 15;
+}

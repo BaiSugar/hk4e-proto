@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message EnterScenePeerNotify {
+	enum EnterScenePeerNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 286;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 HostPeerId = 10;
+	uint32 DestSceneId = 8;
+	uint32 EnterSceneToken = 9;
+	uint32 PeerId = 6;
+}

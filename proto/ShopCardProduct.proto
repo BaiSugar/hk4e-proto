@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package Proto;
+
+import "ItemParam.proto";
+
+message ShopCardProduct {
+	message ShopCardProduct_ResinCard {
+		repeated ItemParam BaseItemList = 1;
+		repeated ItemParam PerDayItemList = 2;
+	}
+
+	string ProductId = 1;
+	string PriceTier = 2;
+	uint32 McoinBase = 3;
+	uint32 HcoinPerDay = 4;
+	uint32 Days = 5;
+	uint32 RemainRewardDays = 6;
+	uint32 CardProductType = 7;
+	oneof ShopCardProduct_ExtraCardDataOneofCase {
+		ShopCardProduct_ResinCard resin_card = 101;
+	}
+}

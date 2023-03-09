@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message AnimatorParameterValueInfo {
+	uint32 ParaType = 1;
+	oneof AnimatorParameterValueInfo_ParaValOneofCase {
+		int32 int_val = 2;
+		float float_val = 3;
+		bool bool_val = 4;
+	}
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HuntingPair {
+	uint32 RefreshId = 5;
+	uint32 MonsterConfigId = 12;
+}

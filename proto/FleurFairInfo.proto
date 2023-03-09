@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "FleurFairMinigameInfo.proto";
+import "FleurFairChapterInfo.proto";
+import "FleurFairDungeonSectionInfo.proto";
+
+message FleurFairInfo {
+	uint32 ObtainedToken = 10;
+	map<uint32, FleurFairMinigameInfo> MinigameInfoMap = 6;
+	bool IsContentClosed = 7;
+	repeated FleurFairChapterInfo ChapterInfoList = 5;
+	bool IsDungeonUnlocked = 9;
+	uint32 ContentCloseTime = 15;
+	uint32 DungeonPunishOverTime = 1;
+	map<uint32, FleurFairDungeonSectionInfo> DungeonSectionInfoMap = 11;
+}

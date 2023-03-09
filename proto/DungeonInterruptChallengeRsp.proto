@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message DungeonInterruptChallengeRsp {
+	enum DungeonInterruptChallengeRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 963;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 GroupId = 7;
+	uint32 ChallengeId = 10;
+	uint32 ChallengeIndex = 3;
+	int32 Retcode = 13;
+}

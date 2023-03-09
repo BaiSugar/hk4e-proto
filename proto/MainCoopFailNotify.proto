@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MainCoopFailNotify {
+	enum MainCoopFailNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 1976;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	string TextmapId = 4;
+	uint32 ChapterId = 13;
+}

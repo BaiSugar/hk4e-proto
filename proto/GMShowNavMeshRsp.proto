@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+import "PBNavMeshTile.proto";
+
+message GMShowNavMeshRsp {
+	enum GMShowNavMeshRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2354;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated PBNavMeshTile Tiles = 9;
+	int32 Retcode = 4;
+}

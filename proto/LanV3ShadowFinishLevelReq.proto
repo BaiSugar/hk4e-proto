@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message LanV3ShadowFinishLevelReq {
+	enum GDKHCIJMJLF {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 23802;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+	uint32 FinishTime = 7;
+	uint32 LevelId = 6;
+}

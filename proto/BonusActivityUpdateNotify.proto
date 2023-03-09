@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+import "BonusActivityInfo.proto";
+
+message BonusActivityUpdateNotify {
+	enum BonusActivityUpdateNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 2529;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	repeated BonusActivityInfo BonusActivityInfoList = 8;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message MistTrialGetDungeonExhibitionDataRsp {
+	enum MistTrialGetDungeonExhibitionDataRsp_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 8208;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 TrialId = 10;
+	int32 Retcode = 13;
+}

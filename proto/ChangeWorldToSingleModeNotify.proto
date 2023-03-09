@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message ChangeWorldToSingleModeNotify {
+	enum ChangeWorldToSingleModeNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 3397;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+		IsAllowClient = 1;
+	}
+
+}

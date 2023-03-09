@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package Proto;
+
+
+message HideAndSeekPlayerSetAvatarNotify {
+	enum HideAndSeekPlayerSetAvatarNotify_CmdId {
+		option allow_alias = true;
+		None = 0;
+		CmdId = 5323;
+		EnetChannelId = 0;
+		EnetIsReliable = 1;
+	}
+
+	uint32 CostumeId = 9;
+	uint32 Uid = 2;
+	uint32 AvatarId = 10;
+}
